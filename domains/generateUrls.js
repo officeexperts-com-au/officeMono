@@ -3,7 +3,7 @@ const path = require('path');
 
 async function generateUrls() {
     try {
-        const baseUrl = 'http:/accessexperts.com'; // Change to your base URL
+        const baseUrl = 'http:/powerplatformexperts.com'; // Change to your base URL
         const appDir = path.join(__dirname, 'app'); // Adjust the path if needed
 
         // Read the contents of the app directory
