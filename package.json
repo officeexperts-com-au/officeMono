@@ -1,0 +1,34 @@
+{
+  "name": "experts",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "access",
+    "excel",
+    "office",
+    "powerPlatform",
+    "word"
+  ],
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "postbuild": "next-sitemap",
+    "sitemap:all": "node generate-sitemaps.js",
+    "build:domain1": "cd domains/access && next build",
+    "build:domain2": "cd domains/excel && next build",
+    "build:domain3": "cd domains/office && next build",
+    "build:domain4": "cd domains/powerPlatform && next build",
+    "build:domain5": "cd domains/word && next build"
+  },
+  "dependencies": {
+    "next": "14.2.15",
+    "node-fetch": "^3.3.2",
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "eslint": "^8",
+    "eslint-config-next": "14.2.15"
+  }
+}
