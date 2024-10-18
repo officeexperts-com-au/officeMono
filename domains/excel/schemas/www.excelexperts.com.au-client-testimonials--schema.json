@@ -1,0 +1,94 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://www.excelexperts.com.au/client-testimonials/",
+      "url": "https://www.excelexperts.com.au/client-testimonials/",
+      "name": "Testimonials | Excel Experts",
+      "isPartOf": {
+        "@id": "https://www.excelexperts.com.au/#website"
+      },
+      "datePublished": "2019-08-06T08:12:54+00:00",
+      "dateModified": "2022-11-09T00:24:40+00:00",
+      "description": "Are you struggling with some of the features in Excel? Do you need some guidance from time to time? Call us on 1300102810",
+      "breadcrumb": {
+        "@id": "https://www.excelexperts.com.au/client-testimonials/#breadcrumb"
+      },
+      "inLanguage": "en-AU",
+      "potentialAction": [
+        {
+          "@type": "ReadAction",
+          "target": [
+            "https://www.excelexperts.com.au/client-testimonials/"
+          ]
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.excelexperts.com.au/client-testimonials/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.excelexperts.com.au/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Testimonials"
+        }
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.excelexperts.com.au/#website",
+      "url": "https://www.excelexperts.com.au/",
+      "name": "Excel Experts - Microsoft Excel Design, Development and Consulting, Office Experts Group",
+      "description": "Your Microsoft Technology Design, Development and Consulting Experts",
+      "publisher": {
+        "@id": "https://www.excelexperts.com.au/#organization"
+      },
+      "potentialAction": [
+        {
+          "@type": "SearchAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://www.excelexperts.com.au/?s={search_term_string}"
+          },
+          "query-input": {
+            "@type": "PropertyValueSpecification",
+            "valueRequired": true,
+            "valueName": "search_term_string"
+          }
+        }
+      ],
+      "inLanguage": "en-AU"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://www.excelexperts.com.au/#organization",
+      "name": "Office Experts Group",
+      "url": "https://www.excelexperts.com.au/",
+      "logo": {
+        "@type": "ImageObject",
+        "inLanguage": "en-AU",
+        "@id": "https://www.excelexperts.com.au/#/schema/logo/image/",
+        "url": "https://www.excelexperts.com.au/wp-content/uploads/2017/11/Office-Experts-Group_Excel-Experts_Access-Experts_Word-Experts-365-Experts_PowerPoint-Experts_Logo_1181x1181.gif",
+        "contentUrl": "https://www.excelexperts.com.au/wp-content/uploads/2017/11/Office-Experts-Group_Excel-Experts_Access-Experts_Word-Experts-365-Experts_PowerPoint-Experts_Logo_1181x1181.gif",
+        "width": 1181,
+        "height": 1181,
+        "caption": "Office Experts Group"
+      },
+      "image": {
+        "@id": "https://www.excelexperts.com.au/#/schema/logo/image/"
+      },
+      "sameAs": [
+        "https://www.facebook.com/MSOfficeExperts",
+        "https://x.com/OfficeExpertsG1"
+      ]
+    }
+  ]
+}

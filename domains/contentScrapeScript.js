@@ -3,8 +3,8 @@ const cheerio = require('cheerio');
 const fs = require('fs').promises;
 const path = require('path');
 
-const outputDir = './app';
-const urlListFile = 'urls.json';
+const outputDir = '../domains/word/content';
+const urlListFile = '../domains/word/urls.json';
 
 const sanitizePath = (urlPath) => {
     return urlPath.replace(/[^a-z0-9]/gi, '_').toLowerCase(); // Sanitize folder path
