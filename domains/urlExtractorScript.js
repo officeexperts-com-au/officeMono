@@ -4,8 +4,8 @@ const fs = require('fs').promises;
 const path = require('path');
 const url = require('url');
 
-const baseUrl = 'https://www.powerplatformexperts.com.au'; // Replace with your base URL
-const outputDir = './generated-pages/powerPlatform'; // Directory to store the generated folders
+const baseUrl = 'https://www.wordexperts.com.au'; // Replace with your base URL
+const outputDir = './word/app'; // Directory to store the generated folders
 
 // Helper function to create directories and files for the URL paths
 async function createPageFiles(pageUrl) {

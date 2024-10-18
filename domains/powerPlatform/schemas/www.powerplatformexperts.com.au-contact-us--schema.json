@@ -1,0 +1,198 @@
+{
+  "additionalType": [
+    "https://en.wikipedia.org/wiki/Microsoft_Word"
+  ],
+  "@context": "http://schema.org",
+  "@id": "https://www.wordexperts.com.au/",
+  "@type": "ProfessionalService",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Australia",
+    "addressRegion": "NT, WA, VIC, QLD, TAS, SA, NSW, ACT",
+    "areaServed": [
+      [
+        "Sydney",
+        "Gold Coast",
+        "Darwin",
+        "Perth",
+        "Canberra",
+        "Brisbane",
+        "Melbourne",
+        "Central Coast",
+        "Northern Rivers",
+        "Wollongong"
+      ]
+    ],
+    "description": "Our Australia-wide, cross-industry Microsoft Word consultants deliver prompt, quality service with competitive pricing. Fulfilling all of your Microsoft Word consulting needs, our experts excel in Microsoft technology services from corporate identity and branding, to document consistency, corporate/business templates, integration, styles and formatting, macro programming, conversions, upgrades, training and support.",
+    "email": "consult@officeexperts.com.au"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://www.wordexperts.com.au/wp-content/uploads/2019/03/word-experts-logo.png",
+    "width": {
+      "@type": "QuantitativeValue",
+      "value": "298"
+    },
+    "height": {
+      "@type": "QuantitativeValue",
+      "value": "119"
+    }
+  },
+  "name": "Word Experts: For All Your Microsoft Technology Development and Consulting Services",
+  "openingHours": "Mo-Fr 09:00-17:00",
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "closes": "17:00:00",
+      "dayOfWeek": "http://schema.org/Monday",
+      "opens": "09:00:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "closes": "17:00:00",
+      "dayOfWeek": "http://schema.org/Tuesday",
+      "opens": "09:00:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "closes": "17:00:00",
+      "dayOfWeek": "http://schema.org/Wednesday",
+      "opens": "09:00:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "closes": "17:00:00",
+      "dayOfWeek": "http://schema.org/Thursday",
+      "opens": "09:00:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "closes": "17:00:00",
+      "dayOfWeek": "http://schema.org/Friday",
+      "opens": "09:00:00"
+    }
+  ],
+  "sameAs": [
+    "https://www.facebook.com/MSOfficeExperts"
+  ],
+  "telephone": "1300 12 20 38",
+  "url": "https://www.wordexperts.com.au",
+  "legalName": "Word Experts",
+  "alternateName": [
+    "Office Experts"
+  ],
+  "brand": {
+    "@type": "Thing",
+    "name": [
+      "Microsoft Word",
+      "Microsoft Office",
+      "Word Experts",
+      "Word consultant",
+      "Word training",
+      "Microsoft Word expert",
+      "Microsoft Word consultant",
+      "Microsoft Word training",
+      "Microsoft Word consulting",
+      "Word expert"
+    ]
+  },
+  "paymentAccepted": "Credit Card, Cheque, Direct Debit",
+  "currenciesAccepted": "AUD",
+  "priceRange": "$50-$5000",
+  "isAccessibleForFree": false,
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Microsoft Word Design and Consulting Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Mail Merge"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "VBA Macro development"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Word Template creation"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "PowerPoint Presentation creation"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "PowerPoint Template creation"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Cloud backups, backups"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "pptPlex presentations"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Reporting solutions"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Professional documents"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Integrate financial systems"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Review code and fix defects"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Process automation and upgrades"
+        }
+      }
+    ]
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5",
+    "reviewCount": "15"
+  }
+}

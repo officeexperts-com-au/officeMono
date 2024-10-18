@@ -4,28 +4,29 @@ const fs = require('fs');
 const path = require('path');
 
 // List of URLs to scrape metadata from
+
 const urls = [
-    'https://www.wordexperts.com.au/',
-    'https://www.wordexperts.com.au/contact-us/request-a-quote/',
-    'https://www.wordexperts.com.au/excel-and-access-experts-sydney/',
-    'https://www.wordexperts.com.au/training/',
-    'https://www.wordexperts.com.au/custom-toolbars-and-ribbons/',
-    'https://www.wordexperts.com.au/word-template-conversions/',
-    'https://www.wordexperts.com.au/upgrades-and-migration/',
-    'https://www.wordexperts.com.au/fill-in-forms/',
-    'https://www.wordexperts.com.au/popup-forms/',
-    'https://www.wordexperts.com.au/quick-parts/',
-    'https://www.wordexperts.com.au/remove-repetition-and-increase-productivity/',
-    'https://www.wordexperts.com.au/government-departments/',
-    'https://www.wordexperts.com.au/corporate-identity/',
-    'https://www.wordexperts.com.au/corporate-global-template-solution/',
-    'https://www.wordexperts.com.au/contact-us/',
-    'https://www.wordexperts.com.au/client-testimonials/',
-    'https://www.wordexperts.com.au/meet-the-team/',
-    'https://www.wordexperts.com.au/accessibility/',
-    'https://www.wordexperts.com.au/word-document-template-creation/',
-    'https://www.wordexperts.com.au/companies-and-organisations/',
-];
+    "https://www.wordexperts.com.au/",
+    "https://www.wordexperts.com.au/contact-us/request-a-quote/",
+    "https://www.wordexperts.com.au/excel-and-access-experts-sydney/",
+    "https://www.wordexperts.com.au/training/",
+    "https://www.wordexperts.com.au/custom-toolbars-and-ribbons/",
+    "https://www.wordexperts.com.au/word-template-conversions/",
+    "https://www.wordexperts.com.au/upgrades-and-migration/",
+    "https://www.wordexperts.com.au/fill-in-forms/",
+    "https://www.wordexperts.com.au/popup-forms/",
+    "https://www.wordexperts.com.au/quick-parts/",
+    "https://www.wordexperts.com.au/remove-repetition-and-increase-productivity/",
+    "https://www.wordexperts.com.au/government-departments/",
+    "https://www.wordexperts.com.au/corporate-identity/",
+    "https://www.wordexperts.com.au/corporate-global-template-solution/",
+    "https://www.wordexperts.com.au/contact-us/",
+    "https://www.wordexperts.com.au/client-testimonials/",
+    "https://www.wordexperts.com.au/meet-the-team/",
+    "https://www.wordexperts.com.au/accessibility/",
+    "https://www.wordexperts.com.au/word-document-template-creation/",
+    "https://www.wordexperts.com.au/companies-and-organisations/"
+]
 
 // Function to fetch and scrape metadata
 async function fetchMetadata(url) {
@@ -41,6 +42,9 @@ async function fetchMetadata(url) {
 
         // Extract meta description
         const description = $('meta[name="description"]').attr('content') || 'No description';
+
+        // Extract meta keywords
+        const keywords = $('meta[name="keywords"]').attr('content') || 'No keywords';
 
         // Extract Open Graph title
         const ogTitle = $('meta[property="og:title"]').attr('content') || 'No OG title';
