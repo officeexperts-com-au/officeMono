@@ -15,8 +15,13 @@ So far we have installed the following:
 
 ## Sitemap creation
 Is a little strange given all the domains, so a config file is added in each domains root path, the package.json has been configured to run a node script /generate-sitemap.js, this will generate a sitemap.xml file in the root of the domain.
-<<<<<<< HEAD
 ** This is untested waters for Dan, but the logic seems sound!
-=======
-** This is untested waters for Dan, but the logic seems sound!
->>>>>>> e18a6744c5233413bef59505be3fa6356df6f8a9
+
+## Content
+Each domain has in its folder
+- content folder
+This is scraped from each site, contains all the text content in a markdown format.
+- metadata.json
+A file containing all the metadata for each page, this is scraped from each site, unfortunately not neatly into each nested URL
+- schemas folder
+Every schema we currently have for each nested url
