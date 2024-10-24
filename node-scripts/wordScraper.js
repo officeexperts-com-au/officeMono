@@ -13,8 +13,8 @@ import {
 } from 'docx';
 import fsExtra from 'fs-extra';
 
-const outputDir = './formattedContent';
-const urlListFile = './../domains/office/urls.json';
+const outputDir = './../domains/word/formattedContent';
+const urlListFile = './../domains/word/urls.json';
 
 const sanitizePath = (urlPath) => {
     return urlPath.replace(/[^a-z0-9]/gi, '_').toLowerCase();

@@ -30,10 +30,10 @@ async function scrapeContentForUrl(url) {
                 if (text) {
                     let prefix = '';
                     switch (tag) {
-                        case 'h1': prefix = '## H1: '; break;
-                        case 'h2': prefix = '### H2: '; break;
-                        case 'h3': prefix = '#### H3: '; break;
-                        case 'h4': prefix = '##### H4: '; break;
+                        case 'h1': prefix = ' H1: '; break;
+                        case 'h2': prefix = ' H2: '; break;
+                        case 'h3': prefix = ' H3: '; break;
+                        case 'h4': prefix = ' H4: '; break;
                         case 'li': prefix = '- '; break;
                     }
                     mdContent.push(`${prefix}${text}\n`);

@@ -6,14 +6,14 @@ const schema = [
     "@type": "Organization",
     "@id": "https://www.officeexperts.com.au/#organization",
     "name": "Office Experts Group",
-    "url": "https://www.officeexperts.com.au/",
+    "url": "https://www.officeexperts.com.au/about-us/",
     "logo": {
       "@type": "ImageObject",
       "url": "/logo.png",
       "width": 1181,
       "height": 1181
     },
-    "description": "Specialists in Microsoft Office 365 custom application development and SharePoint integration solutions across Australia.",
+    "description": "Expert Microsoft Office consulting team specializing in PC and Mac solutions across Australia.",
     "areaServed": [
       {
         "@type": "Country",
@@ -54,8 +54,8 @@ const schema = [
     ],
     "sameAs": [
       "https://www.facebook.com/MSOfficeExperts",
-      "https://x.com/OfficeExpertsG1", 
-      "https://www.instagram.com/officeexpertsgroup",
+      "https://x.com/OfficeExpertsG1",
+      "https://www.instagram.com/officeexpertsgroup", 
       "https://www.linkedin.com/company/office-experts-group",
       "https://www.youtube.com/channel/UCw2Xf02ukEwvM6fQ2lVZxuw"
     ],
@@ -65,17 +65,6 @@ const schema = [
       "contactType": "customer service",
       "areaServed": "AU",
       "availableLanguage": "English"
-    }
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "@id": "https://www.officeexperts.com.au/#website",
-    "url": "https://www.officeexperts.com.au/",
-    "name": "Office Experts Group",
-    "description": "Your Microsoft Office Design, Development and Consulting Experts",
-    "publisher": {
-      "@id": "https://www.officeexperts.com.au/#organization"
     }
   }
 ];

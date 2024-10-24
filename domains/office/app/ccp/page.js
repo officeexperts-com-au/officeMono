@@ -13,7 +13,7 @@ const schema = [
       "width": 1181,
       "height": 1181
     },
-    "description": "Specialists in Microsoft Office 365 custom application development and SharePoint integration solutions across Australia.",
+    "description": "Professional Microsoft Office consulting services with secure payment processing options.",
     "areaServed": [
       {
         "@type": "Country",
@@ -69,13 +69,13 @@ const schema = [
   },
   {
     "@context": "https://schema.org",
-    "@type": "WebSite",
-    "@id": "https://www.officeexperts.com.au/#website",
-    "url": "https://www.officeexperts.com.au/",
-    "name": "Office Experts Group",
-    "description": "Your Microsoft Office Design, Development and Consulting Experts",
-    "publisher": {
-      "@id": "https://www.officeexperts.com.au/#organization"
+    "@type": "WebPage",
+    "@id": "https://www.officeexperts.com.au/ccp/#webpage",
+    "url": "https://www.officeexperts.com.au/ccp/",
+    "name": "Credit Card Payments",
+    "description": "Secure credit card payment processing for Microsoft Office consulting services and solutions.",
+    "isPartOf": {
+      "@id": "https://www.officeexperts.com.au/#website"
     }
   }
 ];

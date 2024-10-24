@@ -1,0 +1,127 @@
+# Expert Domains - Next.js 14 Migration Project Reference
+
+## Project Overview
+Migration of five WordPress sites to Next.js 14, focusing on server-side rendering and performance optimization while maintaining SEO value.
+
+### Target Domains
+- officeexperts.com.au
+- wordexperts.com.au
+- powerplatformexperts.com.au
+- excelexperts.com.au
+- accessexperts.com.au
+
+## Technical Stack
+- Next.js 14 (App Router)
+- JavaScript (not TypeScript)
+- SCSS Modules
+- Azure hosting
+- Resend.com for emails
+- Azure Application Insights for error tracking
+
+## Core Requirements
+### Architecture
+- Server-side rendering first approach
+- Minimal client-side components
+- Monorepo structure
+- No CMS - manual content updates
+- Shared resources across domains
+
+### Performance Goals
+- Lighthouse score: 100 across all metrics
+- SEO optimization
+- Minimal dependencies
+- Automated sitemap/robots.txt generation
+
+## Project Structure
+```
+domains/
+├── domains/
+│   ├── office/
+│   │   ├── app/
+│   │   │   ├── api/
+│   │   │   │   ├── contact/
+│   │   │   │   │   └── route.js
+│   │   │   │   └── quote/
+│   │   │   │       └── route.js
+│   │   │   ├── search/
+│   │   │   │   ├── page.js
+│   │   │   │   └── loading.js
+│   │   │   └── not-found.js
+│   │   ├── components/
+│   │   └── styles/
+│   ├── word/
+│   ├── excel/
+│   ├── access/
+│   ├── powerPlatform/
+│   ├── components/
+│   │   ├── layout/
+│   │   ├── search/
+│   │   └── ui/
+│   ├── lib/
+│   │   ├── email/
+│   │   ├── search/
+│   │   └── utils/
+│   └── styles/
+└── package.json
+```
+
+## Feature Specifications
+
+### Forms & Email
+- Resend.com integration (100 emails/day limit)
+- HTML and plain text templates
+- Company notification & client confirmation
+- Domain-specific signatures
+- Honeypot for spam prevention (no CAPTCHA)
+- Send to contact@officeexperts.com.au
+
+### Search Implementation
+- Submit-based (not real-time)
+- 20 results per page
+- Mixed results across domains
+- Remove common words (and, or, the)
+- Show highlighted snippets
+- Sort by relevance
+- No caching required
+
+### Deployment Strategy
+- GitHub-based deployment
+- Branch Structure:
+  - main → Production
+  - staging → Subdomain preview
+  - feature branches → Development
+- Manual content updates
+- Subdomain testing before production
+
+### Testing Focus
+- Critical paths only (forms, search, routes)
+- Accessibility testing
+- Performance monitoring
+- Basic automated testing
+
+## Content & SEO
+- Content already migrated from WordPress
+- Metadata and schemas preserved
+- URL structure maintained
+- Google Search Console integration
+- Azure analytics integration
+
+## Development Notes
+- Comment all functions
+- Keep dependencies minimal
+- Use SCSS modules
+- Server components by default
+- Client components only for:
+  - Forms
+  - Search functionality
+  - Interactive UI elements
+
+## Current Status
+- Folder structure established
+- Content scraped
+- Awaiting design team deliverables
+- URL structure documentation pending
+
+This document serves as the master reference for the Expert Domains migration project. It should be referenced for all development decisions and project queries.
+
+Note: This is a living document and may be updated as the project progresses.
