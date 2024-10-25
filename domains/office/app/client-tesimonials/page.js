@@ -13,7 +13,7 @@ const schema = [
       "width": 1181,
       "height": 1181
     },
-    "description": "Professional Excel training and support services providing expert guidance across Australia.",
+    "description": "Office Experts testimonials - Professional Microsoft Office consulting services specializing in comprehensive business solutions and automation across Australia.",
     "areaServed": [
       {
         "@type": "Country",
@@ -54,8 +54,8 @@ const schema = [
     ],
     "sameAs": [
       "https://www.facebook.com/MSOfficeExperts",
-      "https://x.com/OfficeExpertsG1", 
-      "https://www.instagram.com/officeexpertsgroup",
+      "https://x.com/OfficeExpertsG1",
+      "https://www.instagram.com/officeexpertsgroup", 
       "https://www.linkedin.com/company/office-experts-group",
       "https://www.youtube.com/channel/UCw2Xf02ukEwvM6fQ2lVZxuw"
     ],
@@ -77,13 +77,36 @@ const schema = [
     "publisher": {
       "@id": "https://www.officeexperts.com.au/#organization"
     }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "https://www.officeexperts.com.au/client-testimonials/",
+    "url": "https://www.officeexperts.com.au/client-testimonials/",
+    "name": "Client Testimonials",
+    "isPartOf": {
+      "@id": "https://www.officeexperts.com.au/#website"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "ReviewAggregate",
+    "itemReviewed": {
+      "@type": "LocalBusiness",
+      "name": "Office Experts Group",
+      "@id": "https://www.officeexperts.com.au/#organization"
+    },
+    "reviewCount": "50+",
+    "ratingValue": "5",
+    "bestRating": "5",
+    "worstRating": "1"
   }
 ];
 
 const Page = () => {
   return (
     <>
-      <script
+      <script 
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
