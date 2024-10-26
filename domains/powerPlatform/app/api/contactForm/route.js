@@ -54,10 +54,10 @@ export async function POST(req) {
       ${htmlSignature}
     `;
 
-    // Send email to the consult@accessexperts.com.au
+    // Send email to the consult@powerplatformexperts.com.au
     await sgMail.send({
       from: email,
-      to: "consult@accessexperts.com.au",
+      to: "consult@powerplatformexperts.com.au",
       subject: "New Contact Form Submission",
       text: clientTextMessage,
       html: clientHtmlMessage,
@@ -74,7 +74,7 @@ export async function POST(req) {
 
     // Send confirmation email to the customer
     await sgMail.send({
-      from: "consult@accessexperts.com.au",
+      from: "consult@powerplatformexperts.com.au",
       to: email,
       subject: "Thank you for your message!",
       text: customerTextMessage,
