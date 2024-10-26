@@ -1,58 +1,93 @@
 import React from "react";
 
-const schema = [
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "@id": "https://www.officeexperts.com.au/#organization",
-    name: "Office Experts Group",
-    url: "https://www.officeexperts.com.au/",
-    logo: {
-      "@type": "ImageObject",
-      url: "/logo.png",
-      width: 1181,
-      height: 1181,
-    },
-    description:
-      "Professional Microsoft Excel and Access consulting services specializing in comprehensive business solutions and automation across Central Coast NSW.",
-    areaServed: [
-      {
-        "@type": "Country",
-        name: "Australia",
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id":
+        "https://www.officeexperts.com.au/excel-and-access-experts-central-coast-nsw/",
+      url: "https://www.officeexperts.com.au/excel-and-access-experts-central-coast-nsw/",
+      name: "Excel and Access Experts - Central Coast, NSW",
+      isPartOf: {
+        "@id": "https://www.officeexperts.com.au/#website",
       },
-      {
-        "@type": "AdministrativeArea",
-        name: "New South Wales",
+      datePublished: "2024-10-26T00:00:00+00:00",
+      dateModified: "2024-10-26T00:00:00+00:00",
+      breadcrumb: {
+        "@id":
+          "https://www.officeexperts.com.au/excel-and-access-experts-central-coast-nsw/#breadcrumb",
       },
-    ],
-    sameAs: [
-      "https://www.facebook.com/MSOfficeExperts",
-      "https://x.com/OfficeExpertsG1",
-      "https://www.instagram.com/officeexpertsgroup",
-      "https://www.linkedin.com/company/office-experts-group",
-      "https://www.youtube.com/channel/UCw2Xf02ukEwvM6fQ2lVZxuw",
-    ],
-    contactPoint: {
-      "@type": "ContactPoint",
-      telephone: "+61-1300-10-28-10",
-      contactType: "customer service",
-      areaServed: "AU",
-      availableLanguage: "English",
+      inLanguage: "en-AU",
+      potentialAction: [
+        {
+          "@type": "ReadAction",
+          target: [
+            "https://www.officeexperts.com.au/excel-and-access-experts-central-coast-nsw/",
+          ],
+        },
+      ],
     },
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "@id": "https://www.officeexperts.com.au/#website",
-    url: "https://www.officeexperts.com.au/",
-    name: "Office Experts Group",
-    description:
-      "Your Microsoft Excel and Access Design, Development and Consulting Experts in Central Coast NSW",
-    publisher: {
+    {
+      "@type": "BreadcrumbList",
+      "@id":
+        "https://www.officeexperts.com.au/excel-and-access-experts-central-coast-nsw/#breadcrumb",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Home",
+          item: "https://www.officeexperts.com.au/",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Excel and Access Experts - Central Coast, NSW",
+        },
+      ],
+    },
+    {
+      "@type": "Organization",
       "@id": "https://www.officeexperts.com.au/#organization",
+      name: "Office Experts Group",
+      url: "https://www.officeexperts.com.au/",
+      areaServed: [
+        {
+          "@type": "Country",
+          name: "Australia",
+        },
+        {
+          "@type": "AdministrativeArea",
+          name: "New South Wales",
+        },
+        {
+          "@type": "City",
+          name: "Central Coast",
+        },
+      ],
+      logo: {
+        "@type": "ImageObject",
+        inLanguage: "en-AU",
+        "@id": "https://www.officeexperts.com.au/#/schema/logo/image/",
+        url: "/images/logo.png",
+        contentUrl: "/images/logo.png",
+        width: 1181,
+        height: 1181,
+        caption: "Office Experts Group",
+      },
+      image: {
+        "@id": "https://www.officeexperts.com.au/#/schema/logo/image/",
+      },
+      sameAs: [
+        "https://www.facebook.com/MSOfficeExperts",
+        "https://x.com/OfficeExpertsG1",
+        "https://www.instagram.com/officeexpertsgroup",
+        "https://www.linkedin.com/company/office-experts-group",
+        "https://www.youtube.com/channel/UCw2Xf02ukEwvM6fQ2lVZxuw",
+      ],
     },
-  },
-];
+  ],
+};
 
 const Page = () => {
   return (

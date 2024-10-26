@@ -1,68 +1,124 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
 
-export const metadata = {
-  // Basic metadata
-  title: "Refund Policy | Office Experts Group",
-  description: "This Refund Policy should be read in conjunction with our Service Agreement. Your rights under the Service Agreement can be found at section 15.\n\n1. Refunds for legal services provided\nOffice Experts Group is bound by Australian Consumer Law ('ACL') obligations to provide IT services with due care and skill within a reasonable period of time.",
-  
-  // OpenGraph
-  openGraph: {
-    title: "Refund Policy",
-    description: "This Refund Policy should be read in conjunction with our Service Agreement. Your rights under the Service Agreement can be found at section 15.\n\n1. Refunds for legal services provided\nOffice Experts Group is bound by Australian Consumer Law ('ACL') obligations to provide IT services with due care and skill within a reasonable period of time.",
-    url: "https://www.officeexperts.com.au/refund-policy/",
-    siteName: "Office Experts Group",
-    images: [
-      {
-        url: "https://www.officeexperts.com.au/wp-content/uploads/2023/09/microsoft-office-experts-group-logo.png",
-        width: 1200,
-        height: 630,
-        alt: "Office Experts Group Logo"
-      }
-    ],
-    locale: "en-AU",
-    type: "article",
-  },
-
-  // Twitter Card
-  twitter: {
-    card: "summary_large_image",
-    site: "@OfficeExpertsG1",
-    title: "Refund Policy | Office Experts Group",
-    description: "This Refund Policy should be read in conjunction with our Service Agreement. Your rights under the Service Agreement can be found at section 15.",
-    images: ["https://www.officeexperts.com.au/wp-content/uploads/2023/09/microsoft-office-experts-group-logo.png"],
-  },
-
-  // Additional metadata
-  viewport: "width=device-width, initial-scale=1",
-  canonical: "https://www.officeexperts.com.au/refund-policy/",
-  
-  // Updated robots directive for policy page
-  robots: {
-    index: true,
-    follow: false,
-    nofollow: true,
-    "max-image-preview": "large",
-    "max-snippet": -1,
-    "max-video-preview": -1,
-  },
-
-  // Icons
-  icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon-32x32.png",
-    apple: "/apple-touch-icon.png",
-  }
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://www.officeexperts.com.au/refund-policy/",
+      url: "https://www.officeexperts.com.au/refund-policy/",
+      name: "Refund Policy | Office Experts Group",
+      isPartOf: {
+        "@id": "https://www.officeexperts.com.au/#website",
+      },
+      datePublished: "2024-10-26T00:00:00+00:00",
+      dateModified: "2024-10-26T00:00:00+00:00",
+      description:
+        "Refund policy for Office Experts Group services and products",
+      breadcrumb: {
+        "@id": "https://www.officeexperts.com.au/refund-policy/#breadcrumb",
+      },
+      inLanguage: "en-AU",
+      potentialAction: [
+        {
+          "@type": "ReadAction",
+          target: ["https://www.officeexperts.com.au/refund-policy/"],
+        },
+      ],
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.officeexperts.com.au/refund-policy/#breadcrumb",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Home",
+          item: "https://www.officeexperts.com.au/",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Refund Policy",
+        },
+      ],
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://www.officeexperts.com.au/#organization",
+      name: "Office Experts Group",
+      url: "https://www.officeexperts.com.au/",
+      areaServed: [
+        {
+          "@type": "Country",
+          name: "Australia",
+        },
+        {
+          "@type": "AdministrativeArea",
+          name: "New South Wales",
+        },
+        {
+          "@type": "AdministrativeArea",
+          name: "Victoria",
+        },
+        {
+          "@type": "AdministrativeArea",
+          name: "Queensland",
+        },
+        {
+          "@type": "AdministrativeArea",
+          name: "Western Australia",
+        },
+        {
+          "@type": "AdministrativeArea",
+          name: "South Australia",
+        },
+        {
+          "@type": "AdministrativeArea",
+          name: "Tasmania",
+        },
+        {
+          "@type": "AdministrativeArea",
+          name: "Australian Capital Territory",
+        },
+        {
+          "@type": "AdministrativeArea",
+          name: "Northern Territory",
+        },
+      ],
+      logo: {
+        "@type": "ImageObject",
+        inLanguage: "en-AU",
+        "@id": "https://www.officeexperts.com.au/#/schema/logo/image/",
+        url: "/images/logo.png",
+        contentUrl: "/images/logo.png",
+        width: 1181,
+        height: 1181,
+        caption: "Office Experts Group",
+      },
+      image: {
+        "@id": "https://www.officeexperts.com.au/#/schema/logo/image/",
+      },
+      sameAs: [
+        "https://www.facebook.com/MSOfficeExperts",
+        "https://x.com/OfficeExpertsG1",
+        "https://www.instagram.com/officeexpertsgroup",
+        "https://www.linkedin.com/company/office-experts-group",
+        "https://www.youtube.com/channel/UCw2Xf02ukEwvM6fQ2lVZxuw",
+      ],
+    },
+  ],
 };
 
-export default function RootLayout({ children }) {
+const Page = () => {
   return (
-      <body>
-        {children}
-      </body>
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
+    </>
   );
-}
-
-RootLayout.propTypes = {
-  children: PropTypes.node.isRequired,
 };
+
+export default Page;
