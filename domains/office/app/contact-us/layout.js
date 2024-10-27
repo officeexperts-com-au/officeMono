@@ -51,7 +51,7 @@ export const metadata = {
   themeColor: "#ffffff",
   canonical: "https://www.officeexperts.com.au/contact-us/",
   robots: {
-    index: true,
+    index: false,
     follow: false,
     "max-image-preview": "large",
     "max-snippet": -1,
