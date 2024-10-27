@@ -7,6 +7,17 @@ const schema = [
     "@id": "https://www.officeexperts.com.au/#organization",
     name: "Office Experts Group",
     url: "https://www.officeexperts.com.au/",
+    telephone: "1300 10 28 10",
+    email: "consult@officeexperts.com.au",
+    contactPoint: [
+      {
+        "@type": "ContactPoint",
+        telephone: "1300 10 28 10",
+        contactType: "customer service",
+        email: "consult@officeexperts.com.au",
+        availableLanguage: ["en", "en-AU"],
+      },
+    ],
     logo: {
       "@type": "ImageObject",
       url: "/logo.png",
@@ -60,13 +71,6 @@ const schema = [
       "https://www.linkedin.com/company/office-experts-group",
       "https://www.youtube.com/channel/UCw2Xf02ukEwvM6fQ2lVZxuw",
     ],
-    contactPoint: {
-      "@type": "ContactPoint",
-      telephone: "+61-1300-10-28-10",
-      contactType: "customer service",
-      areaServed: "AU",
-      availableLanguage: "English",
-    },
   },
   {
     "@context": "https://schema.org",

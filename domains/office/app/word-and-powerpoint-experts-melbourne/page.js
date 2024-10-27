@@ -8,12 +8,15 @@ const schema = {
       "@id":
         "https://www.officeexperts.com.au/word-and-powerpoint-experts-melbourne/",
       url: "https://www.officeexperts.com.au/word-and-powerpoint-experts-melbourne/",
-      name: "Word and Powerpoint Experts - Melbourne - Office Experts Group",
+      name: "Word and PowerPoint Experts - Melbourne - Office Experts Group: Microsoft Excel Experts, Microsoft Access Database Experts, Microsoft Word Experts, PowerPoint Experts, Azure, Power BI, SQL Server, SharePoint, Microsoft Office 365",
       isPartOf: {
         "@id": "https://www.officeexperts.com.au/#website",
       },
-      datePublished: "2019-06-28T02:36:03+00:00",
-      dateModified: "2019-06-28T02:36:03+00:00",
+      about: {
+        "@id": "https://www.officeexperts.com.au/#organization",
+      },
+      datePublished: "2024-10-27T00:00:00+00:00",
+      dateModified: "2024-10-27T00:00:00+00:00",
       breadcrumb: {
         "@id":
           "https://www.officeexperts.com.au/word-and-powerpoint-experts-melbourne/#breadcrumb",
@@ -42,7 +45,7 @@ const schema = {
         {
           "@type": "ListItem",
           position: 2,
-          name: "Word and Powerpoint Experts - Melbourne",
+          name: "Word and PowerPoint Experts - Melbourne",
         },
       ],
     },
@@ -78,14 +81,27 @@ const schema = {
       "@id": "https://www.officeexperts.com.au/#organization",
       name: "Office Experts Group",
       url: "https://www.officeexperts.com.au/",
-      areaServed: {
-        "@type": "City",
-        name: "Melbourne",
-        containedInPlace: {
-          "@type": "State",
+      telephone: "1300 10 28 10",
+      email: "consult@officeexperts.com.au",
+      contactPoint: [
+        {
+          "@type": "ContactPoint",
+          telephone: "1300 10 28 10",
+          contactType: "customer service",
+          email: "consult@officeexperts.com.au",
+          availableLanguage: ["en", "en-AU"],
+        },
+      ],
+      areaServed: [
+        {
+          "@type": "Country",
+          name: "Australia",
+        },
+        {
+          "@type": "AdministrativeArea",
           name: "Victoria",
         },
-      },
+      ],
       logo: {
         "@type": "ImageObject",
         inLanguage: "en-AU",

@@ -11,10 +11,11 @@ const schema = {
       isPartOf: {
         "@id": "https://www.officeexperts.com.au/#website",
       },
-      datePublished: "2024-10-26T00:00:00+00:00",
-      dateModified: "2024-10-26T00:00:00+00:00",
-      description:
-        "Refund policy for Office Experts Group services and products",
+      about: {
+        "@id": "https://www.officeexperts.com.au/#organization",
+      },
+      datePublished: "2024-10-27T00:00:00+00:00",
+      dateModified: "2024-10-27T00:00:00+00:00",
       breadcrumb: {
         "@id": "https://www.officeexperts.com.au/refund-policy/#breadcrumb",
       },
@@ -44,10 +45,48 @@ const schema = {
       ],
     },
     {
+      "@type": "WebSite",
+      "@id": "https://www.officeexperts.com.au/#website",
+      url: "https://www.officeexperts.com.au/",
+      name: "Office Experts Group: Microsoft Excel Experts, Microsoft Access Database Experts, Microsoft Word Experts, PowerPoint Experts, Azure, Power BI, SQL Server, SharePoint, Microsoft Office 365",
+      description:
+        "Your Microsoft Office Design, Development and Consulting Experts",
+      publisher: {
+        "@id": "https://www.officeexperts.com.au/#organization",
+      },
+      potentialAction: [
+        {
+          "@type": "SearchAction",
+          target: {
+            "@type": "EntryPoint",
+            urlTemplate:
+              "https://www.officeexperts.com.au/?s={search_term_string}",
+          },
+          "query-input": {
+            "@type": "PropertyValueSpecification",
+            valueRequired: true,
+            valueName: "search_term_string",
+          },
+        },
+      ],
+      inLanguage: "en-AU",
+    },
+    {
       "@type": "Organization",
       "@id": "https://www.officeexperts.com.au/#organization",
       name: "Office Experts Group",
       url: "https://www.officeexperts.com.au/",
+      telephone: "1300 10 28 10",
+      email: "consult@officeexperts.com.au",
+      contactPoint: [
+        {
+          "@type": "ContactPoint",
+          telephone: "1300 10 28 10",
+          contactType: "customer service",
+          email: "consult@officeexperts.com.au",
+          availableLanguage: ["en", "en-AU"],
+        },
+      ],
       areaServed: [
         {
           "@type": "Country",
@@ -90,8 +129,8 @@ const schema = {
         "@type": "ImageObject",
         inLanguage: "en-AU",
         "@id": "https://www.officeexperts.com.au/#/schema/logo/image/",
-        url: "/images/logo.png",
-        contentUrl: "/images/logo.png",
+        url: "/logo.png",
+        contentUrl: "/logo.png",
         width: 1181,
         height: 1181,
         caption: "Office Experts Group",

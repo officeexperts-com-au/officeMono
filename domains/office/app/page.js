@@ -5,38 +5,51 @@ const schema = {
   "@graph": [
     {
       "@type": "WebPage",
-      "@id": "https://www.officeexperts.com.au/",
-      url: "https://www.officeexperts.com.au/",
-      name: "Microsoft Office Consulting | Office Programmers | Office Experts Group",
+      "@id": "https://www.officeexperts.com.au/services/microsoft-office/",
+      url: "https://www.officeexperts.com.au/services/microsoft-office/",
+      name: "Microsoft Office Services | Excel Consultancy Services",
       isPartOf: {
         "@id": "https://www.officeexperts.com.au/#website",
-      },
-      about: {
-        "@id": "https://www.officeexperts.com.au/#organization",
       },
       datePublished: "2024-10-26T00:00:00+00:00",
       dateModified: "2024-10-26T00:00:00+00:00",
       description:
-        "Our Microsoft Office Consulting services help to optimize your productivity! Our vast knowledge of Excel and Microsoft technologies will help your business.",
+        "We provide Microsoft office services, Custom office Solutions, VBA and Macro Development, Cloud Based Solution with Azure. Call us today 1300 10 28 10",
       breadcrumb: {
-        "@id": "https://www.officeexperts.com.au/#breadcrumb",
+        "@id":
+          "https://www.officeexperts.com.au/services/microsoft-office/#breadcrumb",
       },
       inLanguage: "en-AU",
       potentialAction: [
         {
           "@type": "ReadAction",
-          target: ["https://www.officeexperts.com.au/"],
+          target: [
+            "https://www.officeexperts.com.au/services/microsoft-office/",
+          ],
         },
       ],
     },
     {
       "@type": "BreadcrumbList",
-      "@id": "https://www.officeexperts.com.au/#breadcrumb",
+      "@id":
+        "https://www.officeexperts.com.au/services/microsoft-office/#breadcrumb",
       itemListElement: [
         {
           "@type": "ListItem",
           position: 1,
           name: "Home",
+          item: "https://www.officeexperts.com.au/",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Services",
+          item: "https://www.officeexperts.com.au/services/",
+        },
+        {
+          "@type": "ListItem",
+          position: 3,
+          name: "Our Microsoft Office Services",
         },
       ],
     },
@@ -72,6 +85,17 @@ const schema = {
       "@id": "https://www.officeexperts.com.au/#organization",
       name: "Office Experts Group",
       url: "https://www.officeexperts.com.au/",
+      telephone: "1300 10 28 10",
+      email: "consult@officeexperts.com.au",
+      contactPoint: [
+        {
+          "@type": "ContactPoint",
+          telephone: "1300 10 28 10",
+          contactType: "customer service",
+          email: "consult@officeexperts.com.au",
+          availableLanguage: ["en", "en-AU"],
+        },
+      ],
       areaServed: [
         {
           "@type": "Country",
@@ -114,8 +138,8 @@ const schema = {
         "@type": "ImageObject",
         inLanguage: "en-AU",
         "@id": "https://www.officeexperts.com.au/#/schema/logo/image/",
-        url: "/images/logo.png",
-        contentUrl: "/images/logo.png",
+        url: "/logo.png",
+        contentUrl: "/logo.png",
         width: 1181,
         height: 1181,
         caption: "Office Experts Group",
