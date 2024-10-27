@@ -5,68 +5,61 @@ const schema = {
   "@graph": [
     {
       "@type": "WebPage",
-      "@id":
-        "https://www.officeexperts.com.au/services/microsoft-power-platform/microsoft-power-pages/",
-      url: "https://www.officeexperts.com.au/services/microsoft-power-platform/microsoft-power-pages/",
-      name: "Our Microsoft Power Pages Consulting Services - Office Experts Group: Microsoft Excel Experts, Microsoft Access Database Experts, Microsoft Word Experts, PowerPoint Experts, Azure, Power BI, SQL Server, SharePoint, Microsoft Office 365",
+      "@id": "https://www.powerplatformexperts.com.au/author/ppexperts/",
+      url: "https://www.powerplatformexperts.com.au/author/ppexperts/",
+      name: "Power Platform Experts Group | Expert Authors",
       isPartOf: {
-        "@id": "https://www.officeexperts.com.au/#website",
+        "@id": "https://www.powerplatformexperts.com.au/#website",
       },
       datePublished: "2024-10-27T00:00:00+00:00",
       dateModified: "2024-10-27T00:00:00+00:00",
+      description:
+        "Meet our expert authors and consultants specializing in Microsoft Power Platform solutions. Industry leaders in Power Apps, Power Automate, Power BI, and Power Pages.",
       breadcrumb: {
         "@id":
-          "https://www.officeexperts.com.au/services/microsoft-power-platform/microsoft-power-pages/#breadcrumb",
+          "https://www.powerplatformexperts.com.au/author/ppexperts/#breadcrumb",
       },
       inLanguage: "en-AU",
       potentialAction: [
         {
           "@type": "ReadAction",
-          target: [
-            "https://www.officeexperts.com.au/services/microsoft-power-platform/microsoft-power-pages/",
-          ],
+          target: ["https://www.powerplatformexperts.com.au/author/ppexperts/"],
         },
       ],
     },
     {
       "@type": "BreadcrumbList",
       "@id":
-        "https://www.officeexperts.com.au/services/microsoft-power-platform/microsoft-power-pages/#breadcrumb",
+        "https://www.powerplatformexperts.com.au/author/ppexperts/#breadcrumb",
       itemListElement: [
         {
           "@type": "ListItem",
           position: 1,
           name: "Home",
-          item: "https://www.officeexperts.com.au/",
+          item: "https://www.powerplatformexperts.com.au/",
         },
         {
           "@type": "ListItem",
           position: 2,
-          name: "Services",
-          item: "https://www.officeexperts.com.au/services/",
+          name: "Authors",
+          item: "https://www.powerplatformexperts.com.au/author/",
         },
         {
           "@type": "ListItem",
           position: 3,
-          name: "Our Microsoft Power Platform Services",
-          item: "https://www.officeexperts.com.au/services/microsoft-power-platform/",
-        },
-        {
-          "@type": "ListItem",
-          position: 4,
-          name: "Our Microsoft Power Pages Consulting Services",
+          name: "Power Platform Experts Group",
         },
       ],
     },
     {
       "@type": "WebSite",
-      "@id": "https://www.officeexperts.com.au/#website",
-      url: "https://www.officeexperts.com.au/",
-      name: "Office Experts Group: Microsoft Excel Experts, Microsoft Access Database Experts, Microsoft Word Experts, PowerPoint Experts, Azure, Power BI, SQL Server, SharePoint, Microsoft Office 365",
+      "@id": "https://www.powerplatformexperts.com.au/#website",
+      url: "https://www.powerplatformexperts.com.au/",
+      name: "Power Platform Experts: Microsoft Power Platform Development and Consulting Services",
       description:
-        "Your Microsoft Office Design, Development and Consulting Experts",
+        "Your Microsoft Power Platform Design, Development and Consulting Experts",
       publisher: {
-        "@id": "https://www.officeexperts.com.au/#organization",
+        "@id": "https://www.powerplatformexperts.com.au/#organization",
       },
       potentialAction: [
         {
@@ -74,7 +67,7 @@ const schema = {
           target: {
             "@type": "EntryPoint",
             urlTemplate:
-              "https://www.officeexperts.com.au/?s={search_term_string}",
+              "https://www.powerplatformexperts.com.au/?s={search_term_string}",
           },
           "query-input": {
             "@type": "PropertyValueSpecification",
@@ -87,17 +80,17 @@ const schema = {
     },
     {
       "@type": "Organization",
-      "@id": "https://www.officeexperts.com.au/#organization",
-      name: "Office Experts Group",
-      url: "https://www.officeexperts.com.au/",
+      "@id": "https://www.powerplatformexperts.com.au/#organization",
+      name: "Power Platform Experts Group",
+      url: "https://www.powerplatformexperts.com.au/",
       telephone: "1300 10 28 10",
-      email: "consult@officeexperts.com.au",
+      email: "consult@powerplatformexperts.com.au",
       contactPoint: [
         {
           "@type": "ContactPoint",
           telephone: "1300 10 28 10",
           contactType: "customer service",
-          email: "consult@officeexperts.com.au",
+          email: "consult@powerplatformexperts.com.au",
           availableLanguage: ["en", "en-AU"],
         },
       ],
@@ -142,23 +135,16 @@ const schema = {
       logo: {
         "@type": "ImageObject",
         inLanguage: "en-AU",
-        "@id": "https://www.officeexperts.com.au/#/schema/logo/image/",
+        "@id": "https://www.powerplatformexperts.com.au/#/schema/logo/image/",
         url: "/logo.png",
         contentUrl: "/logo.png",
         width: 1181,
         height: 1181,
-        caption: "Office Experts Group",
+        caption: "Power Platform Experts Group",
       },
       image: {
-        "@id": "https://www.officeexperts.com.au/#/schema/logo/image/",
+        "@id": "https://www.powerplatformexperts.com.au/#/schema/logo/image/",
       },
-      sameAs: [
-        "https://www.facebook.com/MSOfficeExperts",
-        "https://x.com/OfficeExpertsG1",
-        "https://www.instagram.com/officeexpertsgroup",
-        "https://www.linkedin.com/company/office-experts-group",
-        "https://www.youtube.com/channel/UCw2Xf02ukEwvM6fQ2lVZxuw",
-      ],
     },
   ],
 };

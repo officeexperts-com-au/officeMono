@@ -20,3 +20,16 @@ So far we have installed the following:
 
 Is a little strange given all the domains, so a config file is added in each domains root path, the package.json has been configured to run a node script /generate-sitemap.js, this will generate a sitemap.xml file in the root of the domain.
 \*\* This is untested waters for Dan, but the logic seems sound!
+
+# Dev notes TODO
+
+- change image paths in metadata and schemas, use full paths.
+- create icons: {
+  icon: "/favicon.ico",
+  shortcut: "/favicon-32x32.png",
+  apple: "/apple-touch-icon.png",
+  },
+  // resize existing logos
+- decide on nesting public folders for different logos
+- create canonical duplicate tags for quote, contact us, meet the teams and any others we find along the way
+- Get Sendgrid key (share a .env.local file via email)
