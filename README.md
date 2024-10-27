@@ -33,3 +33,4 @@ Is a little strange given all the domains, so a config file is added in each dom
 - decide on nesting public folders for different logos
 - create canonical duplicate tags for quote, contact us, meet the teams and any others we find along the way
 - Get Sendgrid key (share a .env.local file via email)
+- redirects for the blog page's, rather than the current redirect to home, redirect to officeesperts.com.au/blog
