@@ -1,6 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
 
+import Header from "../../../components/Header";
+import MobileNav from "../../../components/MobileNav";
+import CookieConsent from "../../../components/CookieConsent";
+
+import "./global.css";
+
 export const metadata = {
   // Basic metadata
   title:
@@ -103,7 +109,16 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-  return <body>{children}</body>;
+  return (
+    <html>
+      <body>
+        <MobileNav />
+        <Header />
+        {children}
+        <CookieConsent />
+      </body>
+    </html>
+  );
 }
 
 RootLayout.propTypes = {

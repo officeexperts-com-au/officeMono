@@ -1,0 +1,337 @@
+/*!***************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../../node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[2]!../../node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[3]!../../styles/cookieConsent.module.css ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************/
+.cookieConsent_container__HS_KG {
+  position: fixed;
+  bottom: 1rem;
+  left: 1rem;
+  right: 1rem;
+  z-index: 50;
+}
+@media (min-width: 768px) {
+  .cookieConsent_container__HS_KG {
+    left: auto;
+    right: 1rem;
+    max-width: 28rem;
+  }
+}
+
+.cookieConsent_alert__VkJGf {
+  position: relative;
+  background-color: white;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.cookieConsent_title__o0gbz {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.cookieConsent_description__7wpr0 {
+  margin-top: 0.5rem;
+}
+
+.cookieConsent_message__3fvQb {
+  margin-bottom: 1rem;
+  color: #4b5563;
+  line-height: 1.5;
+}
+
+.cookieConsent_buttonGroup__dqra7 {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.cookieConsent_acceptButton__XiXcD {
+  padding: 0.5rem 1rem;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 0.375rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+.cookieConsent_acceptButton__XiXcD:hover {
+  background-color: #1d4ed8;
+}
+.cookieConsent_acceptButton__XiXcD:focus {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+}
+
+.cookieConsent_declineButton__PcOLS {
+  padding: 0.5rem 1rem;
+  background-color: white;
+  color: #4b5563;
+  border: 1px solid #d1d5db;
+  border-radius: 0.375rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+.cookieConsent_declineButton__PcOLS:hover {
+  background-color: #f3f4f6;
+}
+.cookieConsent_declineButton__PcOLS:focus {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+}
+
+.cookieConsent_closeButton__EyUha {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6b7280;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+  transition: color 0.2s;
+}
+.cookieConsent_closeButton__EyUha:hover {
+  color: #374151;
+}
+.cookieConsent_closeButton__EyUha svg {
+  width: 1rem;
+  height: 1rem;
+  stroke-width: 2;
+}
+
+.cookieConsent_srOnly__KZ_Vd {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}/*# sourceMappingURL=cookieConsent.module.css.map */
+/*!********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../../node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[2]!../../node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[3]!../../styles/header.module.css ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************/
+.header_header__6P5Qd {
+  background-color: #f8f8f8;
+  padding: 1rem;
+}
+
+.header_nav__GU83m {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header_navList__bZuRn {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+.header_navList__bZuRn p {
+  margin: 0;
+}
+
+.header_navItem__zpKNr {
+  position: relative;
+}
+
+.header_navLink__kSqpr {
+  text-decoration: none;
+  color: #333;
+  padding: 0.5rem 1rem;
+}
+
+.header_dropdown__R32NG {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  min-width: 200px;
+  display: none;
+  z-index: 1;
+}
+
+.header_navItem__zpKNr:hover .header_dropdown__R32NG {
+  display: block;
+}
+
+.header_dropdown__R32NG li {
+  padding: 0.5rem 1rem;
+}
+
+.header_nestedDropdown___XqJ0 {
+  position: relative;
+}
+
+.header_nestedItems__YYjJy {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  min-width: 200px;
+  display: none;
+}
+
+.header_nestedDropdown___XqJ0:hover .header_nestedItems__YYjJy {
+  display: block;
+}/*# sourceMappingURL=header.module.css.map */
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../../node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[9].use[2]!../../node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[9].use[3]!../../node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[14].oneOf[9].use[4]!../../node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[14].oneOf[9].use[5]!../../styles/mobileNav.module.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@media (min-width: 1025px) {
+  .mobileNav_mobileNavContainer__vz2kw {
+    display: none;
+  }
+}
+
+.mobileNav_menuButton__PDtDV {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 1000;
+  background: none;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.mobileNav_menuIcon__Dkj69 {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.mobileNav_mobileNav__Gl_EP {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 80%;
+  max-width: 400px;
+  height: 100vh;
+  background-color: white;
+  z-index: 999;
+  transition: right 0.3s ease-in-out;
+  overflow-y: auto;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.mobileNav_isOpen__b8eCp {
+  right: 0;
+}
+
+.mobileNav_overlay__hg_y2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 998;
+}
+
+.mobileNav_backButton__m4KPw {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  background: none;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+}
+
+.mobileNav_backIcon__52vsy {
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-right: 0.5rem;
+}
+
+.mobileNav_navList__bOJDE {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.mobileNav_fadeIn__PWvv8 {
+  opacity: 1;
+}
+
+.mobileNav_fadeOut__qp_VI {
+  opacity: 0;
+}
+
+.mobileNav_navItem__JCSfa {
+  border-bottom: 1px solid #eee;
+}
+
+.mobileNav_navButton__oGeJN,
+.mobileNav_navLink__Mxgvc {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  text-align: left;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+.mobileNav_navButton__oGeJN:hover,
+.mobileNav_navLink__Mxgvc:hover {
+  background-color: #f5f5f5;
+}
+/*!********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../../node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!../../node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./app/global.css ***!
+  \********************************************************************************************************************************************************************************************************************************************************************/
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+

@@ -12,6 +12,9 @@
   display: flex;
   justify-content: space-between;
   list-style-type: none;
+  p {
+    margin: 0;
+  }
 }
 
 .navItem {

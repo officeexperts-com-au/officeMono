@@ -2,24 +2,21 @@
   "name": "experts",
   "version": "0.1.0",
   "private": true,
+  "packageManager": "npm@10.8.0",
   "workspaces": [
-    "access",
-    "excel",
-    "office",
-    "powerPlatform",
-    "word"
+    "domains/*"
   ],
   "scripts": {
-    "build": "turbo run build",
     "dev": "turbo run dev",
+    "build": "turbo run build",
     "lint": "turbo run lint",
     "postbuild": "next-sitemap",
     "sitemap:all": "node generate-sitemaps.js",
-    "build:domain1": "cd domains/access && next build",
-    "build:domain2": "cd domains/excel && next build",
-    "build:domain3": "cd domains/office && next build",
-    "build:domain4": "cd domains/powerPlatform && next build",
-    "build:domain5": "cd domains/word && next build"
+    "dev:office": "turbo run dev --filter=@experts/office",
+    "dev:word": "turbo run dev --filter=@experts/word",
+    "dev:excel": "turbo run dev --filter=@experts/excel",
+    "dev:access": "turbo run dev --filter=@experts/access",
+    "dev:powerplatform": "turbo run dev --filter=@experts/powerplatform"
   },
   "dependencies": {
     "@sendgrid/mail": "^8.1.4",
@@ -38,7 +35,8 @@
     "eslint": "^8.57.1",
     "eslint-config-next": "14.2.15",
     "eslint-plugin-react": "^7.37.1",
-    "globals": "^15.11.0"
+    "globals": "^15.11.0",
+    "turbo": "latest"
   },
   "type": "module"
 }
