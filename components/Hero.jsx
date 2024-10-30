@@ -1,9 +1,12 @@
 import React from "react";
+import Image from "next/image";
+
 import styles from "../styles/hero.module.css";
 
 import handShake from "../public/hero/handShake.webp";
 import graph from "../public/hero/graph.webp";
-import Image from "next/image";
+import shapeLeft from "../public/hero/shapeLeft.png";
+import shapeRight from "../public/hero/shapeRight.png";
 
 const Hero = () => {
   return (
@@ -25,9 +28,34 @@ const Hero = () => {
         </div>
       </div>
 
+      <Image
+        src={shapeLeft}
+        alt="shape icon"
+        className={`${styles.shape} ${styles.shapeLeft}`}
+        width={378}
+        height={371}
+      />
+      <Image
+        src={shapeRight}
+        alt="shape icon"
+        className={`${styles.shape} ${styles.shapeRight}`}
+        width={327}
+        height={317.5}
+      />
+
       <div className={styles.content}>
-        <h4>Document Design and Development</h4>
-        <h1>Microsoft Word Designer & Consultants</h1>
+        <div className={styles.subHead}>
+          <div className={styles.bar}></div>
+          <div className={styles.headingWrapper}>
+            <h4 className={styles.heading1}>
+              Microsoft Development and Consulting
+            </h4>
+            <h4 className={styles.heading2}>With over 25yrs of experience</h4>
+          </div>
+        </div>
+        <h1>
+          Access<br></br>Experts
+        </h1>
         <button className="btn">Discover More</button>
       </div>
     </section>

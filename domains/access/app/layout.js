@@ -1,12 +1,21 @@
 import React from "react";
 import PropTypes from "prop-types";
 
+import { Roboto } from "next/font/google";
+
+import HeadTop from "../../../components/HeadTop";
 import Header from "../../../components/Header";
 import CookieConsent from "../../../components/CookieConsent";
 import Footer from "../../../components/Footer";
 import Hero from "../../../components/Hero";
 
 import "./global.css";
+
+const roboto = Roboto({
+  weight: ["400", "500", "700", "900"],
+  subsets: ["latin"],
+  display: "swap",
+});
 
 export const metadata = {
   // Basic metadata
@@ -114,8 +123,9 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html>
-      <body>
+    <html lang="en-AU">
+      <body className={roboto.className}>
+        <HeadTop />
         <Header />
         <Hero />
         {children}
