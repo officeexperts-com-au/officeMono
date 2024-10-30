@@ -1,0 +1,108 @@
+.locationsSection {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1.5rem;
+}
+.locationsSection h3 {
+  margin: 0;
+  color: #333;
+  font-size: 1.2rem;
+}
+.locationsSection .remoteAccess {
+  margin: 0;
+  color: #666;
+  font-style: italic;
+}
+
+.dropdownSection {
+  position: relative;
+}
+.dropdownSection .dropdownContent {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+.dropdownSection:hover .dropdownContent, .dropdownSection:focus-within .dropdownContent {
+  max-height: 200px;
+}
+.dropdownSection:hover .dropdownArrow, .dropdownSection:focus-within .dropdownArrow {
+  transform: rotate(180deg);
+}
+
+.dropdownHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  margin: 0;
+  padding: 0.5rem 0;
+  color: #333;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.dropdownHeader .dropdownArrow {
+  font-size: 0.8em;
+  transition: transform 0.3s ease;
+}
+
+.dropdownContent {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-left: 1rem;
+}
+
+.serviceGroup {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.serviceGroup a {
+  color: #666;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.2s;
+}
+.serviceGroup a:hover {
+  color: #333;
+}
+.serviceGroup a:not(:last-child)::after {
+  content: "|";
+  margin-left: 0.5rem;
+  color: #ccc;
+}
+
+.staticLink {
+  color: #666;
+  text-decoration: none;
+  transition: color 0.2s;
+  padding: 0.25rem 0;
+}
+.staticLink:hover {
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .dropdownSection .dropdownContent {
+    max-height: 0;
+  }
+  .dropdownSection:active .dropdownContent, .dropdownSection:focus-within .dropdownContent {
+    max-height: 200px;
+  }
+  .dropdownHeader {
+    padding: 0.75rem 0;
+  }
+  .serviceGroup {
+    flex-wrap: wrap;
+  }
+  .serviceGroup a {
+    padding: 0.5rem 0;
+  }
+  .serviceGroup a:not(:last-child)::after {
+    margin: 0 0.25rem;
+  }
+  .staticLink {
+    padding: 0.5rem 0;
+  }
+}/*# sourceMappingURL=footerLocations.module.css.map */

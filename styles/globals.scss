@@ -1,3 +1,10 @@
+// colors
+$body: #333;
+$theme: #e12454;
+$background: #f6f6f6;
+$offWhite: #f8f8f8;
+
+// breakpoints
 @mixin smallPhone {
   @media (max-width: 359px) {
     @content;

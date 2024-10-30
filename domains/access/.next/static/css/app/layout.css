@@ -121,12 +121,20 @@
   !*** css ../../node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[2]!../../node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[3]!../../styles/header.module.css ***!
   \********************************************************************************************************************************************************************************************************************************************************************************/
 .header_header__6P5Qd {
-  background-color: #f8f8f8;
-  padding: 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 1em;
+  background-color: transparent;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+.header_header__6P5Qd.header_scrolled__Bsqmt {
+  background-color: #333;
 }
 
 .header_nav__GU83m {
-  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -134,38 +142,45 @@
   display: flex;
   justify-content: space-between;
   list-style-type: none;
-}
-.header_navList__bZuRn p {
   margin: 0;
+  padding: 0;
 }
 
 .header_navItem__zpKNr {
   position: relative;
 }
+.header_navItem__zpKNr p {
+  margin: 0;
+  cursor: pointer;
+  color: #f8f8f8;
+}
 
 .header_navLink__kSqpr {
   text-decoration: none;
-  color: #333;
+  color: #f8f8f8;
   padding: 0.5rem 1rem;
+  display: block;
 }
 
 .header_dropdown__R32NG {
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: #fff;
+  background-color: white;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   min-width: 200px;
   display: none;
   z-index: 1;
 }
+.header_dropdown__R32NG li {
+  padding: 0.5rem 1rem;
+}
+.header_dropdown__R32NG li:hover {
+  background-color: #f5f5f5;
+}
 
 .header_navItem__zpKNr:hover .header_dropdown__R32NG {
   display: block;
-}
-
-.header_dropdown__R32NG li {
-  padding: 0.5rem 1rem;
 }
 
 .header_nestedDropdown___XqJ0 {
@@ -176,7 +191,7 @@
   position: absolute;
   top: 0;
   left: 100%;
-  background-color: #fff;
+  background-color: white;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   min-width: 200px;
   display: none;
@@ -304,6 +319,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  color: #333;
+}
+
 body,
 h1,
 h2,
@@ -329,9 +348,342 @@ a:hover {
   text-decoration: underline;
 }
 
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  color: inherit;
+}
+h1 {
+  font-size: 40px;
+  font-weight: 500;
+}
+h2 {
+  font-size: 35px;
+}
+h3 {
+  font-size: 28px;
+}
+h4 {
+  font-size: 22px;
+}
+h5 {
+  font-size: 18px;
+}
+h6 {
+  font-size: 16px;
+}
+ul {
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 20px;
+}
+
 button {
   background: none;
   border: none;
   cursor: pointer;
+  transition: all 0.3s ease-out 0s;
 }
 
+.btn {
+  -moz-user-select: none;
+  background: #e12454 none repeat scroll 0 0;
+  border: medium none;
+  border-radius: 2px;
+  color: #fff;
+  display: inline-block;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 1;
+  margin-bottom: 0;
+  padding: 13px 25px;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  transition: all 0.3s ease 0s;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+/*!****************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../../node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[2]!../../node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[3]!../../styles/footerServices.module.css ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************/
+.footerServices_servicesSection__mufqG {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1.5rem;
+}
+
+.footerServices_mainLinks__gMayH {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.footerServices_mainLinks__gMayH a {
+  color: #666;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.footerServices_mainLinks__gMayH a:hover {
+  color: #333;
+}
+
+.footerServices_dropdownSection__mECbn {
+  position: relative;
+}
+.footerServices_dropdownSection__mECbn .footerServices_dropdownContent__CTiHw {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+.footerServices_dropdownSection__mECbn:hover .footerServices_dropdownContent__CTiHw, .footerServices_dropdownSection__mECbn:focus-within .footerServices_dropdownContent__CTiHw {
+  max-height: 300px;
+}
+.footerServices_dropdownSection__mECbn:hover .footerServices_dropdownArrow__rVtOv, .footerServices_dropdownSection__mECbn:focus-within .footerServices_dropdownArrow__rVtOv {
+  transform: rotate(180deg);
+}
+
+.footerServices_dropdownHeader__Jj604 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  margin: 0;
+  padding: 0.5rem 0;
+  color: #333;
+}
+.footerServices_dropdownHeader__Jj604 .footerServices_dropdownArrow__rVtOv {
+  font-size: 0.8em;
+  transition: transform 0.3s ease;
+}
+
+.footerServices_dropdownContent__CTiHw {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-left: 1rem;
+}
+.footerServices_dropdownContent__CTiHw a {
+  color: #666;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.footerServices_dropdownContent__CTiHw a:hover {
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .footerServices_dropdownSection__mECbn .footerServices_dropdownContent__CTiHw {
+    max-height: 0;
+  }
+  .footerServices_dropdownSection__mECbn:active .footerServices_dropdownContent__CTiHw, .footerServices_dropdownSection__mECbn:focus-within .footerServices_dropdownContent__CTiHw {
+    max-height: 300px;
+  }
+  .footerServices_dropdownHeader__Jj604 {
+    padding: 1rem 0;
+  }
+  .footerServices_dropdownContent__CTiHw a {
+    padding: 0.5rem 0;
+  }
+}/*# sourceMappingURL=footerServices.module.css.map */
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../../node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[2]!../../node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[3]!../../styles/footerLocations.module.css ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************/
+.footerLocations_locationsSection__CbJPh {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1.5rem;
+}
+.footerLocations_locationsSection__CbJPh h3 {
+  margin: 0;
+  color: #333;
+  font-size: 1.2rem;
+}
+.footerLocations_locationsSection__CbJPh .footerLocations_remoteAccess__BgkCx {
+  margin: 0;
+  color: #666;
+  font-style: italic;
+}
+
+.footerLocations_dropdownSection__kg2q_ {
+  position: relative;
+}
+.footerLocations_dropdownSection__kg2q_ .footerLocations_dropdownContent__yIIvC {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+.footerLocations_dropdownSection__kg2q_:hover .footerLocations_dropdownContent__yIIvC, .footerLocations_dropdownSection__kg2q_:focus-within .footerLocations_dropdownContent__yIIvC {
+  max-height: 200px;
+}
+.footerLocations_dropdownSection__kg2q_:hover .footerLocations_dropdownArrow__GFbhW, .footerLocations_dropdownSection__kg2q_:focus-within .footerLocations_dropdownArrow__GFbhW {
+  transform: rotate(180deg);
+}
+
+.footerLocations_dropdownHeader__tzkzP {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  margin: 0;
+  padding: 0.5rem 0;
+  color: #333;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.footerLocations_dropdownHeader__tzkzP .footerLocations_dropdownArrow__GFbhW {
+  font-size: 0.8em;
+  transition: transform 0.3s ease;
+}
+
+.footerLocations_dropdownContent__yIIvC {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-left: 1rem;
+}
+
+.footerLocations_serviceGroup__FHNwS {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.footerLocations_serviceGroup__FHNwS a {
+  color: #666;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.2s;
+}
+.footerLocations_serviceGroup__FHNwS a:hover {
+  color: #333;
+}
+.footerLocations_serviceGroup__FHNwS a:not(:last-child)::after {
+  content: "|";
+  margin-left: 0.5rem;
+  color: #ccc;
+}
+
+.footerLocations_staticLink__oCRJ0 {
+  color: #666;
+  text-decoration: none;
+  transition: color 0.2s;
+  padding: 0.25rem 0;
+}
+.footerLocations_staticLink__oCRJ0:hover {
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .footerLocations_dropdownSection__kg2q_ .footerLocations_dropdownContent__yIIvC {
+    max-height: 0;
+  }
+  .footerLocations_dropdownSection__kg2q_:active .footerLocations_dropdownContent__yIIvC, .footerLocations_dropdownSection__kg2q_:focus-within .footerLocations_dropdownContent__yIIvC {
+    max-height: 200px;
+  }
+  .footerLocations_dropdownHeader__tzkzP {
+    padding: 0.75rem 0;
+  }
+  .footerLocations_serviceGroup__FHNwS {
+    flex-wrap: wrap;
+  }
+  .footerLocations_serviceGroup__FHNwS a {
+    padding: 0.5rem 0;
+  }
+  .footerLocations_serviceGroup__FHNwS a:not(:last-child)::after {
+    margin: 0 0.25rem;
+  }
+  .footerLocations_staticLink__oCRJ0 {
+    padding: 0.5rem 0;
+  }
+}/*# sourceMappingURL=footerLocations.module.css.map */
+/*!******************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../../node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[2]!../../node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[3]!../../styles/hero.module.css ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************/
+.hero_heroSection__gSJKU {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero_slider__8y6H_ {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.hero_slide__DJYYc {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  animation: hero_fadeInOut__hNhbK 10s infinite;
+}
+.hero_slide__DJYYc:nth-child(1) {
+  animation-delay: -5s;
+}
+.hero_slide__DJYYc:nth-child(2) {
+  animation-delay: 0s;
+}
+
+.hero_slideImage__pTW3m {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.7);
+}
+
+.hero_content__T15_a {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.hero_content__T15_a h4 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.hero_content__T15_a h1 {
+  font-size: 3.5rem;
+  margin-bottom: 2rem;
+}
+
+.hero_button__qQwV3 {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.hero_button__qQwV3:hover {
+  background-color: #0056b3;
+}
+
+@keyframes hero_fadeInOut__hNhbK {
+  0%, 45%, 100% {
+    opacity: 0;
+  }
+  50%, 95% {
+    opacity: 1;
+  }
+}/*# sourceMappingURL=hero.module.css.map */

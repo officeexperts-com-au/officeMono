@@ -1,7 +1,7 @@
 # Expert Domains - Next.js 14 Migration Project Reference
 
 ## Project Overview
-Migration of five WordPress sites to Next.js 14, focusing on server-side rendering and performance optimization while maintaining SEO value.
+Migration of five WordPress sites to Next.js 14 app router, focusing on server-side rendering and performance optimization while maintaining SEO value.
 
 ### Target Domains
 - officeexperts.com.au
@@ -13,9 +13,9 @@ Migration of five WordPress sites to Next.js 14, focusing on server-side renderi
 ## Technical Stack
 - Next.js 14 (App Router)
 - JavaScript (not TypeScript)
-- SCSS Modules
+- SCSS Modules (not tailwind or bootstrap)
 - Azure hosting
-- Resend.com for emails
+- Sendgrid for emails
 - Azure Application Insights for error tracking
 
 ## Core Requirements
@@ -68,12 +68,11 @@ domains/
 ## Feature Specifications
 
 ### Forms & Email
-- Resend.com integration (100 emails/day limit)
+- Sendgrid integration (100 emails/day limit)
 - HTML and plain text templates
 - Company notification & client confirmation
 - Domain-specific signatures
 - Honeypot for spam prevention (no CAPTCHA)
-- Send to contact@officeexperts.com.au
 
 ### Search Implementation
 - Submit-based (not real-time)
@@ -119,8 +118,7 @@ domains/
 ## Current Status
 - Folder structure established
 - Content scraped
-- Awaiting design team deliverables
-- URL structure documentation pending
+- Design files have arrived as a nextjs template, but it is using bootstrap and typescript, all content must be changed to javascipt and scss modules.
 
 This document serves as the master reference for the Expert Domains migration project. It should be referenced for all development decisions and project queries.
 

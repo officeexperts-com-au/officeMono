@@ -1,17 +1,30 @@
 "use client";
 import React, { useEffect, useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
+
 import styles from "../styles/header.module.css";
+import MobileNav from "./MobileNav";
+
+import logo from "../public/access/access-experts-logo.png";
 
 const Header = () => {
   const [activeDropdown, setActiveDropdown] = useState(null);
   const [currentDomain, setCurrentDomain] = useState("");
+  const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
-    if (typeof window !== "undefined" && !currentDomain) {
+    if (typeof window !== "undefined") {
       setCurrentDomain(window.location.hostname);
+
+      const handleScroll = () => {
+        setIsScrolled(window.scrollY > 10);
+      };
+
+      window.addEventListener("scroll", handleScroll);
+      return () => window.removeEventListener("scroll", handleScroll);
     }
-  }, [currentDomain]);
+  }, []);
 
   const handleMouseEnter = (dropdown) => {
     setActiveDropdown(dropdown);
@@ -22,7 +35,13 @@ const Header = () => {
   };
 
   return (
-    <header className={styles.header}>
+    <header className={`${styles.header} ${isScrolled ? styles.scrolled : ""}`}>
+      <div className={styles.logo}>
+        <Image src={logo} alt="Office experts logo" width={170} height={45} />
+      </div>
+      <div className={styles.mobNav}>
+        <MobileNav />
+      </div>
       <nav className={styles.nav}>
         <ul className={styles.navList}>
           <li

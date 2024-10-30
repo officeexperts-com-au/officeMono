@@ -2,7 +2,6 @@ import React from "react";
 import PropTypes from "prop-types";
 
 import Header from "../../../components/Header";
-import MobileNav from "../../../components/MobileNav";
 import CookieConsent from "../../../components/CookieConsent";
 
 import "./global.css";
@@ -84,7 +83,6 @@ export default function RootLayout({ children }) {
   return (
     <html>
       <body>
-        <MobileNav />
         <Header />
         {children}
         <CookieConsent />
