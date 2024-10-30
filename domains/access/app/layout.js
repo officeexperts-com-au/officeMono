@@ -7,7 +7,6 @@ import HeadTop from "../../../components/HeadTop";
 import Header from "../../../components/Header";
 import CookieConsent from "../../../components/CookieConsent";
 import Footer from "../../../components/Footer";
-import Hero from "../../../components/Hero";
 
 import "./global.css";
 
@@ -127,7 +126,6 @@ export default function RootLayout({ children }) {
       <body className={roboto.className}>
         <HeadTop />
         <Header />
-        <Hero />
         {children}
         <CookieConsent />
         <Footer />

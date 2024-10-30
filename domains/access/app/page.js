@@ -1,5 +1,8 @@
 import React from "react";
 
+import Hero from "../../../components/Hero";
+import Services from "../../../components/Services";
+
 const schema = {
   "@context": "https://schema.org",
   "@graph": [
@@ -135,6 +138,8 @@ const Page = () => {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
+      <Hero />
+      <Services />
     </>
   );
 };

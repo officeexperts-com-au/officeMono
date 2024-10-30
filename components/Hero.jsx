@@ -17,6 +17,7 @@ const Hero = () => {
             src={handShake}
             alt="Office environment"
             className={styles.slideImage}
+            priority
           />
         </div>
         <div className={styles.slide}>
