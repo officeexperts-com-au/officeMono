@@ -1,37 +1,52 @@
 .servicesSection {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
-  padding: 1.5rem;
+  padding: 1rem;
+}
+.servicesSection a {
+  color: #a0a2a6;
+  text-decoration: none;
+  transition: color 0.5s;
+  font-weight: 500;
+}
+.servicesSection a:hover {
+  color: #ff403f;
 }
 
 .mainLinks {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 1.5rem;
 }
-.mainLinks a {
-  color: #666;
-  text-decoration: none;
-  transition: color 0.2s;
-}
-.mainLinks a:hover {
-  color: #333;
+.mainLinks h3 {
+  color: #f8f8f8;
+  font-size: 1.125rem;
+  margin-bottom: 2rem;
 }
 
 .dropdownSection {
   position: relative;
 }
+.dropdownSection h3 {
+  color: #a0a2a6;
+  text-decoration: none;
+  transition: color 0.5s;
+  font-size: 1rem;
+  color: #a0a2a6;
+  font-weight: 500;
+  margin-top: 1rem;
+}
+.dropdownSection h3:hover {
+  color: #ff403f;
+}
 .dropdownSection .dropdownContent {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.3s ease-out;
+  transition: max-height 1s ease-out;
 }
 .dropdownSection:hover .dropdownContent, .dropdownSection:focus-within .dropdownContent {
   max-height: 300px;
-}
-.dropdownSection:hover .dropdownArrow, .dropdownSection:focus-within .dropdownArrow {
-  transform: rotate(180deg);
+  padding: 1rem;
 }
 
 .dropdownHeader {
@@ -39,13 +54,7 @@
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
-  margin: 0;
   padding: 0.5rem 0;
-  color: #333;
-}
-.dropdownHeader .dropdownArrow {
-  font-size: 0.8em;
-  transition: transform 0.3s ease;
 }
 
 .dropdownContent {
@@ -53,14 +62,6 @@
   flex-direction: column;
   gap: 0.5rem;
   padding-left: 1rem;
-}
-.dropdownContent a {
-  color: #666;
-  text-decoration: none;
-  transition: color 0.2s;
-}
-.dropdownContent a:hover {
-  color: #333;
 }
 
 @media (max-width: 768px) {

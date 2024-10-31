@@ -10,6 +10,9 @@
   padding: 0.7rem;
   font-size: 0.9rem;
   font-weight: 500;
+  p {
+    letter-spacing: 1px;
+  }
 }
 
 .topContacts {
@@ -211,4 +214,11 @@
   margin-right: 0.8rem;
   height: 100%;
   border-right: 1px solid rgba(255, 255, 255, 0.275);
+  svg {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    &:hover {
+      color: $theme;
+    }
+  }
 }

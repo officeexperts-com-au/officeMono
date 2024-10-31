@@ -1,0 +1,9 @@
+@import "./globals.scss";
+
+.footer {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: $black;
+  padding-top: 6rem;
+}

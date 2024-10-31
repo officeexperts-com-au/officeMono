@@ -8,6 +8,9 @@
   font-size: 0.9rem;
   font-weight: 500;
 }
+.headTop p {
+  letter-spacing: 1px;
+}
 
 .topContacts {
   display: flex;
@@ -195,4 +198,11 @@
   margin-right: 0.8rem;
   height: 100%;
   border-right: 1px solid rgba(255, 255, 255, 0.275);
+}
+.socials svg {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.socials svg:hover {
+  color: #ff403f;
 }/*# sourceMappingURL=header.module.css.map */

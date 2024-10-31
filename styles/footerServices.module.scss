@@ -1,46 +1,62 @@
-// components/layout/FooterServicesSection.module.scss
+@import "./globals.scss";
+
 .servicesSection {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
-  padding: 1.5rem;
+  padding: 1rem;
+
+  a {
+    color: $grayText;
+    text-decoration: none;
+    transition: color 0.5s;
+    font-weight: 500;
+
+    &:hover {
+      color: $theme;
+    }
+  }
 }
 
 .mainLinks {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 1.5rem;
 
-  a {
-    color: #666;
-    text-decoration: none;
-    transition: color 0.2s;
-
-    &:hover {
-      color: #333;
-    }
+  h3 {
+    color: $offWhite;
+    font-size: 1.125rem;
+    margin-bottom: 2rem;
   }
 }
 
 .dropdownSection {
   position: relative;
 
+  h3 {
+    color: $grayText;
+    text-decoration: none;
+    transition: color 0.5s;
+    font-size: 1rem;
+    color: $grayText;
+    font-weight: 500;
+    margin-top: 1rem;
+    &:hover {
+      color: $theme;
+    }
+  }
+
   // Default collapsed state
   .dropdownContent {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease-out;
+    transition: max-height 1s ease-out;
   }
 
   // Expanded state on hover/focus
   &:hover .dropdownContent,
   &:focus-within .dropdownContent {
-    max-height: 300px; // Adjust based on content
-  }
-
-  &:hover .dropdownArrow,
-  &:focus-within .dropdownArrow {
-    transform: rotate(180deg);
+    max-height: 300px;
+    padding: 1rem;
   }
 }
 
@@ -49,14 +65,7 @@
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
-  margin: 0;
   padding: 0.5rem 0;
-  color: #333;
-
-  .dropdownArrow {
-    font-size: 0.8em;
-    transition: transform 0.3s ease;
-  }
 }
 
 .dropdownContent {
@@ -64,16 +73,6 @@
   flex-direction: column;
   gap: 0.5rem;
   padding-left: 1rem;
-
-  a {
-    color: #666;
-    text-decoration: none;
-    transition: color 0.2s;
-
-    &:hover {
-      color: #333;
-    }
-  }
 }
 
 // Mobile styles

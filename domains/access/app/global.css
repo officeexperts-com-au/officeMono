@@ -11,6 +11,7 @@ html {
 
 body {
   color: #333;
+  overflow-x: hidden;
 }
 
 body,
@@ -83,7 +84,7 @@ button {
   -moz-user-select: none;
   background: #ff403f;
   border: medium none;
-  border-radius: 2px;
+  border-radius: 0.1rem;
   color: #fff;
   display: inline-block;
   font-weight: 600;

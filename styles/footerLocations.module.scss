@@ -1,20 +1,20 @@
-// components/layout/FooterLocationsSection.module.scss
+@import "./globals.scss";
+
 .locationsSection {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
-  padding: 1.5rem;
+  padding: 1rem;
 
   h3 {
-    margin: 0;
-    color: #333;
-    font-size: 1.2rem;
+    margin-bottom: 2.5rem;
+    color: $offWhite;
+    font-size: 1.125rem;
   }
 
   .remoteAccess {
-    margin: 0;
-    color: #666;
-    font-style: italic;
+    color: $grayText;
+    font-weight: 500;
   }
 }
 
@@ -25,18 +25,15 @@
   .dropdownContent {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease-out;
+    transition: all 0.5s ease-out;
+    padding: 0;
   }
 
   // Expanded state on hover/focus
   &:hover .dropdownContent,
   &:focus-within .dropdownContent {
     max-height: 200px; // Adjust based on content
-  }
-
-  &:hover .dropdownArrow,
-  &:focus-within .dropdownArrow {
-    transform: rotate(180deg);
+    padding: 1rem 0 0 1rem;
   }
 }
 
@@ -45,23 +42,16 @@
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
-  margin: 0;
-  padding: 0.5rem 0;
-  color: #333;
+  margin-top: 0.8rem;
+  color: $grayText;
   font-size: 1rem;
   font-weight: 500;
-
-  .dropdownArrow {
-    font-size: 0.8em;
-    transition: transform 0.3s ease;
-  }
 }
 
 .dropdownContent {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  padding-left: 1rem;
 }
 
 .serviceGroup {
@@ -70,31 +60,30 @@
   align-items: center;
 
   a {
-    color: #666;
-    text-decoration: none;
-    font-size: 0.9rem;
-    transition: color 0.2s;
+    color: $grayText;
+    transition: color 0.5s;
 
     &:hover {
-      color: #333;
+      color: $theme;
     }
 
     &:not(:last-child)::after {
       content: "|";
       margin-left: 0.5rem;
-      color: #ccc;
+      color: $grayText;
     }
   }
 }
 
 .staticLink {
-  color: #666;
-  text-decoration: none;
-  transition: color 0.2s;
+  color: $grayText;
+  transition: all 0.5s ease;
   padding: 0.25rem 0;
+  margin-top: 0.7rem;
+  font-weight: 500;
 
   &:hover {
-    color: #333;
+    color: $theme;
   }
 }
 

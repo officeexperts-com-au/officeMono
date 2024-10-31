@@ -1,7 +1,8 @@
 @import "./globals.scss";
 
 .services {
-  background: url("../public/service-bg.webp") no-repeat center center fixed;
+  background: url("../public/service-bg.webp") no-repeat center center;
+  background-size: cover;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;

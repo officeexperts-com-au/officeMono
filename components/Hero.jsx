@@ -51,7 +51,9 @@ const Hero = () => {
             <h4 className={styles.heading1}>
               Microsoft Development and Consulting
             </h4>
-            <h4 className={styles.heading2}>With over 25yrs of experience</h4>
+            <h4 className={styles.heading2}>
+              With over 25 years of experience...
+            </h4>
           </div>
         </div>
         <h1>

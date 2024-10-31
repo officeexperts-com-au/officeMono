@@ -1,0 +1,7 @@
+.footer {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: #1e1e1e;
+  padding-top: 6rem;
+}/*# sourceMappingURL=footer.module.css.map */

@@ -4,13 +4,14 @@ import Image from "next/image";
 import styles from "../styles/header.module.css";
 
 import maps from "../public/icons/maps.png";
+import msg from "../public/icons/msg.png";
 import emailSlide from "../public/icons/emailSlide.png";
 import Link from "next/link";
 
 const HeadTop = () => {
   return (
     <div className={styles.headTop}>
-      <p>Office Experts Group</p>
+      <p>Welcome to the Office Experts Group</p>
 
       <div className={styles.topContacts}>
         <div>
@@ -26,7 +27,7 @@ const HeadTop = () => {
 
         <div>
           <Link href="tel:+61-1300-12-20-38">
-            <Image src={emailSlide} alt="email" width={9} height={9} />
+            <Image src={msg} alt="email" width={9} height={9} />
             +61 1300 122 038
           </Link>
         </div>

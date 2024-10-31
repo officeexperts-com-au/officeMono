@@ -2,17 +2,16 @@
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
-  padding: 1.5rem;
+  padding: 1rem;
 }
 .locationsSection h3 {
-  margin: 0;
-  color: #333;
-  font-size: 1.2rem;
+  margin-bottom: 2.5rem;
+  color: #f8f8f8;
+  font-size: 1.125rem;
 }
 .locationsSection .remoteAccess {
-  margin: 0;
-  color: #666;
-  font-style: italic;
+  color: #a0a2a6;
+  font-weight: 500;
 }
 
 .dropdownSection {
@@ -21,13 +20,12 @@
 .dropdownSection .dropdownContent {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.3s ease-out;
+  transition: all 0.5s ease-out;
+  padding: 0;
 }
 .dropdownSection:hover .dropdownContent, .dropdownSection:focus-within .dropdownContent {
   max-height: 200px;
-}
-.dropdownSection:hover .dropdownArrow, .dropdownSection:focus-within .dropdownArrow {
-  transform: rotate(180deg);
+  padding: 1rem 0 0 1rem;
 }
 
 .dropdownHeader {
@@ -35,22 +33,16 @@
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
-  margin: 0;
-  padding: 0.5rem 0;
-  color: #333;
+  margin-top: 0.8rem;
+  color: #a0a2a6;
   font-size: 1rem;
   font-weight: 500;
-}
-.dropdownHeader .dropdownArrow {
-  font-size: 0.8em;
-  transition: transform 0.3s ease;
 }
 
 .dropdownContent {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  padding-left: 1rem;
 }
 
 .serviceGroup {
@@ -59,28 +51,27 @@
   align-items: center;
 }
 .serviceGroup a {
-  color: #666;
-  text-decoration: none;
-  font-size: 0.9rem;
-  transition: color 0.2s;
+  color: #a0a2a6;
+  transition: color 0.5s;
 }
 .serviceGroup a:hover {
-  color: #333;
+  color: #ff403f;
 }
 .serviceGroup a:not(:last-child)::after {
   content: "|";
   margin-left: 0.5rem;
-  color: #ccc;
+  color: #a0a2a6;
 }
 
 .staticLink {
-  color: #666;
-  text-decoration: none;
-  transition: color 0.2s;
+  color: #a0a2a6;
+  transition: all 0.5s ease;
   padding: 0.25rem 0;
+  margin-top: 0.7rem;
+  font-weight: 500;
 }
 .staticLink:hover {
-  color: #333;
+  color: #ff403f;
 }
 
 @media (max-width: 768px) {

@@ -130,6 +130,9 @@
   font-size: 0.9rem;
   font-weight: 500;
 }
+.header_headTop__h4FLj p {
+  letter-spacing: 1px;
+}
 
 .header_topContacts__Iznnh {
   display: flex;
@@ -317,6 +320,13 @@
   margin-right: 0.8rem;
   height: 100%;
   border-right: 1px solid rgba(255, 255, 255, 0.275);
+}
+.header_socials__DZaLA svg {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.header_socials__DZaLA svg:hover {
+  color: #ff403f;
 }/*# sourceMappingURL=header.module.css.map */
 /*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ../../node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[9].use[2]!../../node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[9].use[3]!../../node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[14].oneOf[9].use[4]!../../node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[14].oneOf[9].use[5]!../../styles/mobileNav.module.scss ***!
@@ -423,128 +433,6 @@
 .mobileNav_navLink__Mxgvc:hover {
   background-color: #f5f5f5;
 }
-/*!********************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ../../node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!../../node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./app/global.css ***!
-  \********************************************************************************************************************************************************************************************************************************************************************/
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-html {
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-}
-
-body {
-  color: #333;
-}
-
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-a,
-figure,
-blockquote,
-dl,
-dd {
-  margin: 0;
-  padding: 0;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-h1 a,
-h2 a,
-h3 a,
-h4 a,
-h5 a,
-h6 a {
-  color: inherit;
-}
-h1 {
-  font-size: 40px;
-  font-weight: 500;
-}
-h2 {
-  font-size: 35px;
-}
-h3 {
-  font-size: 28px;
-}
-h4 {
-  font-size: 22px;
-}
-h5 {
-  font-size: 18px;
-}
-h6 {
-  font-size: 16px;
-}
-ul {
-  margin: 0px;
-  padding: 0px;
-  margin-bottom: 20px;
-}
-
-button {
-  background: none;
-  border: none;
-  cursor: pointer;
-  transition: all 0.3s ease-out 0s;
-}
-
-.btn {
-  -moz-user-select: none;
-  background: #ff403f;
-  border: medium none;
-  border-radius: 2px;
-  color: #fff;
-  display: inline-block;
-  font-weight: 600;
-  letter-spacing: 1px;
-  line-height: 1;
-  margin-bottom: 0;
-  padding: 13px 25px;
-  text-align: center;
-  text-transform: uppercase;
-  touch-action: manipulation;
-  vertical-align: middle;
-  white-space: nowrap;
-  position: relative;
-  z-index: 1;
-  overflow: hidden;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: #fff;
-    transition: left 0.3s ease;
-    z-index: -1;
-  }
-
-  &:hover {
-    color: #ff403f;
-
-    &::before {
-      left: 0;
-    }
-  }
-}
-
 /*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ../../node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[2].use[1]!../../node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[14].oneOf[2].use[2]!../../node_modules/next/font/google/target.css?{"path":"app/layout.js","import":"Roboto","arguments":[{"weight":["400","500","700","900"],"subsets":["latin"],"display":"swap"}],"variableName":"roboto"} ***!
   \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
@@ -803,43 +691,181 @@ button {
 }.__className_095985 {font-family: '__Roboto_095985', '__Roboto_Fallback_095985';font-style: normal
 }
 
+/*!********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../../node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!../../node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./app/global.css ***!
+  \********************************************************************************************************************************************************************************************************************************************************************/
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #333;
+  overflow-x: hidden;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  color: inherit;
+}
+h1 {
+  font-size: 40px;
+  font-weight: 500;
+}
+h2 {
+  font-size: 35px;
+}
+h3 {
+  font-size: 28px;
+}
+h4 {
+  font-size: 22px;
+}
+h5 {
+  font-size: 18px;
+}
+h6 {
+  font-size: 16px;
+}
+ul {
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 20px;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out 0s;
+}
+
+.btn {
+  -moz-user-select: none;
+  background: #ff403f;
+  border: medium none;
+  border-radius: 0.1rem;
+  color: #fff;
+  display: inline-block;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 1;
+  margin-bottom: 0;
+  padding: 13px 25px;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    transition: left 0.3s ease;
+    z-index: -1;
+  }
+
+  &:hover {
+    color: #ff403f;
+
+    &::before {
+      left: 0;
+    }
+  }
+}
+
 /*!****************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ../../node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[2]!../../node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[3]!../../styles/footerServices.module.css ***!
   \****************************************************************************************************************************************************************************************************************************************************************************************/
 .footerServices_servicesSection__mufqG {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
-  padding: 1.5rem;
+  padding: 1rem;
+}
+.footerServices_servicesSection__mufqG a {
+  color: #a0a2a6;
+  text-decoration: none;
+  transition: color 0.5s;
+  font-weight: 500;
+}
+.footerServices_servicesSection__mufqG a:hover {
+  color: #ff403f;
 }
 
 .footerServices_mainLinks__gMayH {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 1.5rem;
 }
-.footerServices_mainLinks__gMayH a {
-  color: #666;
-  text-decoration: none;
-  transition: color 0.2s;
-}
-.footerServices_mainLinks__gMayH a:hover {
-  color: #333;
+.footerServices_mainLinks__gMayH h3 {
+  color: #f8f8f8;
+  font-size: 1.125rem;
+  margin-bottom: 2rem;
 }
 
 .footerServices_dropdownSection__mECbn {
   position: relative;
 }
+.footerServices_dropdownSection__mECbn h3 {
+  color: #a0a2a6;
+  text-decoration: none;
+  transition: color 0.5s;
+  font-size: 1rem;
+  color: #a0a2a6;
+  font-weight: 500;
+  margin-top: 1rem;
+}
+.footerServices_dropdownSection__mECbn h3:hover {
+  color: #ff403f;
+}
 .footerServices_dropdownSection__mECbn .footerServices_dropdownContent__CTiHw {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.3s ease-out;
+  transition: max-height 1s ease-out;
 }
 .footerServices_dropdownSection__mECbn:hover .footerServices_dropdownContent__CTiHw, .footerServices_dropdownSection__mECbn:focus-within .footerServices_dropdownContent__CTiHw {
   max-height: 300px;
-}
-.footerServices_dropdownSection__mECbn:hover .footerServices_dropdownArrow__rVtOv, .footerServices_dropdownSection__mECbn:focus-within .footerServices_dropdownArrow__rVtOv {
-  transform: rotate(180deg);
+  padding: 1rem;
 }
 
 .footerServices_dropdownHeader__Jj604 {
@@ -847,13 +873,7 @@ button {
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
-  margin: 0;
   padding: 0.5rem 0;
-  color: #333;
-}
-.footerServices_dropdownHeader__Jj604 .footerServices_dropdownArrow__rVtOv {
-  font-size: 0.8em;
-  transition: transform 0.3s ease;
 }
 
 .footerServices_dropdownContent__CTiHw {
@@ -861,14 +881,6 @@ button {
   flex-direction: column;
   gap: 0.5rem;
   padding-left: 1rem;
-}
-.footerServices_dropdownContent__CTiHw a {
-  color: #666;
-  text-decoration: none;
-  transition: color 0.2s;
-}
-.footerServices_dropdownContent__CTiHw a:hover {
-  color: #333;
 }
 
 @media (max-width: 768px) {
@@ -892,17 +904,16 @@ button {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
-  padding: 1.5rem;
+  padding: 1rem;
 }
 .footerLocations_locationsSection__CbJPh h3 {
-  margin: 0;
-  color: #333;
-  font-size: 1.2rem;
+  margin-bottom: 2.5rem;
+  color: #f8f8f8;
+  font-size: 1.125rem;
 }
 .footerLocations_locationsSection__CbJPh .footerLocations_remoteAccess__BgkCx {
-  margin: 0;
-  color: #666;
-  font-style: italic;
+  color: #a0a2a6;
+  font-weight: 500;
 }
 
 .footerLocations_dropdownSection__kg2q_ {
@@ -911,13 +922,12 @@ button {
 .footerLocations_dropdownSection__kg2q_ .footerLocations_dropdownContent__yIIvC {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.3s ease-out;
+  transition: all 0.5s ease-out;
+  padding: 0;
 }
 .footerLocations_dropdownSection__kg2q_:hover .footerLocations_dropdownContent__yIIvC, .footerLocations_dropdownSection__kg2q_:focus-within .footerLocations_dropdownContent__yIIvC {
   max-height: 200px;
-}
-.footerLocations_dropdownSection__kg2q_:hover .footerLocations_dropdownArrow__GFbhW, .footerLocations_dropdownSection__kg2q_:focus-within .footerLocations_dropdownArrow__GFbhW {
-  transform: rotate(180deg);
+  padding: 1rem 0 0 1rem;
 }
 
 .footerLocations_dropdownHeader__tzkzP {
@@ -925,22 +935,16 @@ button {
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
-  margin: 0;
-  padding: 0.5rem 0;
-  color: #333;
+  margin-top: 0.8rem;
+  color: #a0a2a6;
   font-size: 1rem;
   font-weight: 500;
-}
-.footerLocations_dropdownHeader__tzkzP .footerLocations_dropdownArrow__GFbhW {
-  font-size: 0.8em;
-  transition: transform 0.3s ease;
 }
 
 .footerLocations_dropdownContent__yIIvC {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  padding-left: 1rem;
 }
 
 .footerLocations_serviceGroup__FHNwS {
@@ -949,28 +953,27 @@ button {
   align-items: center;
 }
 .footerLocations_serviceGroup__FHNwS a {
-  color: #666;
-  text-decoration: none;
-  font-size: 0.9rem;
-  transition: color 0.2s;
+  color: #a0a2a6;
+  transition: color 0.5s;
 }
 .footerLocations_serviceGroup__FHNwS a:hover {
-  color: #333;
+  color: #ff403f;
 }
 .footerLocations_serviceGroup__FHNwS a:not(:last-child)::after {
   content: "|";
   margin-left: 0.5rem;
-  color: #ccc;
+  color: #a0a2a6;
 }
 
 .footerLocations_staticLink__oCRJ0 {
-  color: #666;
-  text-decoration: none;
-  transition: color 0.2s;
+  color: #a0a2a6;
+  transition: all 0.5s ease;
   padding: 0.25rem 0;
+  margin-top: 0.7rem;
+  font-weight: 500;
 }
 .footerLocations_staticLink__oCRJ0:hover {
-  color: #333;
+  color: #ff403f;
 }
 
 @media (max-width: 768px) {
@@ -996,3 +999,79 @@ button {
     padding: 0.5rem 0;
   }
 }/*# sourceMappingURL=footerLocations.module.css.map */
+/*!************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../../node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[2]!../../node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[3]!../../styles/footerLogo.module.css ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************/
+.footerLogo_footerLogo__Sc83L {
+  padding: 1rem;
+}
+.footerLogo_footerLogo__Sc83L p {
+  color: #a0a2a6;
+  line-height: 2rem;
+  padding: 1rem 1rem 2rem 1rem;
+}
+.footerLogo_footerLogo__Sc83L h3 {
+  color: #f8f8f8;
+  font-size: 1.125rem;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+}
+
+.footerLogo_socials__wipV2 {
+  display: flex;
+  gap: 0.8rem;
+  margin-left: 0.5rem;
+}
+.footerLogo_socials__wipV2 svg {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  stroke: #ff403f;
+}
+.footerLogo_socials__wipV2 svg:hover {
+  transform: scale(1.2);
+  transition: all 1s ease;
+}/*# sourceMappingURL=footerLogo.module.css.map */
+/*!************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../../node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[2]!../../node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[3]!../../styles/footerHelp.module.css ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************/
+.footerHelp_helpSection__bipWA {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1rem;
+}
+.footerHelp_helpSection__bipWA h3 {
+  color: #f8f8f8;
+  font-size: 1.125rem;
+}
+.footerHelp_helpSection__bipWA h3:first-of-type {
+  margin-bottom: 2.5rem;
+}
+.footerHelp_helpSection__bipWA h3:nth-of-type(2) {
+  margin-bottom: 0.8rem;
+}
+.footerHelp_helpSection__bipWA h3:last-of-type {
+  letter-spacing: 1px;
+}
+.footerHelp_helpSection__bipWA a {
+  color: #a0a2a6;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.footerHelp_helpSection__bipWA a:hover {
+  color: #ff403f;
+  transition: color 0.5s ease;
+}/*# sourceMappingURL=footerHelp.module.css.map */
+/*!********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../../node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[2]!../../node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[3]!../../styles/footer.module.css ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************/
+.footer_footer__n0yls {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: #1e1e1e;
+  padding-top: 6rem;
+}/*# sourceMappingURL=footer.module.css.map */

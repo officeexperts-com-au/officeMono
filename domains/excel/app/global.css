@@ -2,6 +2,8 @@
 *::before,
 *::after {
   box-sizing: inherit;
+  transition-behavior: allow-discrete;
+  interpolate-size: allow-keywords;
 }
 
 html {
