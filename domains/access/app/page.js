@@ -6,6 +6,9 @@ import CTAMain from "../../../components/CTAMain";
 import IsRight from "../../../components/IsRight";
 import Solutions from "../../../components/Solutions";
 import CTAFull from "../../../components/CTAFull";
+import Testimonials from "../../../components/Testimonials";
+import Brands from "../../../components/Brands";
+import Promo from "../../../components/Promo";
 
 const schema = {
   "@context": "https://schema.org",
@@ -147,7 +150,10 @@ const Page = () => {
       <CTAMain />
       <IsRight />
       <Solutions />
+      <Testimonials />
+      <Brands />
       <CTAFull />
+      <Promo />
     </>
   );
 };

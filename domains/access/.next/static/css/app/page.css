@@ -836,21 +836,357 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 485px;
 }
 
-.ctaFull_ctaWwapper__3c2Z3 {
-  position: relative;
+.ctaFull_ctaWrapper__ZU1wU {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  padding: 0 20vw;
 }
-.ctaFull_ctaWwapper__3c2Z3 img {
-  position: fixed;
-  filter: grayscale(100%);
+.ctaFull_ctaWrapper__ZU1wU img {
+  position: absolute;
   top: 0;
   left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(100%);
+  transition: all 0.5s ease-in-out;
+  z-index: 1;
+}
+.ctaFull_ctaWrapper__ZU1wU::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+.ctaFull_ctaWrapper__ZU1wU H2 {
+  color: #f8f8f8;
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  margin: 1.25rem 0 2.5rem 0;
+  z-index: 2;
+}
+
+.ctaFull_ctaBtn__cPa5M {
+  z-index: 2;
+  padding: 1.8rem 3rem;
+}/*# sourceMappingURL=ctaFull.module.css.map */
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../../node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[9].use[2]!../../node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[9].use[3]!../../node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[14].oneOf[9].use[4]!../../node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[14].oneOf[9].use[5]!../../styles/testimonialsSection.module.scss ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.testimonialsSection_testimonials__3Voir {
+  width: 100%;
+  max-width: 1200px;
+  margin: 4rem auto 6rem auto;
+  padding: 2rem 0;
+  overflow: hidden;
+}
+.testimonialsSection_testimonials__3Voir h3 {
+  color: #1e1e1e;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 3rem;
+  margin: 0 auto;
+}
+
+.testimonialsSection_box__cU66d {
+  margin: 0 auto 1.5rem auto;
+  border-bottom: 6px solid rgba(176, 176, 176, 0.3568627451);
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.testimonialsSection_box__cU66d h2 {
+  color: #ff403f;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  margin-bottom: -0.5rem;
+}
+
+.testimonialsSection_testimonialsWrapper__MEZCC {
+  position: relative;
+  overflow: hidden;
+  margin-top: 2rem;
+}
+
+.testimonialsSection_testimonialsTrack__c3NVN {
+  display: flex;
+  gap: 2rem;
+  animation: testimonialsSection_slideTrack__vZQRh 40s cubic-bezier(0.45, 0, 0.15, 1) infinite;
+  will-change: transform;
+  transform: translateZ(0);
+}
+.testimonialsSection_testimonialsTrack__c3NVN:hover {
+  animation-play-state: paused;
+}
+
+.testimonialsSection_testimonialSlide__Fs1bl {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: calc((100% - 4rem) / 3);
+  opacity: 1;
+}
+
+@keyframes testimonialsSection_slideTrack__vZQRh {
+  0% {
+    transform: translateX(0);
+  }
+  3%, 10% {
+    transform: translateX(0);
+  }
+  13%, 20% {
+    transform: translateX(calc(-1 * (100% - 4rem) / 3 - 2rem));
+  }
+  23%, 30% {
+    transform: translateX(calc(-2 * (100% - 4rem) / 3 - 4rem));
+  }
+  33%, 40% {
+    transform: translateX(calc(-3 * (100% - 4rem) / 3 - 6rem));
+  }
+  43%, 50% {
+    transform: translateX(calc(-4 * (100% - 4rem) / 3 - 8rem));
+  }
+  53%, 60% {
+    transform: translateX(calc(-5 * (100% - 4rem) / 3 - 10rem));
+  }
+  63%, 70% {
+    transform: translateX(calc(-6 * (100% - 4rem) / 3 - 12rem));
+  }
+  73%, 80% {
+    transform: translateX(calc(-7 * (100% - 4rem) / 3 - 14rem));
+  }
+  83%, 90% {
+    transform: translateX(calc(-8 * (100% - 4rem) / 3 - 16rem));
+  }
+  93%, 100% {
+    transform: translateX(calc(-9 * (100% - 4rem) / 3 - 18rem));
+  }
+}
+@media (max-width: 1024px) {
+  .testimonialsSection_testimonialSlide__Fs1bl {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: calc((100% - 2rem) / 2);
+  }
+  @keyframes testimonialsSection_slideTrack__vZQRh {
+    0% {
+      transform: translateX(0);
+    }
+    3%, 10% {
+      transform: translateX(0);
+    }
+    13%, 20% {
+      transform: translateX(calc(-1 * (100% - 2rem) / 2 - 2rem));
+    }
+    23%, 30% {
+      transform: translateX(calc(-2 * (100% - 2rem) / 2 - 4rem));
+    }
+    33%, 40% {
+      transform: translateX(calc(-3 * (100% - 2rem) / 2 - 6rem));
+    }
+    43%, 50% {
+      transform: translateX(calc(-4 * (100% - 2rem) / 2 - 8rem));
+    }
+    53%, 60% {
+      transform: translateX(calc(-5 * (100% - 2rem) / 2 - 10rem));
+    }
+    63%, 70% {
+      transform: translateX(calc(-6 * (100% - 2rem) / 2 - 12rem));
+    }
+    73%, 80% {
+      transform: translateX(calc(-7 * (100% - 2rem) / 2 - 14rem));
+    }
+    83%, 90% {
+      transform: translateX(calc(-8 * (100% - 2rem) / 2 - 16rem));
+    }
+    93%, 100% {
+      transform: translateX(calc(-9 * (100% - 2rem) / 2 - 18rem));
+    }
+  }
+}
+@media (max-width: 640px) {
+  .testimonialsSection_testimonialSlide__Fs1bl {
+    flex: 0 0 100%;
+  }
+  @keyframes testimonialsSection_slideTrack__vZQRh {
+    0% {
+      transform: translateX(0);
+    }
+    3%, 10% {
+      transform: translateX(0);
+    }
+    13%, 20% {
+      transform: translateX(calc(-100% - 2rem));
+    }
+    23%, 30% {
+      transform: translateX(calc(-200% - 4rem));
+    }
+    33%, 40% {
+      transform: translateX(calc(-300% - 6rem));
+    }
+    43%, 50% {
+      transform: translateX(calc(-400% - 8rem));
+    }
+    53%, 60% {
+      transform: translateX(calc(-500% - 10rem));
+    }
+    63%, 70% {
+      transform: translateX(calc(-600% - 12rem));
+    }
+    73%, 80% {
+      transform: translateX(calc(-700% - 14rem));
+    }
+    83%, 90% {
+      transform: translateX(calc(-800% - 16rem));
+    }
+    93%, 100% {
+      transform: translateX(calc(-900% - 18rem));
+    }
+  }
+}
+/*!***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../../node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[9].use[2]!../../node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[9].use[3]!../../node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[14].oneOf[9].use[4]!../../node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[14].oneOf[9].use[5]!../../styles/testimonialsCard.module.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.testimonialsCard_card__4U7Xc {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  border: 1px solid rgba(176, 176, 176, 0.3568627451);
+  border-bottom: 10px solid rgba(176, 176, 176, 0.3568627451);
+  padding: 3rem 3rem 0.5rem 3rem;
+  height: 350px;
+  min-height: 350px;
+  transition: all 0.3s ease;
+}
+.testimonialsCard_card__4U7Xc p {
+  color: #777a7e;
+  line-height: 2rem;
+  font-size: 1.125rem;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  max-height: 8rem;
+}
+.testimonialsCard_card__4U7Xc:hover {
+  border: 1px solid #ff403f;
+  border-bottom: 10px solid #ff403f;
+  height: auto;
+}
+.testimonialsCard_card__4U7Xc:hover p {
+  max-height: none;
+  -webkit-line-clamp: unset;
+}
+.testimonialsCard_card__4U7Xc:hover img {
+  margin-top: 1rem;
+}
+.testimonialsCard_card__4U7Xc img {
+  align-self: end;
+}
+
+.testimonialsCard_cardWrapper__s8hQU h4 {
+  color: #1e1e1e;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+.testimonialsCard_cardWrapper__s8hQU h5 {
+  color: #ff403f;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+/*!********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../../node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[2]!../../node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[3]!../../styles/brands.module.css ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************/
+.brands_brands__hlKfT {
+  display: flex;
+  justify-content: space-around;
+  padding: 6rem 0;
+  border-top: 1px solid #dddddd;
+  position: relative;
+  z-index: 1;
+}
+
+.brands_brandLink__6tv2i {
+  display: block;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+}
+
+.brands_brandImage__ik47d {
+  filter: grayscale(100%) brightness(120%);
+  transition: 0.5s ease-in-out;
+}
+
+.brands_brandImage__ik47d:hover {
+  filter: grayscale(0%) brightness(100%);
+  transition: 0.5s ease-in-out;
+}/*# sourceMappingURL=brands.module.css.map */
+/*!*******************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../../node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[2]!../../node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[3]!../../styles/promo.module.css ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************/
+.promo_promo__koRlF {
+  margin: 8rem;
+  display: flex;
+  align-items: center;
+}
+
+.promo_content__QIq2W {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-left: 2rem;
+}
+
+.promo_circle__zpYFh {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: #ff403f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.promo_text__CnUfQ h2 {
+  color: #1e1e1e;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+}
+.promo_text__CnUfQ p {
+  color: #777a7e;
+  line-height: 2rem;
+  max-width: 80%;
+}
+
+.promo_bar__eY49T {
+  background-color: #ff403f;
+  width: 10px;
+  height: 60px;
+}
+
+.promo_img__1AzsG {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.promo_img__1AzsG img {
+  filter: grayscale(100%);
   transition: all 0.5s ease-in-out;
 }
-.ctaFull_ctaWwapper__3c2Z3 img:hover {
+.promo_img__1AzsG img:hover {
   filter: grayscale(0%);
-}/*# sourceMappingURL=ctaFull.module.css.map */
+  transition: all 0.5s ease-in-out;
+}/*# sourceMappingURL=promo.module.css.map */
