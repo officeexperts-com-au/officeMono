@@ -1,5 +1,5 @@
-import sgMail from "@sendgrid/mail";
-import { getEmailSignature } from "@/utils/emailSignature";
+import sgMail from "sendgrid/mail";
+import { getEmailSignature } from "../../../../../utils/emailSignature";
 
 const MAX_FILE_SIZE = 5 * 1024 * 1024; // 5 MB
 const VALID_FILE_TYPES = [

@@ -6,7 +6,7 @@ import Link from "next/link";
 import styles from "../styles/header.module.css";
 import MobileNav from "./MobileNav";
 
-import logo from "../public/access/access-experts-logo.png";
+import logo from "../public/logo150x65.webp";
 
 const Header = () => {
   const [activeDropdown, setActiveDropdown] = useState(null);
@@ -37,7 +37,7 @@ const Header = () => {
   return (
     <header className={`${styles.header} ${isScrolled ? styles.scrolled : ""}`}>
       <div className={styles.logo}>
-        <Image src={logo} alt="Office experts logo" width={170} height={45} />
+        <Image src={logo} alt="Office experts logo" width={150} height={65} />
       </div>
 
       <div className={styles.mobNav}>

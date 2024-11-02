@@ -3,5 +3,5 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   background-color: #1e1e1e;
-  padding-top: 6rem;
+  padding: 6rem 2rem 6rem 3rem;
 }/*# sourceMappingURL=footer.module.css.map */

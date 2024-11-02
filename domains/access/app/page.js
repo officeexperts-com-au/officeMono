@@ -9,6 +9,7 @@ import CTAFull from "../../../components/CTAFull";
 import Testimonials from "../../../components/Testimonials";
 import Brands from "../../../components/Brands";
 import Promo from "../../../components/Promo";
+import Contact from "../../../components/Contact";
 
 const schema = {
   "@context": "https://schema.org",
@@ -154,6 +155,7 @@ const Page = () => {
       <Brands />
       <CTAFull />
       <Promo />
+      <Contact />
     </>
   );
 };

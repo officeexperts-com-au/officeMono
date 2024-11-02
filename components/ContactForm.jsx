@@ -1,70 +1,62 @@
 "use client";
 import React, { useState } from "react";
 
+import styles from "../styles/contact.module.scss";
+
 const ContactForm = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     phone: "",
     message: "",
-    honeypot: "", // hidden bot field
+    honeypot: "",
   });
 
-  const [error, setError] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
+  const [error, setError] = useState({});
   const [success, setSuccess] = useState(false);
 
-  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Simple email regex
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Clear previous errors
-    setError({ name: "", email: "", message: "" });
+    setError({});
+    const newError = {};
 
-    let hasError = false;
-
-    // Validate fields
-    if (!formData.name) {
-      setError((prev) => ({ ...prev, name: "Name is required." }));
-      hasError = true;
+    if (!formData.name.trim()) {
+      newError.name = "*Name is required...";
     }
-    if (!formData.email) {
-      setError((prev) => ({ ...prev, email: "Email is required." }));
-      hasError = true;
-    } else if (!emailRegex.test(formData.email)) {
-      setError((prev) => ({ ...prev, email: "Email is not valid." }));
-      hasError = true;
+    if (!formData.email.trim()) {
+      newError.email = "*Email is required...";
+    } else if (!emailRegex.test(formData.email.trim())) {
+      newError.email = "*Email is not valid...";
     }
-    if (!formData.message) {
-      setError((prev) => ({ ...prev, message: "Message is required." }));
-      hasError = true;
+    if (!formData.message.trim()) {
+      newError.message = "*Message is required...";
     }
 
-    // Focus on the first error input
-    if (hasError) {
-      const firstErrorField = Object.keys(error).find((key) => error[key]);
-      if (firstErrorField) {
-        document.getElementById(firstErrorField).focus();
+    if (Object.keys(newError).length > 0) {
+      setError(newError);
+      // Focus first error field
+      const firstErrorField = Object.keys(newError)[0];
+      const element = document.getElementById(firstErrorField);
+      if (element) {
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: "smooth", block: "center" });
+          element.focus();
+        }, 100);
       }
-      return; // Exit early if there are validation errors
+      return;
     }
 
-    // Bot detection via honeypot
     if (formData.honeypot) {
-      alert("Bot submission detected");
-      return;
+      return; // Silent return for bot submissions
     }
 
     try {
       const res = await fetch("/api/contactForm", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
       });
 
@@ -78,107 +70,178 @@ const ContactForm = () => {
           honeypot: "",
         });
       } else {
-        setError({
-          ...error,
+        setError((prev) => ({
+          ...prev,
           general: "Something went wrong. Please try again.",
-        });
+        }));
       }
-    } catch (error) {
-      setError({
-        ...error,
+    } catch (err) {
+      setError((prev) => ({
+        ...prev,
         general: "There was an error submitting the form.",
-      });
+      }));
     }
   };
 
   const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
+    const { name, value } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+
+    // Clear error when user starts typing
+    if (error[name]) {
+      setError((prev) => ({
+        ...prev,
+        [name]: "",
+      }));
+    }
   };
 
-  return !success ? (
-    <form onSubmit={handleSubmit} aria-labelledby="contact-form" noValidate>
-      <div>
-        <label htmlFor="name">Name *</label>
+  if (success) {
+    return (
+      <div className={styles.successMessage} role="alert" aria-live="polite">
+        <h2>Thank you {formData.name} for your message!</h2>
+        <p>One of our team will contact you shortly</p>
+      </div>
+    );
+  }
+
+  return (
+    <form
+      className={styles.contactForm}
+      onSubmit={handleSubmit}
+      noValidate
+      aria-label="Contact form"
+      role="form"
+    >
+      <div className={styles.formField}>
+        <label htmlFor="name" className={styles.requiredField}>
+          Name
+          <span className={styles.requiredIndicator} aria-hidden="true">
+            *
+          </span>
+        </label>
         <input
           type="text"
           id="name"
           name="name"
-          required
           value={formData.name}
           onChange={handleChange}
           aria-required="true"
           aria-invalid={!!error.name}
-          onFocus={setError({ ...error, name: "" })}
+          aria-describedby={error.name ? "name-error" : undefined}
+          required
         />
         {error.name && (
-          <p style={{ color: "red", fontStyle: "italic" }}>{error.name}</p>
+          <p
+            id="name-error"
+            className={styles.errorMessage}
+            role="alert"
+            aria-live="polite"
+          >
+            {error.name}
+          </p>
         )}
       </div>
 
-      <div>
-        <label htmlFor="email">Email *</label>
+      <div className={styles.formField}>
+        <label htmlFor="message" className={styles.requiredField}>
+          Message
+          <span className={styles.requiredIndicator} aria-hidden="true">
+            *
+          </span>
+        </label>
+        <textarea
+          id="message"
+          name="message"
+          value={formData.message}
+          onChange={handleChange}
+          aria-required="true"
+          aria-invalid={!!error.message}
+          aria-describedby={error.message ? "message-error" : undefined}
+          placeholder="Your message..."
+          required
+        />
+        {error.message && (
+          <p
+            id="message-error"
+            className={styles.errorMessage}
+            role="alert"
+            aria-live="polite"
+          >
+            {error.message}
+          </p>
+        )}
+      </div>
+
+      <div className={styles.formField}>
+        <label htmlFor="email" className={styles.requiredField}>
+          Email
+          <span className={styles.requiredIndicator} aria-hidden="true">
+            *
+          </span>
+        </label>
         <input
           type="email"
           id="email"
           name="email"
-          required
           value={formData.email}
           onChange={handleChange}
           aria-required="true"
           aria-invalid={!!error.email}
-          onFocus={setError({ ...error, email: "" })}
+          aria-describedby={error.email ? "email-error" : undefined}
+          placeholder="eg. john@example.com"
+          required
         />
         {error.email && (
-          <p style={{ color: "red", fontStyle: "italic" }}>{error.email}</p>
+          <p
+            id="email-error"
+            className={styles.errorMessage}
+            role="alert"
+            aria-live="polite"
+          >
+            {error.email}
+          </p>
         )}
       </div>
 
-      <div>
-        <label htmlFor="phone">Phone (optional)</label>
+      <div className={styles.formField}>
+        <label htmlFor="phone" className={styles.label}>
+          Phone
+        </label>
         <input
           type="tel"
           id="phone"
           name="phone"
           value={formData.phone}
           onChange={handleChange}
+          aria-required="false"
+          placeholder="optional..."
         />
       </div>
 
       <div>
-        <label htmlFor="message">Message *</label>
-        <textarea
-          id="message"
-          name="message"
-          required
-          value={formData.message}
+        <input
+          type="text"
+          name="honeypot"
+          value={formData.honeypot}
           onChange={handleChange}
-          aria-required="true"
-          aria-invalid={!!error.message}
-          onFocus={setError({ ...error, message: "" })}
+          className={styles.honeypot}
+          aria-hidden="true"
+          tabIndex="-1"
         />
-        {error.message && (
-          <p style={{ color: "red", fontStyle: "italic" }}>{error.message}</p>
-        )}
       </div>
 
-      {/* Honeypot field (hidden) */}
-      <input
-        type="text"
-        name="honeypot"
-        value={formData.honeypot}
-        onChange={handleChange}
-        style={{ display: "none" }}
-      />
-      <button type="submit">Submit</button>
+      <button
+        type="submit"
+        className={`btn ${styles.submitBtn}`}
+        aria-label="Submit contact form"
+      >
+        Submit
+      </button>
     </form>
-  ) : (
-    <div>
-      <h2>Thank you {formData.name} for your message!</h2>
-      <p>One of our team will contact you shortly</p>
-    </div>
   );
 };
 

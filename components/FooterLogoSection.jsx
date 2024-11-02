@@ -3,12 +3,12 @@ import Link from "next/link";
 import Image from "next/image";
 
 import styles from "../styles/footerLogo.module.css";
-import logo from "../public/logo.jpg";
+import logo from "../public/logo200x86.webp";
 
 const FooterLogoSection = () => {
   return (
     <div className={styles.footerLogo}>
-      <Image src={logo} alt="logo" width={200} height={102} />
+      <Image src={logo} alt="logo" width={200} height={86} />
 
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
