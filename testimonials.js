@@ -69,8 +69,8 @@ export const testimonials = [
     name: "Erin Rodley",
     contact: "www.burpengaryssc.eq.edu.au",
     image: burp,
-    width: 150,
-    height: 150,
+    width: 100,
+    height: 100,
   },
   {
     content:

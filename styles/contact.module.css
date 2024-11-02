@@ -64,11 +64,11 @@
   transition: left 0.3s ease;
   z-index: -1;
 }
-.option h2:hover {
+.option:not(.active) h2:hover {
   color: #ff403f;
   border-color: #ff403f;
 }
-.option h2:hover::before {
+.option:not(.active) h2:hover::before {
   left: 0;
 }
 .option .description {
@@ -114,45 +114,6 @@
   z-index: 3;
 }
 
-.circle {
-  position: relative;
-  width: 60px;
-  height: 60px;
-  background: #f8f8f8;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  animation: bounce 1s ease infinite;
-  z-index: 1;
-  margin: 8rem 0 0rem 0;
-  border: 1px dashed #1e1e1e;
-}
-.circle::before, .circle::after {
-  content: "";
-  position: absolute;
-  left: -10px;
-  top: -10px;
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  border: 1px dashed #1e1e1e;
-  animation: ringExpand 1.8s linear infinite;
-  z-index: 1;
-}
-.circle::after {
-  animation-delay: 0.9s;
-}
-.circle::before {
-  animation-delay: 0.3s;
-}
-.circle span {
-  color: #ff403f;
-  font-weight: 900;
-  font-size: 1.2rem;
-  letter-spacing: 1px;
-}
-
 .formContainer {
   flex: 2;
   position: relative;
@@ -162,8 +123,8 @@
   opacity: 0;
   position: absolute;
   width: 100%;
-  transform: translateX(20px);
-  transition: all 0.3s ease;
+  transform: translateX(200px);
+  transition: all 1s ease;
   pointer-events: none;
 }
 .formWrapper.visible {
@@ -348,7 +309,6 @@
   outline: none;
   cursor: pointer;
   position: relative;
-  margin: 0;
   flex-shrink: 0;
 }
 .termsField .checkboxLabel input[type=checkbox]:checked {
@@ -375,6 +335,7 @@
 .termsField a {
   color: #ff403f;
   text-decoration: underline;
+  font-weight: 500;
 }
 .termsField a:hover {
   text-decoration: none;

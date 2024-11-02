@@ -19,16 +19,20 @@
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 4;
     max-height: calc(2rem * 4); // line-height * number of lines
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
   }
 
   &:hover {
     border: 2px solid $theme;
     border-bottom: 10px solid $theme;
-    height: auto;
 
     p {
       max-height: none;
       -webkit-line-clamp: unset;
+      overflow-y: auto;
     }
 
     img {

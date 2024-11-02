@@ -34,8 +34,6 @@ $background: #f3f4f5f6;
   width: 100%;
   transition: all 1s ease;
   z-index: 2;
-
-  // Default top position
   top: 0;
 
   &.bottom {
@@ -55,7 +53,6 @@ $background: #f3f4f5f6;
     position: relative;
     overflow: hidden;
     z-index: 1;
-    // Add border initially but make it transparent
     border: 1px solid transparent;
 
     &::before {
@@ -69,10 +66,12 @@ $background: #f3f4f5f6;
       transition: left 0.3s ease;
       z-index: -1;
     }
+  }
 
-    &:hover {
+  // Move hover effects outside of h2 and exclude active state
+  &:not(.active) {
+    h2:hover {
       color: $theme;
-      // Just change the border color on hover
       border-color: $theme;
 
       &::before {
@@ -119,7 +118,6 @@ $background: #f3f4f5f6;
     }
   }
 }
-
 .divider {
   position: absolute;
   left: 50%;
@@ -131,51 +129,51 @@ $background: #f3f4f5f6;
   z-index: 3;
 }
 
-.circle {
-  position: relative;
-  width: 60px;
-  height: 60px;
-  background: $offWhite;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  animation: bounce 1s ease infinite;
-  z-index: 1;
-  margin: 8rem 0 0rem 0;
-  border: 1px dashed $black;
+// .circle {
+//   position: relative;
+//   width: 60px;
+//   height: 60px;
+//   background: $offWhite;
+//   border-radius: 50%;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   animation: bounce 1s ease infinite;
+//   z-index: 1;
+//   margin: 8rem 0 0rem 0;
+//   border: 1px dashed $black;
 
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    left: -10px; // Adjusted to be proportional to circle
-    top: -10px; // Adjusted to be proportional to circle
-    width: 80px; // Circle width (60px) + 20px for the ring
-    height: 80px; // Circle height (60px) + 20px for the ring
-    border-radius: 50%;
-    border: 1px dashed $black;
-    animation: ringExpand 1.8s linear infinite;
-    z-index: 1;
-  }
+//   &::before,
+//   &::after {
+//     content: "";
+//     position: absolute;
+//     left: -10px; // Adjusted to be proportional to circle
+//     top: -10px; // Adjusted to be proportional to circle
+//     width: 80px; // Circle width (60px) + 20px for the ring
+//     height: 80px; // Circle height (60px) + 20px for the ring
+//     border-radius: 50%;
+//     border: 1px dashed $black;
+//     animation: ringExpand 1.8s linear infinite;
+//     z-index: 1;
+//   }
 
-  // Delay the second ring
-  &::after {
-    animation-delay: 0.9s;
-  }
+//   // Delay the second ring
+//   &::after {
+//     animation-delay: 0.9s;
+//   }
 
-  // Third ring
-  &::before {
-    animation-delay: 0.3s;
-  }
+//   // Third ring
+//   &::before {
+//     animation-delay: 0.3s;
+//   }
 
-  span {
-    color: $theme;
-    font-weight: 900;
-    font-size: 1.2rem;
-    letter-spacing: 1px;
-  }
-}
+//   span {
+//     color: $theme;
+//     font-weight: 900;
+//     font-size: 1.2rem;
+//     letter-spacing: 1px;
+//   }
+// }
 
 .formContainer {
   flex: 2;
@@ -186,8 +184,8 @@ $background: #f3f4f5f6;
   opacity: 0;
   position: absolute;
   width: 100%;
-  transform: translateX(20px);
-  transition: all 0.3s ease;
+  transform: translateX(200px);
+  transition: all 1s ease;
   pointer-events: none;
 
   &.visible {
@@ -372,7 +370,7 @@ $background: #f3f4f5f6;
 
   .checkboxLabel {
     display: flex;
-    align-items: center; // Changed from align-items: flex-start
+    align-items: center;
     gap: 0.5rem;
 
     input[type="checkbox"] {
@@ -385,7 +383,6 @@ $background: #f3f4f5f6;
       outline: none;
       cursor: pointer;
       position: relative;
-      margin: 0; // Reset margin
       flex-shrink: 0; // Prevent checkbox from shrinking
 
       &:checked {
@@ -411,13 +408,14 @@ $background: #f3f4f5f6;
     }
 
     .checkboxText {
-      line-height: 1.4; // Helps with multi-line text alignment
+      line-height: 1.4;
     }
   }
 
   a {
     color: $theme;
     text-decoration: underline;
+    font-weight: 500;
 
     &:hover {
       text-decoration: none;

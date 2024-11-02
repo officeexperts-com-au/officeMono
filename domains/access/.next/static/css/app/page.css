@@ -1,4 +1,55 @@
 /*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../../node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[9].use[2]!../../node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[9].use[3]!../../node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[14].oneOf[9].use[4]!../../node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[14].oneOf[9].use[5]!../../styles/animate.module.scss ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.animate_animate__QvPA9 {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all var(--animation-duration, 1s) cubic-bezier(0.16, 1, 0.3, 1);
+  transition-delay: var(--animation-delay, 0s);
+  will-change: transform, opacity;
+}
+.animate_animate__QvPA9.animate_visible__CvTWZ {
+  opacity: 1 !important;
+  transform: translateY(0) scale(1) !important;
+}
+
+.animate_fade-up__KTMmZ {
+  transform: translateY(50px);
+  z-index: 2;
+}
+
+.animate_fade-down__XsXzK {
+  transform: translateY(-100px);
+}
+
+.animate_slide-left__ypmRt {
+  transform: translateX(-100px);
+}
+
+.animate_slide-right__gec6e {
+  transform: translateX(100px);
+}
+
+.animate_scale-down__puCyv {
+  transform: scale(1.4);
+}
+
+.animate_scale-up__pD2C3 {
+  transform: scale(0.2);
+}
+
+.animate_fade__gySe6 {
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate_animate__QvPA9 {
+    transition: none !important;
+    transform: none !important;
+    opacity: 1 !important;
+  }
+}
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ../../node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[9].use[2]!../../node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[9].use[3]!../../node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[14].oneOf[9].use[4]!../../node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[14].oneOf[9].use[5]!../../styles/contact.module.scss ***!
   \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 .contact_contact__NrHPR {
@@ -67,11 +118,11 @@
   transition: left 0.3s ease;
   z-index: -1;
 }
-.contact_option__Vytgl h2:hover {
+.contact_option__Vytgl:not(.contact_active__tKo6y) h2:hover {
   color: #ff403f;
   border-color: #ff403f;
 }
-.contact_option__Vytgl h2:hover::before {
+.contact_option__Vytgl:not(.contact_active__tKo6y) h2:hover::before {
   left: 0;
 }
 .contact_option__Vytgl .contact_description__ObNHT {
@@ -117,45 +168,6 @@
   z-index: 3;
 }
 
-.contact_circle__EHdzm {
-  position: relative;
-  width: 60px;
-  height: 60px;
-  background: #f8f8f8;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  animation: contact_bounce__L4fmS 1s ease infinite;
-  z-index: 1;
-  margin: 8rem 0 0rem 0;
-  border: 1px dashed #1e1e1e;
-}
-.contact_circle__EHdzm::before, .contact_circle__EHdzm::after {
-  content: "";
-  position: absolute;
-  left: -10px;
-  top: -10px;
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  border: 1px dashed #1e1e1e;
-  animation: contact_ringExpand__K4BW4 1.8s linear infinite;
-  z-index: 1;
-}
-.contact_circle__EHdzm::after {
-  animation-delay: 0.9s;
-}
-.contact_circle__EHdzm::before {
-  animation-delay: 0.3s;
-}
-.contact_circle__EHdzm span {
-  color: #ff403f;
-  font-weight: 900;
-  font-size: 1.2rem;
-  letter-spacing: 1px;
-}
-
 .contact_formContainer__i4v9T {
   flex: 2 1;
   position: relative;
@@ -165,8 +177,8 @@
   opacity: 0;
   position: absolute;
   width: 100%;
-  transform: translateX(20px);
-  transition: all 0.3s ease;
+  transform: translateX(200px);
+  transition: all 1s ease;
   pointer-events: none;
 }
 .contact_formWrapper__eNqAq.contact_visible__QnWmO {
@@ -347,7 +359,6 @@
   outline: none;
   cursor: pointer;
   position: relative;
-  margin: 0;
   flex-shrink: 0;
 }
 .contact_termsField__BO2Dz .contact_checkboxLabel__uBe18 input[type=checkbox]:checked {
@@ -374,6 +385,7 @@
 .contact_termsField__BO2Dz a {
   color: #ff403f;
   text-decoration: underline;
+  font-weight: 500;
 }
 .contact_termsField__BO2Dz a:hover {
   text-decoration: none;
@@ -464,11 +476,11 @@
   transition: left 0.3s ease;
   z-index: -1;
 }
-.contact_option__j1alX h2:hover {
+.contact_option__j1alX:not(.contact_active__WkR8O) h2:hover {
   color: #ff403f;
   border-color: #ff403f;
 }
-.contact_option__j1alX h2:hover::before {
+.contact_option__j1alX:not(.contact_active__WkR8O) h2:hover::before {
   left: 0;
 }
 .contact_option__j1alX .contact_description__Bbm5s {
@@ -514,45 +526,6 @@
   z-index: 3;
 }
 
-.contact_circle__xvwfN {
-  position: relative;
-  width: 60px;
-  height: 60px;
-  background: #f8f8f8;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  animation: contact_bounce__AwHEg 1s ease infinite;
-  z-index: 1;
-  margin: 8rem 0 0rem 0;
-  border: 1px dashed #1e1e1e;
-}
-.contact_circle__xvwfN::before, .contact_circle__xvwfN::after {
-  content: "";
-  position: absolute;
-  left: -10px;
-  top: -10px;
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  border: 1px dashed #1e1e1e;
-  animation: contact_ringExpand__5__Ja 1.8s linear infinite;
-  z-index: 1;
-}
-.contact_circle__xvwfN::after {
-  animation-delay: 0.9s;
-}
-.contact_circle__xvwfN::before {
-  animation-delay: 0.3s;
-}
-.contact_circle__xvwfN span {
-  color: #ff403f;
-  font-weight: 900;
-  font-size: 1.2rem;
-  letter-spacing: 1px;
-}
-
 .contact_formContainer__fkvoI {
   flex: 2 1;
   position: relative;
@@ -562,8 +535,8 @@
   opacity: 0;
   position: absolute;
   width: 100%;
-  transform: translateX(20px);
-  transition: all 0.3s ease;
+  transform: translateX(200px);
+  transition: all 1s ease;
   pointer-events: none;
 }
 .contact_formWrapper__CGyK9.contact_visible__c27hV {
@@ -744,7 +717,6 @@
   outline: none;
   cursor: pointer;
   position: relative;
-  margin: 0;
   flex-shrink: 0;
 }
 .contact_termsField__vXkRV .contact_checkboxLabel__foGEV input[type=checkbox]:checked {
@@ -771,6 +743,7 @@
 .contact_termsField__vXkRV a {
   color: #ff403f;
   text-decoration: underline;
+  font-weight: 500;
 }
 .contact_termsField__vXkRV a:hover {
   text-decoration: none;
@@ -1053,6 +1026,8 @@
   position: relative;
   overflow: hidden;
   border-radius: 0.2rem;
+  min-height: 300px; /* Ensure minimum height */
+  display: block; /* Ensure block display */
 }
 
 .servicesCard_cardImage__Dvjky {
@@ -1662,12 +1637,14 @@
   z-index: 2;
 }
 .ctaFull_ctaWrapper__ZU1wU H2 {
+  position: relative;
   color: #f8f8f8;
   font-size: 4rem;
   text-transform: uppercase;
+  text-align: center;
   font-weight: 900;
   margin: 1.25rem 0 2.5rem 0;
-  z-index: 2;
+  z-index: 5;
 }
 
 .ctaFull_ctaBtn__cPa5M {
@@ -1870,15 +1847,19 @@
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 4;
   max-height: 8rem;
+  scrollbar-width: none;
+}
+.testimonialsCard_card__4U7Xc p::-webkit-scrollbar {
+  display: none;
 }
 .testimonialsCard_card__4U7Xc:hover {
   border: 2px solid #ff403f;
   border-bottom: 10px solid #ff403f;
-  height: auto;
 }
 .testimonialsCard_card__4U7Xc:hover p {
   max-height: none;
   -webkit-line-clamp: unset;
+  overflow-y: auto;
 }
 .testimonialsCard_card__4U7Xc:hover img {
   margin-top: 1rem;

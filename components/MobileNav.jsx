@@ -452,7 +452,7 @@ const MobileNav = () => {
   return (
     <div className={styles.mobileNavContainer}>
       <button onClick={() => setIsOpen(!isOpen)} className={styles.menuButton}>
-        <button className={styles.menuIcon}>Menu</button>
+        <p className={styles.menuIcon}>Menu</p>
       </button>
 
       <nav className={`${styles.mobileNav} ${isOpen ? styles.isOpen : ""}`}>

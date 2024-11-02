@@ -17,15 +17,19 @@
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 4;
   max-height: 8rem;
+  scrollbar-width: none;
+}
+.card p::-webkit-scrollbar {
+  display: none;
 }
 .card:hover {
   border: 2px solid #ff403f;
   border-bottom: 10px solid #ff403f;
-  height: auto;
 }
 .card:hover p {
   max-height: none;
   -webkit-line-clamp: unset;
+  overflow-y: auto;
 }
 .card:hover img {
   margin-top: 1rem;
