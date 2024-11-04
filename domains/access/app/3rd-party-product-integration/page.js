@@ -248,7 +248,7 @@ const Page = () => {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
-      <ServiceHero />
+      <ServiceHero title={"3rd Party Product Integration"} />
       <PageSegmentMain />
       <ExpertsAwait />
       <Promo

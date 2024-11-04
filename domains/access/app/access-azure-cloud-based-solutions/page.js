@@ -1,5 +1,17 @@
 import React from "react";
 
+import ServiceHero from "../../../../components/ServiceHero";
+import PageSegmentMain2 from "./(components)/PageSegmentMain2";
+import PageSegment3 from "./(components)/PageSegment3";
+import PageSegment4New from "./(components)/PageSegment4New";
+import PageSegment5 from "./(components)/PageSegment5";
+import PageSegment6 from "./(components)/PageSegment6";
+import ExpertsAwait from "../../../../components/ExpertsAwait";
+import PageSegment7 from "./(components)/PageSegment7";
+import PageSegment8 from "./(components)/PageSegment8";
+import Contact from "../../../../components/Contact";
+import Promo from "../../../../components/Promo";
+
 const schema = {
   "@context": "https://schema.org",
   "@graph": [
@@ -142,6 +154,20 @@ const Page = () => {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
+      <ServiceHero title="Azure Cloud Based Solutions" />
+      <PageSegmentMain2 />
+      <PageSegment3 />
+      <PageSegment4New />
+      <PageSegment5 />
+      <PageSegment6 />
+      <ExpertsAwait />
+      <PageSegment7 />
+      <PageSegment8 />
+      <Promo
+        h2="Want Your Access Database in the Cloud?"
+        p="Transform your existing Access database into a cloud-based solution accessible from anywhere. We can help migrate your data to Azure and create custom web solutions for your team."
+      />
+      <Contact />
     </>
   );
 };

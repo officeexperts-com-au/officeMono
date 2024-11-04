@@ -1,21 +1,21 @@
 {
   "pages": {
-    "/3rd-party-product-integration/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/3rd-party-product-integration/page.css",
-      "static/chunks/app/3rd-party-product-integration/page.js"
-    ],
-    "/3rd-party-product-integration/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/3rd-party-product-integration/layout.js"
-    ],
     "/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
+    ],
+    "/access-azure-cloud-based-solutions/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/access-azure-cloud-based-solutions/page.css",
+      "static/chunks/app/access-azure-cloud-based-solutions/page.js"
+    ],
+    "/access-azure-cloud-based-solutions/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/access-azure-cloud-based-solutions/layout.js"
     ]
   }
 }

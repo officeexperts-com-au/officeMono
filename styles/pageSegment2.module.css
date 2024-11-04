@@ -1,0 +1,67 @@
+@charset "UTF-8";
+.pageSegment {
+  display: grid;
+  grid-template-columns: 66% 1fr;
+  gap: 2rem;
+  padding: 4rem 10vw;
+}
+.pageSegment img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.contents {
+  grid-row: span 2;
+  background-color: #f2f3f5;
+  padding: 2rem;
+  border-radius: 0.1rem;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.contents h3 {
+  color: #1e1e1e;
+  text-transform: uppercase;
+  margin: 1rem;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.contentLink {
+  position: relative;
+  padding: 1.5rem 1rem;
+}
+.contentLink p {
+  color: #777a7e;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.contentLink p::after {
+  content: "→";
+  position: absolute;
+  right: 1rem;
+  bottom: 1.25rem;
+  opacity: 0;
+  color: #ff403f;
+  transition: opacity 0.3s ease;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.contentLink:hover {
+  background-color: white;
+}
+.contentLink:hover p::after {
+  opacity: 1;
+}
+
+.info h2 {
+  color: #1e1e1e;
+  text-transform: uppercase;
+  margin: 1rem 0;
+  font-weight: 900;
+}
+.info p {
+  margin-top: 1rem;
+  color: #777a7e;
+  line-height: 2rem;
+  max-width: 90%;
+}/*# sourceMappingURL=pageSegment2.module.css.map */
