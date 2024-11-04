@@ -125,10 +125,10 @@ const schema = {
         "@type": "ImageObject",
         inLanguage: "en-AU",
         "@id": "https://www.accessexperts.com.au/#/schema/logo/image/",
-        url: "/logo.png",
-        contentUrl: "/logo.png",
-        width: 326,
-        height: 107,
+        url: "/logo200x86.webp",
+        contentUrl: "/logo200x86.webp",
+        width: 200,
+        height: 86,
         caption: "Access Experts",
       },
       image: {
@@ -154,7 +154,10 @@ const Page = () => {
       <Testimonials />
       <Brands />
       <CTAFull />
-      <Promo />
+      <Promo
+        h2="We Deliver the Best Quality"
+        p="Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, perferendis nisi enim perspiciatis voluptatem voluptatum!"
+      />
       <Contact />
     </>
   );

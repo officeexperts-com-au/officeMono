@@ -2,7 +2,7 @@
   display: flex;
   gap: 2rem;
   padding: 6rem 10vw;
-  background-color: rgba(243, 244, 245, 0.9647058824);
+  background-color: #f2f3f5;
 }
 @media (min-width: 767px) and (max-width: 1024px) {
   .contact {
@@ -27,7 +27,7 @@
 }
 
 .option {
-  background: rgba(243, 244, 245, 0.9647058824);
+  background: #f2f3f5;
   cursor: pointer;
   position: absolute;
   width: 100%;
@@ -82,7 +82,7 @@
   line-height: 1.8;
 }
 .option:hover {
-  background: rgba(243, 244, 245, 0.9647058824);
+  background: #f2f3f5;
 }
 .option.active h2 {
   text-align: left;
@@ -90,14 +90,14 @@
   font-weight: 900;
   font-size: 3rem;
   padding: 0;
-  background: rgba(243, 244, 245, 0.9647058824);
+  background: #f2f3f5;
   width: -moz-fit-content;
   width: fit-content;
 }
 .option.active .description {
   max-height: 200px;
   opacity: 1;
-  background: rgba(243, 244, 245, 0.9647058824);
+  background: #f2f3f5;
 }
 .option.active .description p {
   color: #1e1e1e;

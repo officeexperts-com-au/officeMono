@@ -11,6 +11,12 @@
 # next.js
 /.next/
 /out/
+domains/*/.next/
+domains/access/.next/
+domains/excel/.next/
+domains/office/.next/
+domains/powerPlatform/.next/
+domains/word/.next/
 
 # production
 /build

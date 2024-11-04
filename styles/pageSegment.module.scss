@@ -1,0 +1,61 @@
+@import "./globals.scss";
+
+.pageSegment {
+  display: flex;
+  gap: 4rem;
+  margin: 8rem;
+}
+
+.imgWrapper {
+  flex: 1;
+  border-bottom: 15px solid $theme;
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    padding-bottom: 0.5rem;
+  }
+}
+
+.contentWrapper {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.content {
+  h2 {
+    color: $black;
+    font-size: 2.5rem;
+    margin: 2rem 0 2rem 0;
+    text-transform: uppercase;
+    font-weight: 900;
+  }
+
+  p:first-child {
+    color: $theme;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+
+  p:last-child {
+    color: #777a7e;
+    line-height: 2rem;
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .pageSegment {
+    flex-direction: column;
+    margin: 2rem;
+    gap: 1rem;
+  }
+
+  .content {
+    h2 {
+      font-size: 2rem;
+    }
+  }
+}

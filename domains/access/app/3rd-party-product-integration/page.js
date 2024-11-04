@@ -1,5 +1,14 @@
 import React from "react";
 
+import PageSegmentMain from "../../../../components/PageSegmentMain";
+import ServiceHero from "../../../../components/ServiceHero";
+import Promo from "../../../../components/Promo";
+import Contact from "../../../../components/Contact";
+import ExpertsAwait from "../../../../components/ExpertsAwait";
+import FAQSection from "../../../../components/FAQSection";
+
+import faqs from "../../faqs/3rd-party-product-integration.js";
+
 const schema = {
   "@context": "https://schema.org",
   "@graph": [
@@ -105,39 +114,6 @@ const schema = {
       ],
       description:
         "Our Australia-wide, cross-industry Microsoft Access database consultants deliver prompt, quality service with competitive pricing. Fulfilling all of your Microsoft Access consulting needs, our experts excel in Microsoft technology services from database creation to maintenance, troubleshooting, integration, data manipulation, programming, conversions, upgrades, training and support.",
-      openingHours: "Mo-Fr 09:00-17:00",
-      openingHoursSpecification: [
-        {
-          "@type": "OpeningHoursSpecification",
-          closes: "17:00",
-          dayOfWeek: "http://schema.org/Monday",
-          opens: "09:00",
-        },
-        {
-          "@type": "OpeningHoursSpecification",
-          closes: "17:00",
-          dayOfWeek: "http://schema.org/Tuesday",
-          opens: "09:00",
-        },
-        {
-          "@type": "OpeningHoursSpecification",
-          closes: "17:00",
-          dayOfWeek: "http://schema.org/Wednesday",
-          opens: "09:00",
-        },
-        {
-          "@type": "OpeningHoursSpecification",
-          closes: "17:00",
-          dayOfWeek: "http://schema.org/Thursday",
-          opens: "09:00",
-        },
-        {
-          "@type": "OpeningHoursSpecification",
-          closes: "17:00",
-          dayOfWeek: "http://schema.org/Friday",
-          opens: "09:00",
-        },
-      ],
       brand: {
         "@type": "Thing",
         name: [
@@ -245,11 +221,11 @@ const schema = {
       logo: {
         "@type": "ImageObject",
         inLanguage: "en-AU",
-        "@id": "https://accessexperts.com.au/#/schema/logo/image/",
-        url: "/logo.png",
-        contentUrl: "/logo.png",
-        width: 326,
-        height: 107,
+        "@id": "https://www.accessexperts.com.au/#/schema/logo/image/",
+        url: "/logo200x86.webp",
+        contentUrl: "/logo200x86.webp",
+        width: 200,
+        height: 86,
         caption: "Access Experts",
       },
       image: {
@@ -272,6 +248,18 @@ const Page = () => {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
+      <ServiceHero />
+      <PageSegmentMain />
+      <ExpertsAwait />
+      <Promo
+        h2="Need An Integration Solution?
+        "
+        p="Do you have another Office application, CRM, accounting package or other 3rd party product that you want linked to Access?
+        
+        Do you want to extend a 3rd party product’s functionality using Access?"
+      />
+      <FAQSection faqs={faqs} />
+      <Contact />
     </>
   );
 };

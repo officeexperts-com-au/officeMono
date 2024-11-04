@@ -8,7 +8,7 @@ import styles from "../styles/promo.module.css";
 import computer from "../public/icons/computer.webp";
 import promo from "../public/promo.webp";
 
-const Promo = () => {
+const Promo = ({ h2, p }) => {
   return (
     <section className={styles.promo}>
       <AnimateOnScroll animation="scale-up" duration={1}>
@@ -17,12 +17,8 @@ const Promo = () => {
             <Image src={computer} alt="computer icon" width={30} height={30} />
           </div>
           <div className={styles.text}>
-            <h2>We Deliver the Best Quality</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Doloribus, perferendis nisi enim perspiciatis voluptatem
-              voluptatum!
-            </p>
+            <h2>{h2}</h2>
+            <p>{p}</p>
           </div>
         </div>
       </AnimateOnScroll>

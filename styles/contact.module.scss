@@ -1,12 +1,10 @@
 @import "./globals.scss";
 
-$background: #f3f4f5f6;
-
 .contact {
   display: flex;
   gap: 2rem;
   padding: 6rem 10vw;
-  background-color: $background;
+  background-color: $grayBGC;
 
   @include tablet {
     flex-direction: column;
@@ -28,7 +26,7 @@ $background: #f3f4f5f6;
 }
 
 .option {
-  background: $background;
+  background: $grayBGC;
   cursor: pointer;
   position: absolute;
   width: 100%;
@@ -93,7 +91,7 @@ $background: #f3f4f5f6;
   }
 
   &:hover {
-    background: $background;
+    background: $grayBGC;
   }
 
   &.active {
@@ -103,14 +101,14 @@ $background: #f3f4f5f6;
       font-weight: 900;
       font-size: 3rem;
       padding: 0;
-      background: $background;
+      background: $grayBGC;
       width: fit-content;
     }
 
     .description {
       max-height: 200px;
       opacity: 1;
-      background: $background;
+      background: $grayBGC;
 
       p {
         color: $black;
