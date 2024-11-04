@@ -1,6 +1,7 @@
 @import "./globals.scss";
 
 .pageSegment {
+  scroll-margin-top: 100px;
   padding: 0 10vw 2rem 10vw;
   display: flex;
   gap: 4rem;

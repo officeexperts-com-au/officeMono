@@ -1,5 +1,16 @@
 import React from "react";
 
+import ServiceHero from "../../../../components/ServiceHero";
+import PageSegmentMain from "./(components)/PageSegmentMain";
+import PageSegmentSmall from "./(components)/PageSegmentSmall";
+import PageSegment4 from "./(components)/PageSegment4";
+import ExpertsAwait from "../../../../components/ExpertsAwait";
+import Contact from "../../../../components/Contact";
+import Promo from "../../../../components/Promo";
+import FAQSection from "../../../../components/FAQSection";
+
+import faqs from "../../faqs/access-online.js";
+
 const schema = {
   "@context": "https://schema.org",
   "@graph": [
@@ -161,6 +172,17 @@ const Page = () => {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
+      <ServiceHero title="Online Access Database Solutions" />
+      <PageSegmentMain />
+      <PageSegmentSmall />
+      <PageSegment4 />
+      <ExpertsAwait />
+      <Promo
+        h2="iPad and iPhone Solutions"
+        p="We often get asked, “What about iPads and iPhones?” …and yes, it is possible to create limited solutions using these and other platforms."
+      />
+      <FAQSection faqs={faqs} />
+      <Contact />
     </>
   );
 };

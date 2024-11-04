@@ -8,7 +8,10 @@ const ContentsSection = () => {
   return (
     <section className={styles.contentsBox}>
       <Image src={semi} alt="shape icon" height={400} width={400} />
-      <div className={styles.contents} id="requirements">
+      <div
+        className={`${styles.contents} ${styles.scrollMargin}`}
+        id="requirements"
+      >
         <h3>Access/Azure Requirements</h3>
 
         <div className={styles.contentLink}>
@@ -37,7 +40,10 @@ const ContentsSection = () => {
         </div>
       </div>
 
-      <div className={styles.contents} id="alternatives">
+      <div
+        className={`${styles.contents} ${styles.scrollMargin}`}
+        id="alternatives"
+      >
         <h3>Alternatives to Access/Azure</h3>
 
         <div className={styles.contentLink}>

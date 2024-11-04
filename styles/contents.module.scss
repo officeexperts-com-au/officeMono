@@ -1,5 +1,9 @@
 @import "./globals.scss";
 
+.scrollMargin {
+  scroll-margin-top: 200px;
+}
+
 .contentsBox {
   position: relative;
   margin: 2rem 10vw 6rem 10vw;

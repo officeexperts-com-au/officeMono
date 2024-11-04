@@ -1,3 +1,6 @@
 {
-  "/access-azure-cloud-based-solutions/page": "app/access-azure-cloud-based-solutions/page.js"
+  "/page": "app/page.js",
+  "/access-azure-cloud-based-solutions/page": "app/access-azure-cloud-based-solutions/page.js",
+  "/access-online/page": "app/access-online/page.js",
+  "/3rd-party-product-integration/page": "app/3rd-party-product-integration/page.js"
 }

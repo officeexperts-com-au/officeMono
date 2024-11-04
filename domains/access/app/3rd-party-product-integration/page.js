@@ -1,6 +1,6 @@
 import React from "react";
 
-import PageSegmentMain from "../../../../components/PageSegmentMain";
+import PageSegmentMain from "./(components)/PageSegmentMain";
 import ServiceHero from "../../../../components/ServiceHero";
 import Promo from "../../../../components/Promo";
 import Contact from "../../../../components/Contact";

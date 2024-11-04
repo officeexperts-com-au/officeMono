@@ -1,5 +1,6 @@
 @charset "UTF-8";
 .pageSegment {
+  scroll-margin-top: 100px;
   display: grid;
   grid-template-columns: 66% 1fr;
   gap: 2rem;

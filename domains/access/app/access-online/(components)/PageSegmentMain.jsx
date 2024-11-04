@@ -24,10 +24,11 @@ const PageSegmentMain = () => {
             Database Analysis,<br></br> Design and Development
           </h2>
           <p>
-            Our Microsoft Access database experts can help determine whether
-            your integration requirements are viable and build the required
-            functionality for your company with competitive pricing and a
-            prompt, high quality service.
+            When it comes to online Microsoft Access database solutions, our
+            innovative and versatile consultants deliver a prompt, quality
+            service with competitive pricing. Talk to our Access database
+            integration experts to get the clarity to take your business forward
+            with proven solutions.
           </p>
         </div>
       </div>
