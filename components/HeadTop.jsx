@@ -21,7 +21,7 @@ const HeadTop = () => {
         <div>
           <Link href="mailto:consult@wordexperts.com.au">
             <Image src={emailSlide} alt="email" width={9} height={9} />
-            consult@wordexperts.com.au
+            consult@accessexperts.com.au
           </Link>
         </div>
 

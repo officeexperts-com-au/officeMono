@@ -1,5 +1,8 @@
 import React from "react";
 
+import Contact from "../../../../components/Contact";
+import TestimonialPage from "../../../../components/TestimonialPage";
+
 const schema = {
   "@context": "https://schema.org",
   "@graph": [
@@ -124,6 +127,8 @@ const Page = () => {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
+      <TestimonialPage />
+      <Contact />
     </>
   );
 };

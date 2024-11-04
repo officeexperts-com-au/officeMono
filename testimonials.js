@@ -8,6 +8,9 @@ import burp from "./public/logos/burpengary.webp";
 import davey from "./public/logos/Davey.webp";
 import metro from "./public/logos/metro.webp";
 import build from "./public/logos/buildcorp.webp";
+import dulux from "./public/logos/Dulux-Group.webp";
+import herron from "./public/logos/herron.webp";
+import eps from "./public/logos/eps.webp";
 
 export const testimonials = [
   {
@@ -27,6 +30,15 @@ export const testimonials = [
     image: queenslandRailLogo,
     width: 150,
     height: 23,
+  },
+  {
+    content:
+      "Jason did an excellent job of translating my requirements for a Risk Register into a finished product that was both functional, easy to use and able to be further refined without the need for further programming.",
+    name: "Garry O'Shea",
+    contact: "www.duluxgroup.com.au",
+    image: dulux,
+    width: 150,
+    height: 38,
   },
   {
     content:
@@ -98,6 +110,33 @@ export const testimonials = [
     image: build,
     width: 150,
     height: 35,
+  },
+  {
+    content:
+      "I have been working with Office Experts for a number of years on projects and cannot recommend them highly enough. If you have a project you want brought to life, Office Experts are guns when it comes to capability, innovation and customer service.",
+    name: "Stuart Clark",
+    contact: "www.duluxgroup.com.au",
+    image: dulux,
+    width: 150,
+    height: 38,
+  },
+  {
+    content:
+      "Herron Todd White engaged the services of Office Experts to develop new software for the Quantity Surveying division of our business. Primarily the software was designed to enable our property inspectors to collect onsite data and upload to a back-end database from the field, therefore removing the need to go back to the office to manually upload the data. The secondary phase of our IT development was to create a program that could analyse and process the uploaded data with minimal input, a feat successfully achieved by Office Experts. From our experience the staff at Office Experts have often gone beyond expectations. Their commitment to the project and their drive to deliver the end product is achieved through professionalism, experience and a solid work ethic.",
+    name: "Ben Walpole",
+    contact: "www.htw.com.au",
+    image: herron,
+    width: 117,
+    height: 61,
+  },
+  {
+    content:
+      "Office Experts have been my 'GO TO' consultants for the development of my Access Database and I now consider them an integral part of my business support team. I've been very impressed with the Expert assigned to us. His ability to quickly grasp an in-depth understanding of what we wanted to achieve and then create it - was impressive. Our Expert was skilled and very efficient, he had a strong customer focus and made it very easy for us to work with him. I definitely recommend Office Experts!",
+    name: "Louise Doedee",
+    contact: "www.essentialpropertysolutions.com.au",
+    image: eps,
+    width: 150,
+    height: 63,
   },
 ];
 
