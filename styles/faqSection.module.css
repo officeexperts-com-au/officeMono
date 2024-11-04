@@ -8,6 +8,7 @@
 .faqSection h2 {
   margin-bottom: 3rem;
   color: #1e1e1e;
+  text-transform: uppercase;
 }
 
 .faqContainer {

@@ -14,6 +14,11 @@
   -o-object-fit: cover;
      object-fit: cover;
   padding-bottom: 0.5rem;
+  filter: grayscale(100%);
+  transition: all 0.3s ease;
+}
+.imgWrapper img:hover {
+  filter: grayscale(0%);
 }
 
 .contentWrapper {

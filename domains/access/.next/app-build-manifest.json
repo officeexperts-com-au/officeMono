@@ -1,49 +1,27 @@
 {
   "pages": {
-    "/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/layout.css",
-      "static/chunks/app/layout.js"
-    ],
-    "/access-azure-cloud-based-solutions/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/access-azure-cloud-based-solutions/page.css",
-      "static/chunks/app/access-azure-cloud-based-solutions/page.js"
-    ],
-    "/access-azure-cloud-based-solutions/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/access-azure-cloud-based-solutions/layout.js"
-    ],
     "/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/css/app/page.css",
       "static/chunks/app/page.js"
     ],
-    "/access-online/page": [
+    "/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/access-online/page.css",
-      "static/chunks/app/access-online/page.js"
+      "static/css/app/layout.css",
+      "static/chunks/app/layout.js"
     ],
-    "/access-online/layout": [
+    "/access-support/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/access-online/layout.js"
+      "static/css/app/access-support/page.css",
+      "static/chunks/app/access-support/page.js"
     ],
-    "/3rd-party-product-integration/page": [
+    "/access-support/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/3rd-party-product-integration/page.css",
-      "static/chunks/app/3rd-party-product-integration/page.js"
-    ],
-    "/3rd-party-product-integration/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/3rd-party-product-integration/layout.js"
+      "static/chunks/app/access-support/layout.js"
     ]
   }
 }
