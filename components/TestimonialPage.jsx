@@ -9,11 +9,10 @@ import styles from "../styles/testimonialPage.module.scss";
 const TestimonialPage = () => {
   return (
     <section className={styles.testimonialPage}>
-      <h1>Our Happy Clients</h1>
       <div className={styles.testimonialGrid}>
         {testimonials.map((testimonial, index) => {
-          // Show first 6 testimonials without animation
-          if (index < 6) {
+          // Show first 3 testimonials without animation
+          if (index < 3) {
             return (
               <div key={testimonial.contact}>
                 <TestimonialCard

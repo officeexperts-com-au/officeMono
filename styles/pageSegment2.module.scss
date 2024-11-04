@@ -13,6 +13,7 @@
 }
 
 .contents {
+  position: relative;
   grid-row: span 2;
   background-color: $grayBGC;
   padding: 2rem;
@@ -25,6 +26,15 @@
     margin: 1rem;
     font-weight: 700;
     font-size: 1.25rem;
+  }
+
+  .buttonWrapper {
+    margin: 3rem 0 1rem 0;
+    display: flex;
+    justify-content: center;
+    button {
+      padding: 1.5rem 3rem;
+    }
   }
 }
 

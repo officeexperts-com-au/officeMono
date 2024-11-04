@@ -1,5 +1,11 @@
 import React from "react";
 
+import ServiceHero from "../../../../components/ServiceHero";
+import ServicePageCards from "./(components)/ServicePageCards";
+import Contact from "../../../../components/Contact";
+import PageSegment4 from "./(components)/PageSegment4";
+import PageSegmentMain from "./(components)/PageSegmentMain";
+
 const schema = {
   "@context": "https://schema.org",
   "@graph": [
@@ -161,6 +167,11 @@ const Page = () => {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
+      <ServiceHero title="Upgrades and Migration" />
+      <ServicePageCards />
+      <PageSegment4 />
+      <PageSegmentMain />
+      <Contact />
     </>
   );
 };

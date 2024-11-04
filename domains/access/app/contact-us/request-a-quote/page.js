@@ -1,5 +1,10 @@
 import React from "react";
 
+import Contact from "../../../../../components/Contact";
+import ServiceHero from "../../../../../components/ServiceHero";
+import CTAMain from "../(components)/CTAMain";
+import ContactDetails from "../../../../../components/ContactDetails";
+
 const schema = {
   "@context": "https://schema.org",
   "@graph": [
@@ -166,6 +171,10 @@ const Page = () => {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
+      <ServiceHero title="Request a Quote" />
+      <CTAMain />
+      <Contact isQuote={true} />
+      <ContactDetails />
     </>
   );
 };

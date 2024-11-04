@@ -21,7 +21,10 @@
   font-size: 3rem;
   font-weight: 900;
   text-transform: uppercase;
+  text-align: center;
   color: #f8f8f8;
+  max-width: 70vw;
+  line-height: 4rem;
 }
 .serviceHero img {
   position: absolute;

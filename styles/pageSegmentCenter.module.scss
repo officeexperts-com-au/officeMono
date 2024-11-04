@@ -36,6 +36,12 @@
   }
 }
 
+.tickText {
+  color: $darkGrayText;
+  margin-bottom: 1rem;
+  line-height: 2rem;
+}
+
 .benefitsList {
   display: flex;
   flex-direction: column;
@@ -56,8 +62,12 @@
     flex-shrink: 0;
   }
 
+  a,
   p {
     color: $darkGrayText;
-    margin: 0;
+  }
+
+  a:hover {
+    color: $theme;
   }
 }

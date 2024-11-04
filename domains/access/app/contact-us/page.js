@@ -1,5 +1,10 @@
 import React from "react";
 
+import Contact from "../../../../components/Contact";
+import ServiceHero from "../../../../components/ServiceHero";
+import CTAMain from "./(components)/CTAMain";
+import ContactDetails from "../../../../components/ContactDetails";
+
 const schema = {
   "@context": "https://schema.org",
   "@graph": [
@@ -89,38 +94,6 @@ const schema = {
           name: "Wollongong",
         },
       ],
-      openingHoursSpecification: [
-        {
-          "@type": "OpeningHoursSpecification",
-          dayOfWeek: "Monday",
-          opens: "09:00",
-          closes: "17:00",
-        },
-        {
-          "@type": "OpeningHoursSpecification",
-          dayOfWeek: "Tuesday",
-          opens: "09:00",
-          closes: "17:00",
-        },
-        {
-          "@type": "OpeningHoursSpecification",
-          dayOfWeek: "Wednesday",
-          opens: "09:00",
-          closes: "17:00",
-        },
-        {
-          "@type": "OpeningHoursSpecification",
-          dayOfWeek: "Thursday",
-          opens: "09:00",
-          closes: "17:00",
-        },
-        {
-          "@type": "OpeningHoursSpecification",
-          dayOfWeek: "Friday",
-          opens: "09:00",
-          closes: "17:00",
-        },
-      ],
       logo: {
         "@type": "ImageObject",
         inLanguage: "en-AU",
@@ -151,6 +124,10 @@ const Page = () => {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
+      <ServiceHero title="Contact Us" />
+      <CTAMain />
+      <Contact />
+      <ContactDetails />
     </>
   );
 };

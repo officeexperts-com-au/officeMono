@@ -1,13 +1,7 @@
 .testimonialPage {
-  padding: 10rem 0 4rem 0;
+  padding: 4rem 0;
   background-color: rgba(243, 244, 245, 0.9647058824);
   border-bottom: 1px solid rgba(176, 176, 176, 0.3568627451);
-}
-.testimonialPage h1 {
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: 900;
-  margin-bottom: 1rem;
 }
 
 .testimonialGrid {

@@ -1,15 +1,21 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "../styles/contact.module.scss";
 import ContactForm from "./ContactForm";
 import QuoteForm from "./QuoteForm";
 
-const Contact = () => {
+const Contact = ({ isQuote }) => {
   const [activeForm, setActiveForm] = useState("contact");
 
   const handleFormSwitch = (formType) => {
     setActiveForm(formType);
   };
+
+  useEffect(() => {
+    if (isQuote) {
+      setActiveForm("quote");
+    }
+  }, []);
 
   return (
     <section className={styles.contact}>

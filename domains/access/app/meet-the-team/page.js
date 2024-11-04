@@ -1,5 +1,9 @@
 import React from "react";
 
+import ServiceHero from "../../../../components/ServiceHero";
+import MeetTheTeam from "../../../../components/MeetTheTeam";
+import Contact from "../../../../components/Contact";
+
 const schema = {
   "@context": "https://schema.org",
   "@graph": [
@@ -124,6 +128,9 @@ const Page = () => {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
+      <ServiceHero title="Meet Our Team" />
+      <MeetTheTeam />
+      <Contact />
     </>
   );
 };

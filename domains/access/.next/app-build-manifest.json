@@ -1,43 +1,21 @@
 {
   "pages": {
-    "/page": [
+    "/upgrades-and-migration/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/page.css",
-      "static/chunks/app/page.js"
+      "static/css/app/upgrades-and-migration/page.css",
+      "static/chunks/app/upgrades-and-migration/page.js"
+    ],
+    "/upgrades-and-migration/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/upgrades-and-migration/layout.js"
     ],
     "/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
-    ],
-    "/access-support/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/access-support/page.css",
-      "static/chunks/app/access-support/page.js"
-    ],
-    "/access-support/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/access-support/layout.js"
-    ],
-    "/client-testimonials/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/client-testimonials/page.css",
-      "static/chunks/app/client-testimonials/page.js"
-    ],
-    "/client-testimonials/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/client-testimonials/layout.js"
-    ],
-    "/_not-found/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/_not-found/page.js"
     ]
   }
 }

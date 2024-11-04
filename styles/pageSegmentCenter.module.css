@@ -35,6 +35,12 @@
   margin-bottom: -0.5rem;
 }
 
+.tickText {
+  color: #777a7e;
+  margin-bottom: 1rem;
+  line-height: 2rem;
+}
+
 .benefitsList {
   display: flex;
   flex-direction: column;
@@ -54,7 +60,10 @@
   font-weight: bold;
   flex-shrink: 0;
 }
+.benefitItem a,
 .benefitItem p {
   color: #777a7e;
-  margin: 0;
+}
+.benefitItem a:hover {
+  color: #ff403f;
 }/*# sourceMappingURL=pageSegmentCenter.module.css.map */
