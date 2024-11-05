@@ -11,6 +11,19 @@
      object-fit: cover;
 }
 
+.pageSegmentReverse {
+  scroll-margin-top: 100px;
+  display: grid;
+  grid-template-columns: 1fr 66%;
+  gap: 4rem;
+  padding: 6rem 10vw;
+}
+.pageSegmentReverse img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: -4rem;
+}
+
 .contents {
   position: relative;
   grid-row: span 2;
@@ -39,6 +52,7 @@
 .contentLink {
   position: relative;
   padding: 1.5rem 1rem;
+  transition: all 0.3s ease;
 }
 .contentLink p {
   color: #777a7e;
@@ -56,11 +70,21 @@
   font-size: 1.5rem;
   font-weight: 600;
 }
-.contentLink:hover {
+
+a:hover .contentLink {
   background-color: white;
 }
-.contentLink:hover p::after {
+a:hover .contentLink p {
+  color: #ff403f;
+  font-weight: 700;
+}
+a:hover .contentLink p::after {
   opacity: 1;
+}
+
+.contentLink[style*="display: flex"] a:hover p {
+  color: #ff403f;
+  font-weight: 700;
 }
 
 .info h2 {

@@ -2,6 +2,11 @@ import React from "react";
 
 import Contact from "../../../../components/Contact";
 import ServiceHero from "../../../../components/ServiceHero";
+import PageSegmentMain2 from "./(components)/PageSegmentMain2";
+import PageSegmentCenter from "./(components)/PageSegmentCenter";
+import SegmentMainCopy from "./(components)/SegmentMainCopy";
+import ExpertsAwait from "../../../../components/ExpertsAwait";
+import Promo from "../../../../components/Promo";
 
 const schema = {
   "@context": "https://schema.org",
@@ -168,6 +173,14 @@ const Page = () => {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
       <ServiceHero title="Custom Design and Development" />
+      <PageSegmentMain2 />
+      <PageSegmentCenter />
+      <SegmentMainCopy />
+      <ExpertsAwait />
+      <Promo
+        h2="Custom Excel Solutions"
+        p="Looking for bespoke Excel solutions? Our experts can automate, integrate, and transform your data processes for greater efficiency and performance."
+      />
       <Contact />
     </>
   );
