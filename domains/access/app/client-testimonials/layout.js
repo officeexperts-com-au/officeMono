@@ -4,23 +4,23 @@ import PropTypes from "prop-types";
 export const metadata = {
   // Basic metadata
   title:
-    "Meet The Team – Access Experts | Microsoft Access Database Design & Development",
+    "Client Testimonials | Access Experts - Microsoft Access Database Solutions",
   description:
-    "Meet our expert team of Microsoft Access database consultants and developers. Our specialists have extensive experience in database design, development, integration, and support across Australia.",
+    "Read what our clients say about their experience with Access Experts. Discover how our database solutions have helped businesses across Australia improve their data management and efficiency.",
 
   // OpenGraph
   openGraph: {
-    title: "Meet Our Microsoft Access Database Experts & Consultants",
+    title: "Client Testimonials | Access Experts - Database Solutions",
     description:
-      "Our team of expert Microsoft Access database consultants and developers bring decades of combined experience in custom database solutions, integration, and support services across Australia.",
-    url: "https://www.accessexperts.com.au/meet-the-team/",
+      "Read trusted reviews from businesses we've helped with Microsoft Access database solutions. Our clients share their experiences with custom database development, integration, and support services.",
+    url: "https://www.accessexperts.com.au/client-testimonials/",
     siteName: "Access Experts",
     images: [
       {
         url: "https://www.accessexperts.com.au/wp-content/uploads/2023/09/microsoft-office-experts-group-logo.png",
         width: 1200,
         height: 630,
-        alt: "Access Experts Team Logo",
+        alt: "Access Experts Logo",
       },
     ],
     locale: "en-AU",
@@ -29,53 +29,37 @@ export const metadata = {
 
   // Additional metadata
   keywords: [
-    // Core expertise keywords
-    "Microsoft Access database consultants Australia",
-    "Access database developers Sydney",
-    "Custom Access database experts",
-    "Microsoft Access integration specialists",
+    // Review-focused keywords
+    "Access database consultant reviews",
+    "Microsoft Access developer testimonials",
+    "Database solution case studies",
+    "Access Experts client feedback",
 
-    // Skill-specific long tail
-    "Microsoft Access VBA macro development experts",
-    "Access SQL Server integration consultants",
-    "Custom Access form development specialists",
-    "Microsoft Access database migration experts",
-    "Access database optimization consultants",
-    "Microsoft Access cloud integration specialists",
+    // Solution-specific reviews
+    "Custom database solution reviews",
+    "Access integration project testimonials",
+    "Database migration success stories",
+    "Access automation client feedback",
 
-    // Service-specific long tail
-    "Microsoft Access database troubleshooting services",
-    "Custom Access report development consultants",
-    "Access database upgrade specialists",
-    "Microsoft Access Azure integration experts",
-    "Access SharePoint integration consultants",
+    // Location-specific testimonials
+    "Database consultant reviews Australia",
+    "Access developer testimonials Sydney",
+    "Database solution reviews Melbourne",
+    "Access Experts feedback Brisbane",
 
-    // Location-specific
-    "Access database consultants Melbourne",
-    "Microsoft Access experts Brisbane",
-    "Database developers Perth",
-    "Access consultants Sydney CBD",
-
-    // Industry-specific
-    "Access inventory management system developers",
-    "Microsoft Access CRM specialists",
-    "Custom business database consultants",
-    "Access financial database experts",
-
-    // Technical expertise
-    "Access database performance optimization",
-    "Microsoft Access data migration specialists",
-    "Custom Access automation solutions",
-    "Database security implementation experts",
-    "Access multi-user database specialists",
+    // Industry feedback
+    "Business database solution reviews",
+    "Enterprise Access database testimonials",
+    "Database consulting client stories",
+    "Access development project reviews",
   ],
 
   // Twitter Card
   twitter: {
     card: "summary_large_image",
-    title: "Meet Our Microsoft Access Database Experts & Consultants",
+    title: "Client Testimonials | Access Experts - Database Solutions",
     description:
-      "Our team of expert Microsoft Access database consultants and developers bring decades of combined experience in custom database solutions, integration, and support services across Australia.",
+      "Read trusted reviews from businesses we've helped with Microsoft Access database solutions. Our clients share their experiences with custom database development, integration, and support services.",
     images: [
       "https://www.accessexperts.com.au/wp-content/uploads/2023/09/microsoft-office-experts-group-logo.png",
     ],
@@ -84,7 +68,7 @@ export const metadata = {
   // Additional tags
   viewport: "width=device-width, initial-scale=1",
   themeColor: "#ffffff",
-  canonical: "https://www.accessexperts.com.au/meet-the-team/",
+  canonical: "https://www.accessexperts.com.au/client-testimonials/",
   robots: {
     index: true,
     follow: true,

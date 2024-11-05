@@ -1,3 +1,10 @@
+import React from "react";
+
+import Contact from "../../../../components/Contact";
+import ServiceHero from "../../../../components/ServiceHero";
+import CTAMain from "./(components)/CTAMain";
+import ContactDetails from "../../../../components/ContactDetails";
+
 const schema = {
   "@context": "https://schema.org",
   "@graph": [
@@ -142,6 +149,11 @@ const schema = {
         "https://www.facebook.com/MSOfficeExperts",
         "https://x.com/OfficeExpertsG1",
       ],
+      aggregateRating: {
+        "@type": "AggregateRating",
+        ratingValue: "5",
+        reviewCount: "112",
+      },
     },
   ],
 };
@@ -153,6 +165,10 @@ const Page = () => {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
+      <ServiceHero title="Contact Us" />
+      <CTAMain />
+      <Contact />
+      <ContactDetails />
     </>
   );
 };

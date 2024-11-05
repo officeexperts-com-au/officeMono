@@ -31,9 +31,6 @@ export const metadata = {
   keywords: [
     // Core Services
     "Microsoft Access database quote",
-    "Access database consulting services",
-    "Custom Access database development",
-    "Access database integration solutions",
 
     // Specific Solutions
     "Access SQL Server integration quote",
@@ -41,35 +38,15 @@ export const metadata = {
     "Access Azure cloud integration cost",
     "VBA macro development pricing",
 
-    // Location-specific
-    "Access database consultants Sydney",
-    "Microsoft Access experts Melbourne",
-    "Database developers Brisbane",
-    "Access consulting Perth",
-
     // Service-specific long tail
     "Access database upgrade consultation",
     "Legacy Access database migration quote",
     "Multi-user Access database setup",
     "Access SharePoint integration pricing",
 
-    // Technical Solutions
-    "Access database performance optimization",
-    "Custom Access form development",
-    "Access report automation solutions",
-    "Database corruption repair services",
-
-    // Integration-specific
-    "Access financial system integration",
-    "Third-party API database connection",
-    "Access cloud database conversion",
-    "Access Office 365 integration",
-
     // Support Services
     "Access database maintenance quote",
     "Database backup solution pricing",
-    "Access technical support services",
-    "Database documentation services",
   ],
 
   // Twitter Card
