@@ -1,10 +1,22 @@
 import React from "react";
 import PropTypes from "prop-types";
 
+import { Roboto } from "next/font/google";
+
+import HeadTop from "../../../components/HeadTop";
 import Header from "../../../components/Header";
 import CookieConsent from "../../../components/CookieConsent";
+import Footer from "../../../components/Footer";
+import Copyright from "../../../components/Copyright";
+import ScrollBtn from "../../../components/ScrollBtn";
 
 import "./global.css";
+
+const roboto = Roboto({
+  weight: ["400", "500", "700", "900"],
+  subsets: ["latin"],
+  display: "swap",
+});
 
 export const metadata = {
   title: "Excel Help Australia - Expert Excel Programmer & Consultant",
@@ -81,11 +93,15 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html>
-      <body>
+    <html lang="en-AU">
+      <body className={roboto.className}>
+        <HeadTop />
         <Header />
         {children}
         <CookieConsent />
+        <Footer />
+        <Copyright />
+        <ScrollBtn />
       </body>
     </html>
   );

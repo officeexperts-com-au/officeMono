@@ -74,7 +74,7 @@ export async function POST(req) {
 
     // Send confirmation email to the customer
     await sgMail.send({
-      from: "consult@officeexperts.com.au",
+      from: "consult@excelexperts.com.au",
       to: email,
       subject: "Thank you for your message!",
       text: customerTextMessage,

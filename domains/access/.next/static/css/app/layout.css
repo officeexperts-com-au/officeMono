@@ -70,7 +70,7 @@
 .cookieConsent_alert__VkJGf {
   position: relative;
   background-color: white;
-  border-radius: 0.5rem;
+  border-radius: 0.1rem;
   padding: 1.5rem;
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
@@ -98,37 +98,38 @@
 
 .cookieConsent_acceptButton__XiXcD {
   padding: 0.5rem 1rem;
-  background-color: #2563eb;
-  color: white;
+  background-color: #ff403f;
+  color: #f8f8f8;
   border: none;
-  border-radius: 0.375rem;
+  border-radius: 0.1rem;
   font-weight: 500;
   cursor: pointer;
   transition: background-color 0.2s;
 }
 .cookieConsent_acceptButton__XiXcD:hover {
-  background-color: #1d4ed8;
+  background-color: #05a605;
 }
 .cookieConsent_acceptButton__XiXcD:focus {
-  outline: 2px solid #2563eb;
+  outline: 2px solid #05a605;
   outline-offset: 2px;
 }
 
 .cookieConsent_declineButton__PcOLS {
   padding: 0.5rem 1rem;
-  background-color: white;
+  background-color: #f8f8f8;
   color: #4b5563;
-  border: 1px solid #d1d5db;
-  border-radius: 0.375rem;
+  border: 1px solid #f8f8f8;
+  border-radius: 0.1rem;
   font-weight: 500;
   cursor: pointer;
   transition: background-color 0.2s;
 }
 .cookieConsent_declineButton__PcOLS:hover {
-  background-color: #f3f4f6;
+  background-color: #ff0909;
+  color: #f8f8f8;
 }
 .cookieConsent_declineButton__PcOLS:focus {
-  outline: 2px solid #2563eb;
+  outline: 2px solid #ff0909;
   outline-offset: 2px;
 }
 

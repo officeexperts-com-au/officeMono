@@ -36,6 +36,52 @@
   justify-content: space-between;
 }
 
+.cardWrapper {
+  position: relative;
+  margin-bottom: 2rem;
+
+  &:hover {
+    .description {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+  }
+}
+
+.description {
+  position: absolute;
+  bottom: calc(100% + 15px); // Keep original height above card
+  left: 0; // Align with left edge of card
+  right: 0; // Align with right edge of card
+  margin: 0 auto; // Center the fixed-width tooltip
+  width: 250px;
+  background: $body;
+  color: $offWhite;
+  padding: 1.5rem;
+  border-radius: 0.1rem;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 20;
+  pointer-events: none;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+
+  // Arrow at the bottom of tooltip
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid $body;
+  }
+}
+
 .card {
   position: relative;
   display: flex;
@@ -46,7 +92,6 @@
   overflow: hidden;
   cursor: pointer;
 
-  // Background image styling
   background-size: cover !important;
   filter: grayscale(100%);
   transition: all 0.3s ease-in-out;
@@ -85,7 +130,7 @@
   width: 330px;
   height: 100px;
   margin-bottom: 2rem;
-  transform: translateY(300px); // Initial position below
+  transform: translateY(300px);
   transition: transform 0.6s ease-in-out;
 
   span {
@@ -101,5 +146,50 @@
 
   svg {
     color: $offWhite;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    justify-content: center;
+  }
+
+  .cardWrapper {
+    margin: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    margin-left: 5vw;
+
+    h2 {
+      font-size: 2.5rem;
+    }
+  }
+
+  .cardWrapper {
+    width: 100%;
+    max-width: 350px;
+    margin: 0.5rem;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .popIn {
+    width: 90%;
+  }
+
+  .description {
+    width: 90%;
+    font-size: 0.8rem;
+    left: 5%;
+    transform: translateY(10px);
+
+    &::after {
+      left: 50%;
+    }
   }
 }

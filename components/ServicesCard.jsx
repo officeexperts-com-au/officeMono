@@ -13,8 +13,8 @@ const ServicesCard = ({ src, alt, h3, li, link }) => {
           src={src}
           alt={alt}
           className={styles.cardImg}
-          height={60}
-          width={60}
+          height={100}
+          width={100}
         />
         <h3>{h3}</h3>
       </div>

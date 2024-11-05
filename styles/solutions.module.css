@@ -32,6 +32,47 @@
   justify-content: space-between;
 }
 
+.cardWrapper {
+  position: relative;
+  margin-bottom: 2rem;
+}
+.cardWrapper:hover .description {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.description {
+  position: absolute;
+  bottom: calc(100% + 15px);
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 250px;
+  background: #333;
+  color: #f8f8f8;
+  padding: 1.5rem;
+  border-radius: 0.1rem;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 20;
+  pointer-events: none;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+.description::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid #333;
+}
+
 .card {
   position: relative;
   display: flex;
@@ -89,4 +130,41 @@
 }
 .popIn svg {
   color: #f8f8f8;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    justify-content: center;
+  }
+  .cardWrapper {
+    margin: 1rem;
+  }
+}
+@media (max-width: 480px) {
+  .title {
+    margin-left: 5vw;
+  }
+  .title h2 {
+    font-size: 2.5rem;
+  }
+  .cardWrapper {
+    width: 100%;
+    max-width: 350px;
+    margin: 0.5rem;
+  }
+  .card {
+    width: 100%;
+  }
+  .popIn {
+    width: 90%;
+  }
+  .description {
+    width: 90%;
+    font-size: 0.8rem;
+    left: 5%;
+    transform: translateY(10px);
+  }
+  .description::after {
+    left: 50%;
+  }
 }/*# sourceMappingURL=solutions.module.css.map */

@@ -1,5 +1,17 @@
 import React from "react";
 
+import Hero from "./(components)/Hero";
+import Services from "./(components)/Services";
+import CTAMain from "./(components)/CTAMain";
+import IsRight from "./(components)/IsRight";
+import Solutions from "./(components)/Solutions";
+import CTAFull from "./(components)/CTAFull";
+import Testimonials from "../../../components/Testimonials";
+import Brands from "../../../components/Brands";
+import Promo from "../../../components/Promo";
+import Contact from "../../../components/Contact";
+import SolutionsCarousel from "./(components)/SolutionsCarousel";
+
 const schema = {
   "@context": "https://schema.org",
   "@graph": [
@@ -150,6 +162,20 @@ const Page = () => {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
+      <Hero />
+      <Services />
+      <CTAMain />
+      <IsRight />
+      {/* <Solutions /> */}
+      <SolutionsCarousel />
+      <Testimonials />
+      <Brands />
+      <CTAFull />
+      <Promo
+        h2="We Deliver the Best Quality"
+        p="Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, perferendis nisi enim perspiciatis voluptatem voluptatum!"
+      />
+      <Contact />
     </>
   );
 };
