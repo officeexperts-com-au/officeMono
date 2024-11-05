@@ -59,7 +59,7 @@
   p {
     color: $darkGrayText;
     transition: all 0.3s ease;
-    cursor: pointer;
+    line-height: 2rem;
 
     &::after {
       content: "→";
@@ -78,6 +78,7 @@
 a:hover {
   .contentLink {
     background-color: white;
+    cursor: pointer;
 
     p {
       color: $theme;

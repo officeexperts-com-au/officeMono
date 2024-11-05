@@ -1,3 +1,11 @@
+import React from "react";
+
+import ServiceHero from "../../../../components/ServiceHero";
+import ExpertsAwait from "../../../../components/ExpertsAwait";
+import Promo from "../../../../components/Promo";
+import Contact from "../../../../components/Contact";
+import PageSegmentMain2 from "./(contents)/PageSegmentMain2";
+
 const schema = {
   "@context": "https://schema.org",
   "@graph": [
@@ -142,6 +150,11 @@ const schema = {
         "https://www.facebook.com/MSOfficeExperts",
         "https://x.com/OfficeExpertsG1",
       ],
+      aggregateRating: {
+        "@type": "AggregateRating",
+        ratingValue: "5",
+        reviewCount: "112",
+      },
     },
   ],
 };
@@ -153,6 +166,15 @@ const Page = () => {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
+      <ServiceHero title="Data Manipulation" />
+      <PageSegmentMain2 />
+
+      <ExpertsAwait />
+      <Promo
+        h2="Data Automation Made Simple"
+        p="Transform tedious data tasks into automated, efficient workflows. From formatting to bulk conversions, we handle it all with precision and speed."
+      />
+      <Contact />
     </>
   );
 };

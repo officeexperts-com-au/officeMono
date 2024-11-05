@@ -57,7 +57,7 @@
 .contentLink p {
   color: #777a7e;
   transition: all 0.3s ease;
-  cursor: pointer;
+  line-height: 2rem;
 }
 .contentLink p::after {
   content: "→";
@@ -73,6 +73,7 @@
 
 a:hover .contentLink {
   background-color: white;
+  cursor: pointer;
 }
 a:hover .contentLink p {
   color: #ff403f;
