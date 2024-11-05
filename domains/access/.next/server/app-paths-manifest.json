@@ -1,5 +1,4 @@
 {
   "/page": "app/page.js",
-  "/access-azure-cloud-based-solutions/page": "app/access-azure-cloud-based-solutions/page.js",
-  "/upgrades-and-migration/page": "app/upgrades-and-migration/page.js"
+  "/access-online/page": "app/access-online/page.js"
 }

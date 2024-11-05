@@ -4,13 +4,12 @@ import Hero from "./(components)/Hero";
 import Services from "./(components)/Services";
 import CTAMain from "./(components)/CTAMain";
 import IsRight from "./(components)/IsRight";
-import Solutions from "./(components)/Solutions";
+import SolutionsCarousel from "./(components)/SolutionsCarousel";
 import CTAFull from "./(components)/CTAFull";
 import Testimonials from "../../../components/Testimonials";
 import Brands from "../../../components/Brands";
 import Promo from "../../../components/Promo";
 import Contact from "../../../components/Contact";
-import SolutionsCarousel from "./(components)/SolutionsCarousel";
 
 const schema = {
   "@context": "https://schema.org",
@@ -166,7 +165,6 @@ const Page = () => {
       <Services />
       <CTAMain />
       <IsRight />
-      {/* <Solutions /> */}
       <SolutionsCarousel />
       <Testimonials />
       <Brands />
