@@ -1,6 +1,7 @@
 @import "./globals.scss";
 
 .expertsAwait {
+  scroll-margin-top: 125px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -160,4 +161,22 @@
   100% {
     transform: translateY(0);
   }
+}
+
+// Black Segment ****************************************************
+.points {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  gap: 2rem;
+  max-width: 60%;
+}
+
+.point {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  color: $darkGrayText;
+  font-size: 1.125rem;
+  line-height: 2rem;
 }

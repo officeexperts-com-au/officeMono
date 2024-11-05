@@ -2,7 +2,7 @@ import React from "react";
 
 import Hero from "../../../components/Hero";
 import Services from "../../../components/Services";
-import CTAMain from "../../../components/CTAMain";
+import CTAMain from "./(components)/CTAMain";
 import IsRight from "../../../components/IsRight";
 import Solutions from "../../../components/Solutions";
 import CTAFull from "../../../components/CTAFull";

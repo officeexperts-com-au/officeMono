@@ -16,6 +16,23 @@
       "static/chunks/main-app.js",
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
+    ],
+    "/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/page.css",
+      "static/chunks/app/page.js"
+    ],
+    "/access-azure-cloud-based-solutions/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/access-azure-cloud-based-solutions/page.css",
+      "static/chunks/app/access-azure-cloud-based-solutions/page.js"
+    ],
+    "/access-azure-cloud-based-solutions/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/access-azure-cloud-based-solutions/layout.js"
     ]
   }
 }

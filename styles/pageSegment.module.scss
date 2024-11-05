@@ -1,6 +1,7 @@
 @import "./globals.scss";
 
 .pageSegment {
+  scroll-margin-top: 150px;
   display: flex;
   gap: 4rem;
   margin: 8rem;
@@ -44,6 +45,17 @@
     letter-spacing: 1px;
   }
 
+  p:nth-of-type(2) {
+    color: #777a7e;
+    line-height: 2rem;
+    margin-top: 1rem;
+  }
+
+  p:nth-of-type(3) {
+    color: #777a7e;
+    line-height: 2rem;
+    margin-top: 1rem;
+  }
   p:last-child {
     color: #777a7e;
     line-height: 2rem;

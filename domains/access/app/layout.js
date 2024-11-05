@@ -7,6 +7,8 @@ import HeadTop from "../../../components/HeadTop";
 import Header from "../../../components/Header";
 import CookieConsent from "../../../components/CookieConsent";
 import Footer from "../../../components/Footer";
+import Copyright from "../../../components/Copyright";
+import ScrollBtn from "../../../components/ScrollBtn";
 
 import "./global.css";
 
@@ -129,6 +131,8 @@ export default function RootLayout({ children }) {
         {children}
         <CookieConsent />
         <Footer />
+        <Copyright />
+        <ScrollBtn />
       </body>
     </html>
   );

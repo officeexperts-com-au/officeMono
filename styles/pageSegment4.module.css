@@ -23,6 +23,13 @@
   color: #777a7e;
   line-height: 2rem;
 }
+.content a {
+  color: #ff403f;
+  font-weight: 500;
+}
+.content a:hover {
+  text-decoration: underline;
+}
 
 .underline {
   border-bottom: 6px solid #ff403f;

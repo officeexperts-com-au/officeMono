@@ -1,6 +1,7 @@
 import React from "react";
-import AnimateOnScroll from "./AnimateOnScroll";
+import Image from "next/image";
 
+import AnimateOnScroll from "./AnimateOnScroll";
 import FooterServicesSection from "./FooterServicesSection";
 import FooterLocationsSection from "./FooterLocationsSection";
 import FooterLogoSection from "./FooterLogoSection";
@@ -8,9 +9,19 @@ import FooterHelpSection from "./FooterHelpSection";
 
 import styles from "../styles/footer.module.css";
 
+import footerImg from "../public/footerImg800x600.webp";
+import semi from "../public/shapes/semi600x600.webp";
+
 const Footer = () => {
   return (
     <footer className={styles.footer}>
+      <Image
+        className={styles.bgImg}
+        src={footerImg}
+        alt="footer image"
+        width={800}
+        height={600}
+      />
       <AnimateOnScroll animation="fade-up" delay={0} duration={1}>
         <FooterLogoSection />
       </AnimateOnScroll>
@@ -26,6 +37,13 @@ const Footer = () => {
       <AnimateOnScroll animation="fade-up" delay={0.3} duration={1}>
         <FooterHelpSection />
       </AnimateOnScroll>
+      <Image
+        className={styles.semi}
+        src={semi}
+        alt="footer image"
+        width={600}
+        height={600}
+      />
     </footer>
   );
 };

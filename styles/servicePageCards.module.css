@@ -73,13 +73,17 @@
   position: relative;
   width: 100%;
   aspect-ratio: 7/4;
+  overflow: hidden;
 }
 
 .mainImage {
   -o-object-fit: cover;
      object-fit: cover;
+  width: 100%;
+  height: 100%;
   filter: grayscale(100%);
-  transition: filter 0.3s ease-in-out;
+  transform: scale(1);
+  transition: filter 0.3s ease-in-out, transform 0.8s ease-in-out;
 }
 
 .card a:hover .content::before {
@@ -93,6 +97,7 @@
 }
 .card a:hover .mainImage {
   filter: grayscale(0%);
+  transform: scale(1.2);
 }
 
 @keyframes scale {

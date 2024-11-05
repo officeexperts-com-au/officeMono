@@ -5,6 +5,10 @@ import ServicePageCards from "./(components)/ServicePageCards";
 import Contact from "../../../../components/Contact";
 import PageSegment4 from "./(components)/PageSegment4";
 import PageSegmentMain from "./(components)/PageSegmentMain";
+import BlackSegment from "./(components)/BlackSegment";
+import Promo from "./(components)/Promo";
+import Segment4Repeat from "./(components)/Segment4Repeat";
+import ExpertsAwait from "../../../../components/ExpertsAwait";
 
 const schema = {
   "@context": "https://schema.org",
@@ -171,6 +175,10 @@ const Page = () => {
       <ServicePageCards />
       <PageSegment4 />
       <PageSegmentMain />
+      <BlackSegment />
+      <Promo />
+      <Segment4Repeat />
+      <ExpertsAwait />
       <Contact />
     </>
   );

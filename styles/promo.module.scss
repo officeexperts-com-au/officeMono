@@ -1,6 +1,7 @@
 @import "./globals.scss";
 
 .promo {
+  scroll-margin-top: 200px;
   margin: 8rem;
   display: flex;
   align-items: center;
@@ -37,12 +38,26 @@
     line-height: 2rem;
     max-width: 80%;
   }
+
+  a {
+    color: $theme;
+    font-weight: 500;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 
 .bar {
   background-color: $theme;
   width: 10px;
   height: 60px;
+}
+
+.barLarge {
+  background-color: $theme;
+  width: 10px;
+  height: 120px;
 }
 .img {
   display: flex;
