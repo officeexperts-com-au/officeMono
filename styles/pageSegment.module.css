@@ -17,11 +17,11 @@
   -o-object-fit: cover;
      object-fit: cover;
   padding-bottom: 0.5rem;
-  filter: grayscale(100%);
+  filter: grayscale(0%);
   transition: all 0.3s ease;
 }
 .imgWrapper img:hover {
-  filter: grayscale(0%);
+  filter: grayscale(100%);
 }
 
 .contentWrapper {
@@ -49,6 +49,11 @@
   margin-top: 1rem;
 }
 .content p:nth-of-type(3) {
+  color: #777a7e;
+  line-height: 2rem;
+  margin-top: 1rem;
+}
+.content p:nth-of-type(4) {
   color: #777a7e;
   line-height: 2rem;
   margin-top: 1rem;

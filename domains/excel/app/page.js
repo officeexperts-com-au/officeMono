@@ -6,7 +6,7 @@ import CTAMain from "./(components)/CTAMain";
 import IsRight from "./(components)/IsRight";
 import SolutionsCarousel from "./(components)/SolutionsCarousel";
 import CTAFull from "./(components)/CTAFull";
-import Testimonials from "../../../components/Testimonials";
+import Testimonials from "./(components)/Testimonials";
 import Brands from "../../../components/Brands";
 import Promo from "../../../components/Promo";
 import Contact from "../../../components/Contact";

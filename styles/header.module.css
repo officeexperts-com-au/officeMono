@@ -28,19 +28,22 @@
   right: 0;
   display: flex;
   align-items: center;
-  padding: 1.5em 1rem;
+  padding: 0rem 1rem;
   background-color: rgba(0, 0, 0, 0.109);
   transition: all 0.3s ease;
   z-index: 10;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1529411765);
   margin-top: 40px;
   transition: all 0.5s ease;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 .header.scrolled {
   background-color: #1e1e1e;
   border-bottom: none;
   margin-top: 0;
   transition: all 0.5s ease;
+  height: 80px;
 }
 
 .nav {

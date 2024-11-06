@@ -8,12 +8,33 @@
 
   img {
     object-fit: cover;
-    filter: grayscale(100%);
+    filter: grayscale(0%);
     transition: all 0.3s ease;
     &:hover {
-      filter: grayscale(0%);
+      filter: grayscale(100%);
       transition: all 0.3s ease;
     }
+  }
+}
+
+.pageSegmentReverse {
+  margin: 8rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 10vw;
+
+  img {
+    object-fit: cover;
+    filter: grayscale(0%);
+    transition: all 0.3s ease;
+    &:hover {
+      filter: grayscale(100%);
+      transition: all 0.3s ease;
+    }
+  }
+
+  .pageSegmentCenter {
+    padding: 0;
   }
 }
 
@@ -69,5 +90,6 @@
 
   a:hover {
     color: $theme;
+    font-weight: 700;
   }
 }

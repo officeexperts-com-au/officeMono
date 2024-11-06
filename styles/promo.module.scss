@@ -64,10 +64,10 @@
   align-items: center;
   gap: 0.5rem;
   img {
-    filter: grayscale(100%);
+    filter: grayscale(0%);
     transition: all 0.5s ease-in-out;
     &:hover {
-      filter: grayscale(0%);
+      filter: grayscale(100%);
       transition: all 0.5s ease-in-out;
     }
   }

@@ -4,7 +4,7 @@ import ServiceHero from "../../../../components/ServiceHero";
 import ExpertsAwait from "../../../../components/ExpertsAwait";
 import Promo from "../../../../components/Promo";
 import Contact from "../../../../components/Contact";
-import PageSegmentMain2 from "./(contents)/PageSegmentMain2";
+import PageSegmentMain2 from "./(components)/PageSegmentMain2";
 
 const schema = {
   "@context": "https://schema.org",

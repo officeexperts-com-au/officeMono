@@ -7,7 +7,7 @@
   padding: 1rem;
 
   h3 {
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
     color: $offWhite;
     font-size: 1.125rem;
   }
@@ -15,6 +15,7 @@
   .remoteAccess {
     color: $grayText;
     font-weight: 500;
+    margin: 0 0 0.2rem 0;
   }
 }
 
@@ -33,7 +34,7 @@
   &:hover .dropdownContent,
   &:focus-within .dropdownContent {
     max-height: 200px; // Adjust based on content
-    padding: 1rem 0 0 1rem;
+    padding: 0.5rem 0 0 0.5rem;
   }
 }
 
@@ -42,7 +43,7 @@
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
-  margin-top: 0.8rem;
+  margin: 0.2rem 0;
   color: $grayText;
   font-size: 1rem;
   font-weight: 500;
@@ -79,46 +80,10 @@
   color: $grayText;
   transition: all 0.5s ease;
   padding: 0.25rem 0;
-  margin-top: 0.7rem;
+  // margin-top: 0.5rem;
   font-weight: 500;
 
   &:hover {
     color: $theme;
-  }
-}
-
-// Mobile styles
-@media (max-width: 768px) {
-  .dropdownSection {
-    // Use click instead of hover on mobile
-    .dropdownContent {
-      max-height: 0;
-    }
-
-    // Only expand on click for mobile
-    &:active .dropdownContent,
-    &:focus-within .dropdownContent {
-      max-height: 200px;
-    }
-  }
-
-  .dropdownHeader {
-    padding: 0.75rem 0;
-  }
-
-  .serviceGroup {
-    flex-wrap: wrap;
-
-    a {
-      padding: 0.5rem 0;
-
-      &:not(:last-child)::after {
-        margin: 0 0.25rem;
-      }
-    }
-  }
-
-  .staticLink {
-    padding: 0.5rem 0;
   }
 }

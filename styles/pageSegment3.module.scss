@@ -13,10 +13,36 @@
   }
 
   img {
-    filter: grayscale(100%);
+    filter: grayscale(0%);
     transition: all 0.3s ease;
     &:hover {
-      filter: grayscale(0%);
+      filter: grayscale(100%);
+      transition: all 0.3s ease;
+    }
+  }
+}
+
+.pageSegmentCentered {
+  scroll-margin-top: 100px;
+  padding: 0 10vw 4rem 10vw;
+  display: flex;
+  align-items: center;
+  gap: 6rem;
+
+  p {
+    color: $darkGrayText;
+    line-height: 2rem;
+    max-width: 80%;
+    &:last-of-type {
+      margin-top: 1rem;
+    }
+  }
+
+  img {
+    filter: grayscale(0%);
+    transition: all 0.3s ease;
+    &:hover {
+      filter: grayscale(100%);
       transition: all 0.3s ease;
     }
   }

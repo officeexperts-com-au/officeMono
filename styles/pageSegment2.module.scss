@@ -53,14 +53,14 @@
 
 .contentLink {
   position: relative;
-  padding: 1.5rem 1rem;
+  padding: 1rem;
   transition: all 0.3s ease;
 
+  a,
   p {
     color: $darkGrayText;
     transition: all 0.3s ease;
     line-height: 2rem;
-
     &::after {
       content: "→";
       position: absolute;

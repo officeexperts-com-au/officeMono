@@ -169,6 +169,44 @@
   white-space: nowrap;
   border: 0;
 }/*# sourceMappingURL=cookieConsent.module.css.map */
+/*!***********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../../node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[2]!../../node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[3]!../../styles/scrollBtn.module.css ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************/
+.scrollBtn_scrollBtn__B9KBn {
+  z-index: 500;
+  position: fixed;
+  bottom: 1.5rem;
+  right: 2rem;
+  background-color: #ff403f;
+  border: none;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f8f8f8;
+  opacity: 0;
+  transform: translateY(-100vh);
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease-in-out;
+  pointer-events: none;
+  will-change: transform, opacity;
+}
+.scrollBtn_scrollBtn__B9KBn:hover {
+  background-color: #ff0d0c;
+}
+.scrollBtn_scrollBtn__B9KBn.scrollBtn_visible__WhmPr {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+.scrollBtn_scrollBtn__B9KBn svg {
+  transition: transform 0.2s ease-in-out;
+}
+.scrollBtn_scrollBtn__B9KBn:hover svg {
+  transform: scale(1.1);
+}/*# sourceMappingURL=scrollBtn.module.css.map */
 /*!********************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ../../node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[2]!../../node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[3]!../../styles/header.module.css ***!
   \********************************************************************************************************************************************************************************************************************************************************************************/
@@ -202,19 +240,22 @@
   right: 0;
   display: flex;
   align-items: center;
-  padding: 1.5em 1rem;
+  padding: 0rem 1rem;
   background-color: rgba(0, 0, 0, 0.109);
   transition: all 0.3s ease;
   z-index: 10;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1529411765);
   margin-top: 40px;
   transition: all 0.5s ease;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 .header_header__6P5Qd.header_scrolled__Bsqmt {
   background-color: #1e1e1e;
   border-bottom: none;
   margin-top: 0;
   transition: all 0.5s ease;
+  height: 80px;
 }
 
 .header_nav__GU83m {
@@ -485,44 +526,6 @@
 .mobileNav_navLink__Mxgvc:hover {
   background-color: #f5f5f5;
 }
-/*!***********************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ../../node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[2]!../../node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[3]!../../styles/scrollBtn.module.css ***!
-  \***********************************************************************************************************************************************************************************************************************************************************************************/
-.scrollBtn_scrollBtn__B9KBn {
-  z-index: 500;
-  position: fixed;
-  bottom: 1.5rem;
-  right: 2rem;
-  background-color: #ff403f;
-  border: none;
-  border-radius: 50%;
-  width: 48px;
-  height: 48px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #f8f8f8;
-  opacity: 0;
-  transform: translateY(-100vh);
-  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease-in-out;
-  pointer-events: none;
-  will-change: transform, opacity;
-}
-.scrollBtn_scrollBtn__B9KBn:hover {
-  background-color: #ff0d0c;
-}
-.scrollBtn_scrollBtn__B9KBn.scrollBtn_visible__WhmPr {
-  opacity: 1;
-  transform: translateY(0);
-  pointer-events: auto;
-}
-.scrollBtn_scrollBtn__B9KBn svg {
-  transition: transform 0.2s ease-in-out;
-}
-.scrollBtn_scrollBtn__B9KBn:hover svg {
-  transform: scale(1.1);
-}/*# sourceMappingURL=scrollBtn.module.css.map */
 /*!********************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ../../node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!../../node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./app/global.css ***!
   \********************************************************************************************************************************************************************************************************************************************************************/
@@ -926,7 +929,7 @@ button {
 .footerServices_mainLinks__gMayH {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 .footerServices_mainLinks__gMayH h3 {
   color: #f8f8f8;
@@ -952,7 +955,7 @@ button {
 .footerServices_dropdownSection__mECbn .footerServices_dropdownContent__CTiHw {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 1s ease-out;
+  transition: all 1s ease-out;
 }
 .footerServices_dropdownSection__mECbn:hover .footerServices_dropdownContent__CTiHw, .footerServices_dropdownSection__mECbn:focus-within .footerServices_dropdownContent__CTiHw {
   max-height: 300px;
@@ -964,7 +967,6 @@ button {
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
-  padding: 0.5rem 0;
 }
 
 .footerServices_dropdownContent__CTiHw {
@@ -972,21 +974,6 @@ button {
   flex-direction: column;
   gap: 0.5rem;
   padding-left: 1rem;
-}
-
-@media (max-width: 768px) {
-  .footerServices_dropdownSection__mECbn .footerServices_dropdownContent__CTiHw {
-    max-height: 0;
-  }
-  .footerServices_dropdownSection__mECbn:active .footerServices_dropdownContent__CTiHw, .footerServices_dropdownSection__mECbn:focus-within .footerServices_dropdownContent__CTiHw {
-    max-height: 300px;
-  }
-  .footerServices_dropdownHeader__Jj604 {
-    padding: 1rem 0;
-  }
-  .footerServices_dropdownContent__CTiHw a {
-    padding: 0.5rem 0;
-  }
 }/*# sourceMappingURL=footerServices.module.css.map */
 /*!*****************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ../../node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[2]!../../node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[3]!../../styles/footerLocations.module.css ***!
@@ -998,13 +985,14 @@ button {
   padding: 1rem;
 }
 .footerLocations_locationsSection__CbJPh h3 {
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
   color: #f8f8f8;
   font-size: 1.125rem;
 }
 .footerLocations_locationsSection__CbJPh .footerLocations_remoteAccess__BgkCx {
   color: #a0a2a6;
   font-weight: 500;
+  margin: 0 0 0.2rem 0;
 }
 
 .footerLocations_dropdownSection__kg2q_ {
@@ -1018,7 +1006,7 @@ button {
 }
 .footerLocations_dropdownSection__kg2q_:hover .footerLocations_dropdownContent__yIIvC, .footerLocations_dropdownSection__kg2q_:focus-within .footerLocations_dropdownContent__yIIvC {
   max-height: 200px;
-  padding: 1rem 0 0 1rem;
+  padding: 0.5rem 0 0 0.5rem;
 }
 
 .footerLocations_dropdownHeader__tzkzP {
@@ -1026,7 +1014,7 @@ button {
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
-  margin-top: 0.8rem;
+  margin: 0.2rem 0;
   color: #a0a2a6;
   font-size: 1rem;
   font-weight: 500;
@@ -1060,35 +1048,10 @@ button {
   color: #a0a2a6;
   transition: all 0.5s ease;
   padding: 0.25rem 0;
-  margin-top: 0.7rem;
   font-weight: 500;
 }
 .footerLocations_staticLink__oCRJ0:hover {
   color: #ff403f;
-}
-
-@media (max-width: 768px) {
-  .footerLocations_dropdownSection__kg2q_ .footerLocations_dropdownContent__yIIvC {
-    max-height: 0;
-  }
-  .footerLocations_dropdownSection__kg2q_:active .footerLocations_dropdownContent__yIIvC, .footerLocations_dropdownSection__kg2q_:focus-within .footerLocations_dropdownContent__yIIvC {
-    max-height: 200px;
-  }
-  .footerLocations_dropdownHeader__tzkzP {
-    padding: 0.75rem 0;
-  }
-  .footerLocations_serviceGroup__FHNwS {
-    flex-wrap: wrap;
-  }
-  .footerLocations_serviceGroup__FHNwS a {
-    padding: 0.5rem 0;
-  }
-  .footerLocations_serviceGroup__FHNwS a:not(:last-child)::after {
-    margin: 0 0.25rem;
-  }
-  .footerLocations_staticLink__oCRJ0 {
-    padding: 0.5rem 0;
-  }
 }/*# sourceMappingURL=footerLocations.module.css.map */
 /*!************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ../../node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[2]!../../node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[3]!../../styles/footerLogo.module.css ***!
@@ -1128,7 +1091,7 @@ button {
 .footerHelp_helpSection__bipWA {
   display: flex;
   flex-direction: column;
-  gap: 0.75rem;
+  gap: 0.5rem;
   padding: 1rem;
 }
 .footerHelp_helpSection__bipWA h3 {
@@ -1136,7 +1099,7 @@ button {
   font-size: 1.125rem;
 }
 .footerHelp_helpSection__bipWA h3:first-of-type {
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
 }
 .footerHelp_helpSection__bipWA h3:nth-of-type(2) {
   margin-bottom: 0.8rem;
@@ -1150,7 +1113,7 @@ button {
   font-weight: 500;
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.25rem;
 }
 .footerHelp_helpSection__bipWA a:hover {
   color: #ff403f;

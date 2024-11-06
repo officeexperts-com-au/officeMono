@@ -16,7 +16,7 @@
 .mainLinks {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 .mainLinks h3 {
   color: #f8f8f8;
@@ -42,7 +42,7 @@
 .dropdownSection .dropdownContent {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 1s ease-out;
+  transition: all 1s ease-out;
 }
 .dropdownSection:hover .dropdownContent, .dropdownSection:focus-within .dropdownContent {
   max-height: 300px;
@@ -54,7 +54,6 @@
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
-  padding: 0.5rem 0;
 }
 
 .dropdownContent {
@@ -62,19 +61,4 @@
   flex-direction: column;
   gap: 0.5rem;
   padding-left: 1rem;
-}
-
-@media (max-width: 768px) {
-  .dropdownSection .dropdownContent {
-    max-height: 0;
-  }
-  .dropdownSection:active .dropdownContent, .dropdownSection:focus-within .dropdownContent {
-    max-height: 300px;
-  }
-  .dropdownHeader {
-    padding: 1rem 0;
-  }
-  .dropdownContent a {
-    padding: 0.5rem 0;
-  }
 }/*# sourceMappingURL=footerServices.module.css.map */

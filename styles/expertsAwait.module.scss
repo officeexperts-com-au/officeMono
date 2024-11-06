@@ -46,11 +46,40 @@
 }
 
 .text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
   p {
     color: $grayText;
+    text-align: center;
     line-height: 2.5rem;
     font-size: 1.125rem;
     margin-top: 0.5rem;
+  }
+}
+
+.link {
+  p,
+  a {
+    color: $offWhite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 240px;
+  }
+
+  p {
+    margin-top: 0rem;
+  }
+
+  svg {
+    height: 45px;
+    width: 45px;
+  }
+  &:hover p {
+    color: $theme;
   }
 }
 

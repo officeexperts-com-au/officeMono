@@ -1,6 +1,6 @@
 // TestimonialPage.jsx
 import React from "react";
-import { testimonials } from "../testimonials";
+import { testimonials } from "../domains/access/testimonials";
 import TestimonialCard from "./TestimonialCard";
 import AnimateOnScroll from "./AnimateOnScroll";
 

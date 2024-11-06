@@ -36,6 +36,9 @@
 }
 .card img {
   align-self: end;
+  max-height: 100px;
+  width: auto;
+  height: auto;
 }
 
 .cardWrapper h4 {

@@ -1,3 +1,12 @@
+import React from "react";
+
+import ServiceHero from "../../../../components/ServiceHero";
+import Contact from "../../../../components/Contact";
+import PageSegmentMain from "./(components)/PageSegmentMain";
+import PageSegment4 from "./(components)/PageSegment4";
+// import ExpertsAwait from "../../../../components/ExpertsAwait";
+// import FAQ from "../../../../components/FAQSection";
+
 const schema = {
   "@context": "https://schema.org",
   "@graph": [
@@ -147,6 +156,11 @@ const schema = {
         "https://www.facebook.com/MSOfficeExperts",
         "https://x.com/OfficeExpertsG1",
       ],
+      aggregateRating: {
+        "@type": "AggregateRating",
+        ratingValue: "5",
+        reviewCount: "112",
+      },
     },
   ],
 };
@@ -158,6 +172,12 @@ const Page = () => {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
+      <ServiceHero title={"Formulas and Custom Formulas"} />
+      <PageSegmentMain />
+      <PageSegment4 />
+
+      {/* <FAQ faqs={faqs} /> */}
+      <Contact />
     </>
   );
 };

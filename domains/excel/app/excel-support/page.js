@@ -1,3 +1,13 @@
+import React from "react";
+
+import ServiceHero from "../../../../components/ServiceHero";
+import ExpertsAwait from "../../../../components/ExpertsAwait";
+import Promo from "../../../../components/Promo";
+import Contact from "../../../../components/Contact";
+import PageSegmentMain from "./(components)/PageSegmentMain";
+import PageSegmentCenter from "./(components)/PageSegmentCenter";
+import PageSegment3 from "./(components)/PageSegment3";
+
 const schema = {
   "@context": "https://schema.org",
   "@graph": [
@@ -142,6 +152,11 @@ const schema = {
         "https://www.facebook.com/MSOfficeExperts",
         "https://x.com/OfficeExpertsG1",
       ],
+      aggregateRating: {
+        "@type": "AggregateRating",
+        ratingValue: "5",
+        reviewCount: "112",
+      },
     },
   ],
 };
@@ -153,6 +168,16 @@ const Page = () => {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
+      <ServiceHero title="Excel Support" />
+      <PageSegmentMain />
+      <PageSegmentCenter />
+      <PageSegment3 />
+      <ExpertsAwait />
+      <Promo
+        h2="Master Excel with Expert Training"
+        p="Gain the skills you need with task-specific, cost-effective training. Whether remote or onsite, our experienced trainers are here to help you succeed."
+      />
+      <Contact />
     </>
   );
 };

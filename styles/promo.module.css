@@ -61,10 +61,10 @@
   gap: 0.5rem;
 }
 .img img {
-  filter: grayscale(100%);
+  filter: grayscale(0%);
   transition: all 0.5s ease-in-out;
 }
 .img img:hover {
-  filter: grayscale(0%);
+  filter: grayscale(100%);
   transition: all 0.5s ease-in-out;
 }/*# sourceMappingURL=promo.module.css.map */

@@ -32,19 +32,21 @@
   right: 0;
   display: flex;
   align-items: center;
-  padding: 1.5em 1rem;
+  padding: 0rem 1rem;
   background-color: rgba(0, 0, 0, 0.109);
   transition: all 0.3s ease;
   z-index: 10;
   border-bottom: 1px solid #ffffff27;
   margin-top: 40px;
   transition: all 0.5s ease;
+  height: fit-content;
 
   &.scrolled {
     background-color: $black;
     border-bottom: none;
     margin-top: 0;
     transition: all 0.5s ease;
+    height: 80px;
   }
 }
 

@@ -3,27 +3,25 @@ import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-import styles from "../styles/header.module.css";
+import styles from "../../../../styles/header.module.css";
 import MobileNav from "./MobileNav";
 
-import logo from "../public/logo150x65.webp";
+import logo from "../../../../public/logo300x130.webp";
 
 const Header = () => {
   const [activeDropdown, setActiveDropdown] = useState(null);
-  const [currentDomain, setCurrentDomain] = useState("");
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
-    if (typeof window !== "undefined") {
-      setCurrentDomain(window.location.hostname);
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 10);
+    };
 
-      const handleScroll = () => {
-        setIsScrolled(window.scrollY > 10);
-      };
+    // Add the event listener
+    window.addEventListener("scroll", handleScroll);
 
-      window.addEventListener("scroll", handleScroll);
-      return () => window.removeEventListener("scroll", handleScroll);
-    }
+    // Cleanup the event listener on component unmount
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const handleMouseEnter = (dropdown) => {
@@ -36,8 +34,18 @@ const Header = () => {
 
   return (
     <header className={`${styles.header} ${isScrolled ? styles.scrolled : ""}`}>
-      <div className={styles.logo}>
-        <Image src={logo} alt="Office experts logo" width={150} height={65} />
+      <div
+        className={styles.logo}
+        style={
+          isScrolled
+            ? {
+                transform: "scale(0.5)",
+                transition: "transform 0.3s ease-in-out",
+              }
+            : {}
+        }
+      >
+        <Image src={logo} alt="Office experts logo" width={300} height={130} />
       </div>
 
       <div className={styles.mobNav}>

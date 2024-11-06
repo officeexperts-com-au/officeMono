@@ -15,41 +15,41 @@ const PageSegmentMain2 = () => {
 
       <div className={styles.contents}>
         <h3>Contents</h3>
-        <div className={styles.contentLink}>
-          <a href="#existing-access">
+        <a href="#existing-access">
+          <div className={styles.contentLink}>
             <p>Existing Access Databases</p>
-          </a>
-        </div>
-        <div className={styles.contentLink}>
-          <a href="#web-apps">
+          </div>
+        </a>
+        <a href="#web-apps">
+          <div className={styles.contentLink}>
             <p>Web Apps Linked to Databases</p>
-          </a>
-        </div>
-        <div className={styles.contentLink}>
-          <a href="#is-access-azure">
+          </div>
+        </a>
+        <a href="#is-access-azure">
+          <div className={styles.contentLink}>
             <p>Is Access/Azure for You?</p>
-          </a>
-        </div>
-        <div className={styles.contentLink}>
-          <a href="#alternatives">
+          </div>
+        </a>
+        <a href="#alternatives">
+          <div className={styles.contentLink}>
             <p>Alternatives to Access/Azure</p>
-          </a>
-        </div>
-        <div className={styles.contentLink}>
-          <a href="#requirements">
+          </div>
+        </a>
+        <a href="#requirements">
+          <div className={styles.contentLink}>
             <p>Access/Azure Requirements</p>
-          </a>
-        </div>
-        <div className={styles.contentLink}>
-          <a href="#low-cost">
+          </div>
+        </a>
+        <a href="#low-cost">
+          <div className={styles.contentLink}>
             <p>Low Cost Solution</p>
-          </a>
-        </div>
-        <div className={styles.contentLink}>
-          <a href="#experts">
+          </div>
+        </a>
+        <a href="#experts">
+          <div className={styles.contentLink}>
             <p>Microsoft Database Solution Experts</p>
-          </a>
-        </div>
+          </div>
+        </a>
       </div>
 
       <div className={styles.info}>

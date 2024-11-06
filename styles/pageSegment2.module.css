@@ -51,14 +51,16 @@
 
 .contentLink {
   position: relative;
-  padding: 1.5rem 1rem;
+  padding: 1rem;
   transition: all 0.3s ease;
 }
+.contentLink a,
 .contentLink p {
   color: #777a7e;
   transition: all 0.3s ease;
   line-height: 2rem;
 }
+.contentLink a::after,
 .contentLink p::after {
   content: "→";
   position: absolute;

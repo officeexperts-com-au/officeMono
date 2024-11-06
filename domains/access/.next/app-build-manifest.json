@@ -1,10 +1,15 @@
 {
   "pages": {
-    "/page": [
+    "/client-testimonials/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/page.css",
-      "static/chunks/app/page.js"
+      "static/css/app/client-testimonials/page.css",
+      "static/chunks/app/client-testimonials/page.js"
+    ],
+    "/client-testimonials/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/client-testimonials/layout.js"
     ],
     "/layout": [
       "static/chunks/webpack.js",
@@ -12,27 +17,22 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/access-online/page": [
+    "/contact-us/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/access-online/page.css",
-      "static/chunks/app/access-online/page.js"
+      "static/css/app/contact-us/page.css",
+      "static/chunks/app/contact-us/page.js"
     ],
-    "/access-online/layout": [
+    "/contact-us/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/access-online/layout.js"
+      "static/chunks/app/contact-us/layout.js"
     ],
-    "/access-azure-cloud-based-solutions/page": [
+    "/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/access-azure-cloud-based-solutions/page.css",
-      "static/chunks/app/access-azure-cloud-based-solutions/page.js"
-    ],
-    "/access-azure-cloud-based-solutions/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/access-azure-cloud-based-solutions/layout.js"
+      "static/css/app/page.css",
+      "static/chunks/app/page.js"
     ]
   }
 }
