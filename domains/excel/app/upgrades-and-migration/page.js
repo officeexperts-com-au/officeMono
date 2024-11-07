@@ -1,15 +1,13 @@
 import React from "react";
 
-// import Hero from "./(components)/Hero";
-// import Services from "./(components)/Services";
-// import CTAMain from "./(components)/CTAMain";
-// import IsRight from "./(components)/IsRight";
-// import SolutionsCarousel from "./(components)/SolutionsCarousel";
-// import CTAFull from "./(components)/CTAFull";
-// import Testimonials from "../../../components/Testimonials";
-// import Brands from "../../../components/Brands";
-// import Promo from "../../../components/Promo";
-// import Contact from "../../../components/Contact";
+import PageSegmentMain from "./(components)/PageSegmentMain";
+import ServiceHero from "../../../../components/ServiceHero";
+import Contact from "../../../../components/Contact";
+import ExpertsAwait from "../../../../components/ExpertsAwait";
+import ServicePageCards from "./(components)/ServicePageCards";
+import PageSegment4 from "./(components)/PageSegment4";
+import PageSegment3 from "./(components)/PageSegment3";
+import PageSegmentDropdowns from "./(components)/PageSegmentDropdowns";
 
 const schema = {
   "@context": "https://schema.org",
@@ -157,6 +155,11 @@ const schema = {
         "https://www.facebook.com/MSOfficeExperts",
         "https://x.com/OfficeExpertsG1",
       ],
+      aggregateRating: {
+        "@type": "AggregateRating",
+        ratingValue: "5",
+        reviewCount: "112",
+      },
     },
   ],
 };
@@ -168,19 +171,14 @@ const Page = () => {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
-      {/* <Hero />
-      <Services />
-      <CTAMain />
-      <IsRight />
-      <SolutionsCarousel />
-      <Testimonials />
-      <Brands />
-      <CTAFull />
-      <Promo
-        h2="Excel Upgrades & Migration"
-        p="Seamless transitions to newer Excel versions while preserving your valuable data and functionality."
-      />
-      <Contact /> */}
+      <ServiceHero title={"Upgrades and Migration"} />
+      <ServicePageCards />
+      <PageSegmentMain />
+      <PageSegment4 />
+      <PageSegment3 />
+      <ExpertsAwait />
+      <PageSegmentDropdowns />
+      <Contact />
     </>
   );
 };

@@ -1,3 +1,14 @@
+import React from "react";
+
+import ServiceHero from "../../../../components/ServiceHero";
+import ExpertsAwait from "../../../../components/ExpertsAwait";
+import Contact from "../../../../components/Contact";
+import PageSegmentMain from "./(components)/PageSegmentMain";
+import PageSegment4 from "./(components)/PageSegment4";
+import FAQ from "../../../../components/FAQSection";
+
+import { faqs } from "../../faqs/pivot-tables.js";
+
 const schema = {
   "@context": "https://schema.org",
   "@graph": [
@@ -147,6 +158,11 @@ const schema = {
         "https://www.facebook.com/MSOfficeExperts",
         "https://x.com/OfficeExpertsG1",
       ],
+      aggregateRating: {
+        "@type": "AggregateRating",
+        ratingValue: "5",
+        reviewCount: "112",
+      },
     },
   ],
 };
@@ -158,6 +174,14 @@ const Page = () => {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
+      <ServiceHero title="Pivot Tables, Charts and Reporting" />
+      <PageSegmentMain />
+      <PageSegment4 />
+      <ExpertsAwait />
+      <div style={{ marginTop: "6em" }}>
+        <FAQ faqs={faqs} />
+      </div>
+      <Contact />
     </>
   );
 };
