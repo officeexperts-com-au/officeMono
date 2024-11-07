@@ -19,7 +19,7 @@ export const faqs = [
   {
     question: "How do I know which reporting solution is right for my needs?",
     answer:
-      "We understand that selecting the right reporting solution can be challenging. Our consultants will work closely with you to understand your data and reporting needs, and recommend the best tools, whether it’s Power Query, PowerPivot, or other Excel features.",
+      "We understand that selecting the right reporting solution can be challenging. Our consultants will work closely with you to understand your data and reporting needs, and recommend the best tools, whether it's Power Query, PowerPivot, or other Excel features.",
   },
   {
     question:

@@ -33,7 +33,7 @@ const PageSegmentMain = () => {
           <p>Seamless Integration</p>
           <h2>Extending Microsoft Excel Functionality</h2>
           <p>
-            An Excel add-in contains code to extend Excel’s functionality,
+            An Excel add-in contains code to extend Excel's functionality,
             usually in the form of new functions, custom ribbon or toolbar
             buttons. Once an add-in is deployed to your Excel environment, the
             new functions and buttons are available to all of your Excel

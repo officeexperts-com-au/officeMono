@@ -2,6 +2,14 @@
   "extends": [
     "next",
     "next/core-web-vitals",
-    "next/babel"
-  ]
+    "next/babel",
+    "eslint:recommended"
+  ],
+  "rules": {
+    "no-irregular-whitespace": "error",
+    "no-control-regex": "error",
+    "no-unescaped-entities": "warn",
+    "quotes": ["error", "double"],
+    "jsx-quotes": ["error", "prefer-double"]
+  }
 }

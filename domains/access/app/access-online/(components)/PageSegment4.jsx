@@ -16,8 +16,8 @@ const PageSegment4 = () => {
             <p>
               We can host your database with Microsoft and use native Access to
               link to your online data. By installing native Access on your
-              Windows based laptops, PC’s, tablets and mobile devices you can
-              access your data in the cloud. This solution is very cost
+              Windows based laptops, PC&apos;s, tablets and mobile devices you
+              can access your data in the cloud. This solution is very cost
               effective with storage starting from as little as $420 per annum
               with no other ongoing costs. Given that databases can be rapidly
               set up in Access, this becomes a very cost effective development

@@ -256,7 +256,7 @@ const Page = () => {
         "
         p="Do you have another Office application, CRM, accounting package or other 3rd party product that you want linked to Access?
         
-        Do you want to extend a 3rd party product’s functionality using Access?"
+        Do you want to extend a 3rd party product's functionality using Access?"
       />
       <FAQSection faqs={faqs} />
       <Contact />

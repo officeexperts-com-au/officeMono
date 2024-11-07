@@ -16,7 +16,8 @@
     "dev:word": "turbo run dev --filter=@experts/word",
     "dev:excel": "turbo run dev --filter=@experts/excel",
     "dev:access": "turbo run dev --filter=@experts/access",
-    "dev:powerplatform": "turbo run dev --filter=@experts/powerplatform"
+    "dev:powerplatform": "turbo run dev --filter=@experts/powerplatform",
+    "scan": "node node-scripts/scan-codebase.js"
   },
   "dependencies": {
     "@sendgrid/mail": "^8.1.4",

@@ -185,7 +185,7 @@ export default function TermsAndConditionsPage() {
             <ul>
               <li>(a) these Terms;</li>
               <li>
-                (b) all and every part of the information regarding that party’s
+                (b) all and every part of the information regarding that party's
                 business affairs obtained or disclosed during the course of
                 negotiation and implementation of these Terms and the provision
                 of the Services;
@@ -362,7 +362,7 @@ export default function TermsAndConditionsPage() {
             access) to the Customer Premises or systems when required; and
           </li>
           <li>
-            (b) (Support): Providing access to the Customer’s systems and
+            (b) (Support): Providing access to the Customer's systems and
             resources, to the extent deemed reasonably necessary and appropriate
             by Office Experts Group in respect of the provision of the Services.
           </li>
@@ -436,13 +436,13 @@ export default function TermsAndConditionsPage() {
           7.4 (Disputed Invoice) If the Customer disputes any invoice, then the
           Customer must contact Office Experts Group in writing setting out the
           details of the dispute (Notification). Office Experts Group will
-          review and consider the Notification, and may, in Office Experts’
+          review and consider the Notification, and may, in Office Experts'
           discretion, either:
         </p>
         <ul>
           <li>
             (a) agree to amend the disputed invoice to take account of the
-            Customer’s concerns; or
+            Customer's concerns; or
           </li>
           <li>
             (b) reject the dispute and require the Customer to pay the invoice.
@@ -470,8 +470,8 @@ export default function TermsAndConditionsPage() {
         </ul>
 
         <p>
-          7.6 (Overdue Amounts – termination, suspension and interest) If a
-          Customer fails to pay some or all of the invoiced amount within the
+          7.6 (Overdue Amounts &ndash; termination, suspension and interest) If
+          a Customer fails to pay some or all of the invoiced amount within the
           required payment time (Overdue Amount) then Office Experts Group may,
           in its sole discretion:
         </p>
@@ -564,7 +564,7 @@ export default function TermsAndConditionsPage() {
 
         <h2>9 LIMITATION OF LIABILITY</h2>
         <p>
-          9.1 Subject to law, Office Experts Group’s liability to the Customer
+          9.1 Subject to law, Office Experts Group's liability to the Customer
           in respect of the Services is limited to the total amount invoiced to
           the Customer in respect of the relevant Services.
         </p>
@@ -620,7 +620,7 @@ export default function TermsAndConditionsPage() {
         <p>
           11.1 (Privacy): Office Experts Group is bound by the privacy
           principles contained under the Privacy Act 1988 (Cth). Office Experts
-          Group’s privacy policy is available at its website{" "}
+          Group's privacy policy is available at its website{" "}
           <Link href="http://www.officeexperts.com.au">
             www.officeexperts.com.au
           </Link>
@@ -640,7 +640,7 @@ export default function TermsAndConditionsPage() {
           check.
         </p>
 
-        <h2>12 OFFICE EXPERTS GROUP’S TIME AND ATTENTION</h2>
+        <h2>12 OFFICE EXPERTS GROUP'S TIME AND ATTENTION</h2>
         <p>
           Office Experts Group agrees to devote all necessary time, attention,
           work, effort and expertise to the provision of the Services as
@@ -666,7 +666,7 @@ export default function TermsAndConditionsPage() {
           resolve any dispute that may arise between the Customer and Office
           Experts Group in relation to the Services by informal means. Office
           Experts Group agrees to take all reasonable steps to resolve any
-          dispute to the Customer’s satisfaction.
+          dispute to the Customer's satisfaction.
         </p>
 
         <h2>16 RECORDS</h2>
@@ -820,7 +820,7 @@ export default function TermsAndConditionsPage() {
         </p>
 
         <p>
-          19.4 (Entire Agreement): These Terms comprise the parties’ entire
+          19.4 (Entire Agreement): These Terms comprise the parties' entire
           understanding in relation to the subject matter of these Terms and
           supersede any prior agreement or arrangement.
         </p>
@@ -850,7 +850,7 @@ export default function TermsAndConditionsPage() {
           19.7 (Consent): Unless these Terms expressly provides otherwise, any
           approval or consent required to be obtained under these Terms may be
           withheld, given conditionally, or given unconditionally, in each case
-          in the relevant party’s absolute discretion.
+          in the relevant party's absolute discretion.
         </p>
 
         <p>
@@ -867,7 +867,7 @@ export default function TermsAndConditionsPage() {
           to decide any dispute between them in relation to these Terms.
         </p>
 
-        <h2>SCHEDULE 1 – SERVICES</h2>
+        <h2>SCHEDULE 1 &ndash; SERVICES</h2>
         <h3>SERVICES</h3>
         <ul>
           <li>
@@ -889,7 +889,7 @@ export default function TermsAndConditionsPage() {
           <li>(e) Web Development using PHP, HTML2, JavaScript.</li>
           <li>
             (f) Other software that is sometimes required to complete the
-            Business’ solutions.
+            Business' solutions.
           </li>
         </ul>
       </main>

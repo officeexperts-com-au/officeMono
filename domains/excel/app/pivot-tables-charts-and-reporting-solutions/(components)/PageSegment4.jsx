@@ -42,7 +42,7 @@ const PageSegment4 = () => {
         <AnimateOnScroll animation="slide-left" duration={1} delay={0}>
           <div className={styles.content}>
             <div className={styles.underline}>
-              <h2>We’re Here For You!</h2>
+              <h2>We're Here For You!</h2>
             </div>
             <p>
               While the hardest part is sometimes working out which reporting

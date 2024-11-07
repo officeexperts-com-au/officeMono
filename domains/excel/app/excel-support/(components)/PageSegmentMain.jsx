@@ -41,7 +41,7 @@ const PageSegmentMain = () => {
             phone, we can offer you instant support and advice. Whether you are
             an individual or have a team of people, our team of experts are
             ready to talk through your requirements and help work through your
-            issues. You’ll appreciate having your own dedicated consultant
+            issues. You'll appreciate having your own dedicated consultant
             available for support when you need them most.
           </p>
         </div>

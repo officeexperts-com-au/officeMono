@@ -35,7 +35,7 @@ const PageSegmentMain = () => {
           <h2>Seamless Excel Upgrades and Migration Solutions</h2>
           <p>
             Are you experiencing the cold reality or unsettling concerns that
-            your Excel workbooks won’t function correctly with your upgraded
+            your Excel workbooks won't function correctly with your upgraded
             version of Microsoft Excel?
           </p>
           <p>

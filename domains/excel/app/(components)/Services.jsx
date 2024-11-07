@@ -25,7 +25,7 @@ const Services = () => {
               <span> for Microsoft Access</span>
             </p>
           </div>
-          <h2>Australia’s Leading Excel Help Service</h2>
+          <h2>Australia's Leading Excel Help Service</h2>
           <p>
             Our expert Microsoft Excel programmers are the very best when it
             comes to custom Microsoft Excel programming, development, databases,
@@ -54,7 +54,7 @@ const Services = () => {
             h3={"VBA/Macro Development"}
             li={[
               "Need experts in VBA/Macros to help automate tasks or extend Excel functionality?",
-              "Our Australian experts each have at least 15 years’ experience.",
+              "Our Australian experts each have at least 15 years' experience.",
             ]}
             link={"/vba-macro-development"}
           />

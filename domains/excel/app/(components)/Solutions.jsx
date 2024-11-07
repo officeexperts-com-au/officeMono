@@ -66,7 +66,7 @@ const Solutions = () => {
       link: "/pivot-tables-charts-and-reporting-solutions",
       image: project2,
       description: [
-        "Need help with Excel’s charting and pivot features?",
+        "Need help with Excel's charting and pivot features?",
         "Need quality visual outputs from your data?",
         "Need an automated charting solution?",
       ],

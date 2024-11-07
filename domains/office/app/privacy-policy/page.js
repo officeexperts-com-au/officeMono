@@ -224,7 +224,7 @@ const Page = () => {
         <p>
           Office Experts processes Personal Information on our servers in
           Australia. In some cases, we process Personal Information on a server
-          outside of a given User’s country. In particular, Office Experts may
+          outside of a given User's country. In particular, Office Experts may
           rely on servers located offshore. Consequently, you should be aware
           that your personal information may be disclosed to overseas
           recipients. In addition, we may process some Personal Information
@@ -236,8 +236,8 @@ const Page = () => {
         <h2>5. INCORPORATION INTO TERMS AND CONDITIONS OF USE</h2>
         <p>
           This Policy is incorporated into, and is subject to, the Office
-          Experts’ Terms and Conditions which each Customer of Office Experts is
-          bound by. A User’s use of the Services and his or her provision of any
+          Experts' Terms and Conditions which each Customer of Office Experts is
+          bound by. A User's use of the Services and his or her provision of any
           Personal Information or location information to Office Experts are
           subject to the terms of this Policy and terms under which you have
           engaged with Office Experts.
@@ -292,10 +292,10 @@ const Page = () => {
         <p>
           Some of the Services may feature or include various location-based
           components. Location information includes, but is not limited to, any
-          information we derive in order to identify a User’s geographic
+          information we derive in order to identify a User's geographic
           position. This information may be collected directly from a User, or
-          from a User’s wireless carrier or from certain third-party service
-          providers. A User’s location information, however, is only displayed
+          from a User's wireless carrier or from certain third-party service
+          providers. A User's location information, however, is only displayed
           and shared in accordance with his or her established privacy settings.
         </p>
         <p>
@@ -558,7 +558,7 @@ const Page = () => {
 
         <h3>13. DATA INTEGRITY</h3>
         <p>
-          Office Experts processes User’s Personal Information only for the
+          Office Experts processes User's Personal Information only for the
           purposes for which it was collected and in accordance with this Policy
           or any applicable terms that you agree with us. We review data
           collection, storage, and processing practices to ensure that we only
