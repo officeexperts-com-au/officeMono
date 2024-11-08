@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../../../../../styles/contents.module.scss";
+import styles from "../../../../../styles/contents.module.css";
 import Image from "next/image";
 
 import semi from "../../../../../public/shapes/semiCircle.webp";

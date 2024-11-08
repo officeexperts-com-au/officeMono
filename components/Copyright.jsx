@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 
-import styles from "../styles/copyright.module.scss";
+import styles from "../styles/copyright.module.css";
 
 const Copyright = () => {
   return (
