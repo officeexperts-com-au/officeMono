@@ -16,8 +16,43 @@
   text-transform: uppercase;
   margin: 1rem 0;
 }
-.upgradeSection img {
-  place-self: center;
+
+.imgSection {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+}
+
+.mainImg {
+  width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  justify-self: center;
+  align-self: center;
+}
+
+.img {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-left: auto;
+}
+.img img {
+  filter: grayscale(0%);
+  transition: all 0.5s ease-in-out;
+}
+.img img:hover {
+  filter: grayscale(100%);
+  transition: all 0.5s ease-in-out;
+}
+
+.bar {
+  background-color: #ff403f;
+  width: 10px;
+  height: 60px;
 }
 
 .underline {

@@ -40,6 +40,11 @@
     font-weight: 900;
   }
 
+  a {
+    color: $theme;
+    font-weight: 700;
+  }
+
   p:first-child {
     color: $theme;
     text-transform: uppercase;

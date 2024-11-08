@@ -37,6 +37,10 @@
   text-transform: uppercase;
   font-weight: 900;
 }
+.content a {
+  color: #ff403f;
+  font-weight: 700;
+}
 .content p:first-child {
   color: #ff403f;
   text-transform: uppercase;

@@ -1,15 +1,13 @@
 import React from "react";
 
-// import Hero from "./(components)/Hero";
-// import Services from "./(components)/Services";
-// import CTAMain from "./(components)/CTAMain";
-// import IsRight from "./(components)/IsRight";
-// import SolutionsCarousel from "./(components)/SolutionsCarousel";
-// import CTAFull from "./(components)/CTAFull";
-// import Testimonials from "../../../components/Testimonials";
-// import Brands from "../../../components/Brands";
-// import Promo from "../../../components/Promo";
-// import Contact from "../../../components/Contact";
+import ServiceHero from "../../../../components/ServiceHero";
+import ExpertsAwait from "../../../../components/ExpertsAwait";
+import Contact from "../../../../components/Contact";
+import PageSegmentMain from "./(components)/PageSegmentMain";
+import PageSegmentCenter from "./(components)/PageSegmentCenter";
+import PageSegment3 from "./(components)/PageSegment3";
+import Segment3Copy from "./(components)/Segment3Copy";
+import Promo from "./(components)/Promo";
 
 const schema = {
   "@context": "https://schema.org",
@@ -157,6 +155,11 @@ const schema = {
         "https://www.facebook.com/MSOfficeExperts",
         "https://x.com/OfficeExpertsG1",
       ],
+      aggregateRating: {
+        "@type": "AggregateRating",
+        ratingValue: "5",
+        reviewCount: "112",
+      },
     },
   ],
 };
@@ -168,19 +171,14 @@ const Page = () => {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
-      {/* <Hero />
-      <Services />
-      <CTAMain />
-      <IsRight />
-      <SolutionsCarousel />
-      <Testimonials />
-      <Brands />
-      <CTAFull />
-      <Promo
-        h2="Excel VBA Macro Development"
-        p="Custom VBA solutions to automate your Excel workflows and increase productivity."
-      />
-      <Contact /> */}
+      <ServiceHero title="VBA and Macro Development" />
+      <PageSegmentMain />
+      <PageSegment3 />
+      <PageSegmentCenter />
+      <Segment3Copy />
+      <Promo />
+      <ExpertsAwait />
+      <Contact />
     </>
   );
 };

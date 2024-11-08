@@ -33,4 +33,24 @@ Is a little strange given all the domains, so a config file is added in each dom
 - decide on nesting public folders for different logos
 - create canonical duplicate tags for quote, contact us, meet the teams and any others we find along the way
 - Get Sendgrid key (share a .env.local file via email)
-- redirects for the blog page's, rather than the current redirect to home, redirect to officeesperts.com.au/blog
+- redirects for the blog page's, rather than the current redirect to home, redirect to officeexperts.com.au/blog
+
+## Issues
+
+- https://www.excelexperts.com.au/services/microsoft-access/uprades-and-migration - 404 page
+
+- https://www.excelexperts.com.au/services/microsoft-access/3rd-party-product-integration/
+  redirects to ---->
+  https://www.officeexperts.com.au/services/microsoft-access/3rd-party-product-integration/
+
+- https://www.excelexperts.com.au/services/microsoft-access/access-online/
+  redirects to ---->
+  https://www.officeexperts.com.au/services/microsoft-access/access-online/
+
+- https://www.excelexperts.com.au/services/microsoft-access/access-support/
+  redirects to ---->
+  https://www.officeexperts.com.au/services/microsoft-access/access-support/
+
+- https://www.excelexperts.com.au/services/microsoft-access/is-access-right-for-your-company/
+  redirects to ---->
+  https://www.officeexperts.com.au/services/microsoft-access/is-access-right-for-your-company/

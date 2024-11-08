@@ -1,0 +1,1670 @@
+# Expert Domains Migration Structure Analysis
+
+*Generated on: 11/8/2024, 10:46:01 AM*
+
+## Project Overview
+
+- Total Files: 922
+- Total Directories: 531
+
+## Directory Structure
+
+```
+├── domains/
+    ├── access/
+        ├── app/
+            ├── (components)/
+                └── CTAFull.jsx
+                └── CTAMain.jsx
+                └── Footer.jsx
+                └── FooterHelpSection.jsx
+                └── FooterServicesSection.jsx
+                └── Header.jsx
+                └── Hero.jsx
+                └── IsRight.jsx
+                └── MobileNav.jsx
+                └── Services.jsx
+                └── Solutions.jsx
+                └── Testimonials.jsx
+            ├── 3rd-party-product-integration/
+                ├── (components)/
+                    └── PageSegmentMain.jsx
+                └── layout.js
+                └── page.js
+            ├── access-azure-cloud-based-solutions/
+                ├── (components)/
+                    └── PageSegment3.jsx
+                    └── PageSegment4New.jsx
+                    └── PageSegment5.jsx
+                    └── PageSegment6.jsx
+                    └── PageSegment7.jsx
+                    └── PageSegment8.jsx
+                    └── PageSegmentMain2.jsx
+                └── layout.js
+                └── page.js
+            ├── access-online/
+                ├── (components)/
+                    └── PageSegment4.jsx
+                    └── PageSegmentMain.jsx
+                    └── PageSegmentSmall.jsx
+                └── layout.js
+                └── page.js
+            ├── access-support/
+                ├── (components)/
+                    └── MiniTicks.jsx
+                    └── PageSegment4.jsx
+                    └── PageSegmentCenter.jsx
+                    └── PageSegmentMain.jsx
+                └── layout.js
+                └── page.js
+            ├── api/
+                ├── contactForm/
+                    └── route.js
+                ├── quoteForm/
+                    └── route.js
+            ├── client-testimonials/
+                ├── (components)/
+                    └── TestimonialPage.jsx
+                └── layout.js
+                └── page.js
+            ├── contact-us/
+                ├── (components)/
+                    └── CTAMain.jsx
+                ├── request-a-quote/
+                    └── layout.js
+                    └── page.js
+                └── layout.js
+                └── page.js
+            ├── is-access-right-for-your-company/
+                ├── (components)/
+                    └── MiniTicks.jsx
+                    └── PageSegmentMain2.jsx
+                └── layout.js
+                └── page.js
+            ├── meet-the-team/
+                └── layout.js
+                └── page.js
+            ├── upgrades-and-migration/
+                ├── (components)/
+                    └── BlackSegment.jsx
+                    └── PageSegment4.jsx
+                    └── PageSegmentMain.jsx
+                    └── Promo.jsx
+                    └── Segment4Repeat.jsx
+                    └── ServicePageCards.jsx
+                └── layout.js
+                └── page.js
+            └── .DS_Store
+            └── favicon.ico
+            └── global.css
+            └── layout.js
+            └── page.js
+        ├── content/
+            ├── _/
+                └── content.md
+            ├── _3rd_party_product_integration_/
+                └── content.md
+            ├── _access_azure_cloud_based_solutions_/
+                └── content.md
+            ├── _access_online_/
+                └── content.md
+            ├── _access_support_/
+                └── content.md
+            ├── _blog_/
+                └── content.md
+            ├── _client_testimonials_/
+                └── content.md
+            ├── _contact_us_/
+                └── content.md
+            ├── _contact_us_request_a_quote_/
+                └── content.md
+            ├── _is_access_right_for_your_company_/
+                └── content.md
+            ├── _meet_the_team_/
+                └── content.md
+            ├── _upgrades_and_migration_/
+                └── content.md
+            └── README.md
+        ├── faqs/
+            └── 3rd-party-product-integration.js
+            └── access-online.js
+            └── access-support.js
+            └── is-access-right-for-you.js
+        ├── formattedContent/
+            ├── _/
+                └── content.docx
+            ├── _3rd_party_product_integration_/
+                └── content.docx
+            ├── _access_azure_cloud_based_solutions_/
+                └── content.docx
+            ├── _access_online_/
+                └── content.docx
+            ├── _access_support_/
+                └── content.docx
+            ├── _blog_/
+                └── content.docx
+            ├── _client_testimonials_/
+                └── content.docx
+            ├── _contact_us_/
+                └── content.docx
+            ├── _contact_us_request_a_quote_/
+                └── content.docx
+            ├── _is_access_right_for_your_company_/
+                └── content.docx
+            ├── _meet_the_team_/
+                └── content.docx
+            ├── _upgrades_and_migration_/
+                └── content.docx
+            └── .DS_Store
+        ├── schemas/
+            └── accessexperts.com.au--schema.json
+            └── accessexperts.com.au-3rd-party-product-integration--schema.json
+            └── accessexperts.com.au-access-azure-cloud-based-solutions--schema.json
+            └── accessexperts.com.au-access-online--schema.json
+            └── accessexperts.com.au-access-support--schema.json
+            └── accessexperts.com.au-blog--schema.json
+            └── accessexperts.com.au-client-testimonials--schema.json
+            └── accessexperts.com.au-contact-us--schema.json
+            └── accessexperts.com.au-contact-us-request-a-quote--schema.json
+            └── accessexperts.com.au-is-access-right-for-your-company--schema.json
+            └── accessexperts.com.au-meet-the-team--schema.json
+            └── accessexperts.com.au-upgrades-and-migration--schema.json
+        └── .DS_Store
+        └── metadata.json
+        └── next-sitemap.config.js
+        └── package.json
+        └── staticwebapp.config.json
+        └── testimonials.js
+        └── urls.json
+    ├── excel/
+        ├── app/
+            ├── (components)/
+                └── CTAFull.jsx
+                └── CTAMain.jsx
+                └── Footer.jsx
+                └── FooterHelpSection.jsx
+                └── FooterServicesSection.jsx
+                └── Header.jsx
+                └── Hero.jsx
+                └── IsRight.jsx
+                └── MobileNav.jsx
+                └── Services.jsx
+                └── Solutions.jsx
+                └── SolutionsCarousel.jsx
+                └── Testimonials.jsx
+            ├── add-in-development/
+                ├── (components)/
+                    └── PageSegment3.jsx
+                    └── PageSegment4.jsx
+                    └── PageSegmentMain.jsx
+                    └── Segment3copy.jsx
+                    └── Segment4Copy.jsx
+                    └── ServicePageCards.jsx
+                └── layout.js
+                └── page.js
+            ├── api/
+                ├── contactForm/
+                    └── route.js
+                ├── quoteForm/
+                    └── route.js
+            ├── client-testimonials/
+                ├── (components)/
+                    └── TestimonialPage.jsx
+                └── layout.js
+                └── page.js
+            ├── contact-us/
+                ├── (components)/
+                    └── CTAMain.jsx
+                ├── request-a-quote/
+                    └── layout.js
+                    └── page.js
+                └── layout.js
+                └── page.js
+            ├── custom-design-and-development/
+                ├── (components)/
+                    └── PageSegmentCenter.jsx
+                    └── PageSegmentMain2.jsx
+                    └── SegmentMainCopy.jsx
+                └── layout.js
+                └── page.js
+            ├── data-manipulation/
+                ├── (components)/
+                    └── PageSegmentMain2.jsx
+                └── layout.js
+                └── page.js
+            ├── excel-formulas-and-custom-formulas/
+                ├── (components)/
+                    └── PageSegment4.jsx
+                    └── PageSegmentMain.jsx
+                    └── VideoSegment.jsx
+                └── layout.js
+                └── page.js
+            ├── excel-support/
+                ├── (components)/
+                    └── PageSegment3.jsx
+                    └── PageSegmentCenter.jsx
+                    └── PageSegmentMain.jsx
+                    └── PageSegmentMain2.jsx
+                └── layout.js
+                └── page.js
+            ├── pivot-tables-charts-and-reporting-solutions/
+                ├── (components)/
+                    └── PageSegment4.jsx
+                    └── PageSegmentMain.jsx
+                └── layout.js
+                └── page.js
+            ├── services/
+                ├── microsoft-access/
+                    ├── 3rd-party-product-integration/
+                        ├── (components)/
+                            └── PageSegmentMain.jsx
+                        └── layout.js
+                        └── page.js
+                    ├── access-azure-cloud-based-solutions/
+                        ├── (components)/
+                            └── PageSegment3.jsx
+                            └── PageSegment4New.jsx
+                            └── PageSegment5.jsx
+                            └── PageSegment6.jsx
+                            └── PageSegment7.jsx
+                            └── PageSegment8.jsx
+                            └── PageSegmentMain2.jsx
+                        └── layout.js
+                        └── page.js
+                    ├── access-online/
+                        └── page.js
+                    ├── access-support/
+                        └── page.js
+                    ├── is-access-right-for-your-company/
+                        └── page.js
+                    ├── upgrades-and-migration/
+                        └── page.js
+                    └── .DS_Store
+                    └── page.js
+                ├── microsoft-powerpoint/
+                    ├── automate-presentations-with-vba/
+                        └── page.js
+                    ├── custom-powerpoint-templates-and-presentations/
+                        └── page.js
+                    ├── existing-presentation-redesign/
+                        └── page.js
+                    ├── powerpoint-user-training-and-assistance/
+                        └── page.js
+                    └── page.js
+                ├── microsoft-word/
+                    ├── accessibility/
+                        └── page.js
+                    ├── companies-and-organisations/
+                        └── page.js
+                    ├── corporate-global-template-solution/
+                        └── page.js
+                    ├── corporate-identity/
+                        └── page.js
+                    ├── custom-toolbars-and-ribbons/
+                        └── page.js
+                    ├── fill-in-forms/
+                        └── page.js
+                    ├── government-departments/
+                        └── page.js
+                    ├── popup-forms/
+                        └── page.js
+                    ├── quick-parts/
+                        └── page.js
+                    ├── remove-repetition-and-increase-productivity/
+                        └── page.js
+                    ├── training/
+                        └── page.js
+                    ├── upgrades-and-migration/
+                        └── page.js
+                    ├── word-document-template-creation/
+                        └── page.js
+                    ├── word-template-conversions/
+                        └── page.js
+                    └── page.js
+            ├── upgrades-and-migration/
+                ├── (components)/
+                    └── PageSegment3.jsx
+                    └── PageSegment4.jsx
+                    └── PageSegmentDropdowns.jsx
+                    └── PageSegmentMain.jsx
+                    └── Segment3copy.jsx
+                    └── Segment4Copy.jsx
+                    └── ServicePageCards.jsx
+                └── layout.js
+                └── page.js
+            ├── vba-macro-development/
+                ├── (components)/
+                    └── PageSegment3.jsx
+                    └── PageSegmentCenter.jsx
+                    └── PageSegmentMain.jsx
+                    └── Promo.jsx
+                    └── Segment3Copy.jsx
+                └── layout.js
+                └── page.js
+            └── .DS_Store
+            └── favicon.ico
+            └── global.css
+            └── layout.js
+            └── page.js
+        ├── content/
+            ├── _/
+                └── content.md
+            ├── _add_in_development_/
+                └── content.md
+            ├── _client_testimonials_/
+                └── content.md
+            ├── _contact_us_/
+                └── content.md
+            ├── _contact_us_request_a_quote_/
+                └── content.md
+            ├── _custom_design_and_development_/
+                └── content.md
+            ├── _data_manipulation_/
+                └── content.md
+            ├── _excel_formulas_and_custom_formulas_/
+                └── content.md
+            ├── _excel_support_/
+                └── content.md
+            ├── _meet_the_team_/
+                └── content.md
+            ├── _pivot_tables_charts_and_reporting_solutions_/
+                └── content.md
+            ├── _upgrades_and_migration_/
+                └── content.md
+            ├── _vba_macro_development_/
+                └── content.md
+            └── .DS_Store
+            └── README.md
+        ├── faqs/
+            └── add-in-development.js
+            └── pivot-tables.js
+        ├── formattedContent/
+            ├── _/
+                └── content.docx
+            ├── _add_in_development_/
+                └── content.docx
+            ├── _client_testimonials_/
+                └── content.docx
+            ├── _contact_us_/
+                └── content.docx
+            ├── _contact_us_request_a_quote_/
+                └── content.docx
+            ├── _custom_design_and_development_/
+                └── content.docx
+            ├── _data_manipulation_/
+                └── content.docx
+            ├── _excel_formulas_and_custom_formulas_/
+                └── content.docx
+            ├── _excel_support_/
+                └── content.docx
+            ├── _meet_the_team_/
+                └── content.docx
+            ├── _pivot_tables_charts_and_reporting_solutions_/
+                └── content.docx
+            ├── _upgrades_and_migration_/
+                └── content.docx
+            ├── _vba_macro_development_/
+                └── content.docx
+            └── .DS_Store
+        ├── schemas/
+            └── www.excelexperts.com.au--schema.json
+            └── www.excelexperts.com.au-add-in-development--schema.json
+            └── www.excelexperts.com.au-client-testimonials--schema.json
+            └── www.excelexperts.com.au-contact-us--schema.json
+            └── www.excelexperts.com.au-contact-us-request-a-quote--schema.json
+            └── www.excelexperts.com.au-custom-design-and-development--schema.json
+            └── www.excelexperts.com.au-data-manipulation--schema.json
+            └── www.excelexperts.com.au-excel-formulas-and-custom-formulas--schema.json
+            └── www.excelexperts.com.au-excel-support--schema.json
+            └── www.excelexperts.com.au-meet-the-team--schema.json
+            └── www.excelexperts.com.au-pivot-tables-charts-and-reporting-solutions--schema.json
+            └── www.excelexperts.com.au-upgrades-and-migration--schema.json
+            └── www.excelexperts.com.au-vba-macro-development--schema.json
+        └── .DS_Store
+        └── metadata.json
+        └── next-sitemap.config.js
+        └── package.json
+        └── staticwebapp.config.json
+        └── testimonials.js
+        └── urls.json
+    ├── office/
+        ├── app/
+            ├── about-us/
+                └── layout.js
+                └── page.js
+            ├── api/
+                ├── contactForm/
+                    └── route.js
+                ├── quoteForm/
+                    └── route.js
+            ├── ccp/
+                └── layout.js
+                └── page.js
+            ├── client-tesimonials/
+                └── layout.js
+                └── page.js
+            ├── contact-us/
+                ├── request-a-quote/
+                    └── layout.js
+                    └── page.js
+                └── layout.js
+                └── page.js
+            ├── excel-and-access-experts-central-coast-nsw/
+                └── layout.js
+                └── page.js
+            ├── excel-and-access-experts-melbourne/
+                └── layout.js
+                └── page.js
+            ├── excel-and-access-experts-richmond/
+                └── layout.js
+                └── page.js
+            ├── excel-and-access-experts-sydney/
+                └── layout.js
+                └── page.js
+            ├── faq/
+                └── layout.js
+                └── page.js
+            ├── looking-for-a-job/
+                └── layout.js
+                └── page.js
+            ├── office-and-office-365-experts-melbourne/
+                └── layout.js
+                └── page.js
+            ├── office-and-office-365-experts-richmond/
+                └── layout.js
+                └── page.js
+            ├── office-and-office-365-experts-sydney/
+                └── layout.js
+                └── page.js
+            ├── office-excel-access-and-365-experts-brisbane/
+                └── layout.js
+                └── page.js
+            ├── office-excel-access-and-365-experts-darwin/
+                └── layout.js
+                └── page.js
+            ├── office-excel-access-and-365-experts-northern-rivers-nsw/
+                └── layout.js
+                └── page.js
+            ├── office-excel-access-and-365-experts-perth/
+                └── layout.js
+                └── page.js
+            ├── office-excel-access-and-word-experts-wollongong/
+                └── layout.js
+                └── page.js
+            ├── privacy-policy/
+                └── layout.js
+                └── page.js
+            ├── refund-policy/
+                └── layout.js
+                └── page.js
+            ├── services/
+                ├── by-business-solution/
+                    ├── 3rd-party-application-or-office-integration/
+                        └── layout.js
+                        └── page.js
+                    ├── add-in-creation/
+                        └── layout.js
+                        └── page.js
+                    ├── cloud-based-solutions-with-azure/
+                        └── layout.js
+                        └── page.js
+                    ├── custom-office-solutions/
+                        └── layout.js
+                        └── page.js
+                    ├── dashboards/
+                        └── layout.js
+                        └── page.js
+                    ├── database-development-and-solutions/
+                        └── layout.js
+                        └── page.js
+                    ├── office-and-sql-server-integration/
+                        └── layout.js
+                        └── page.js
+                    ├── online-solutions/
+                        └── layout.js
+                        └── page.js
+                    ├── vba-macro-development/
+                        └── layout.js
+                        └── page.js
+                    └── layout.js
+                    └── page.js
+                ├── by-office-product/
+                    └── layout.js
+                    └── page.js
+                ├── microsoft-access/
+                    ├── 3rd-party-product-integration/
+                        └── layout.js
+                        └── page.js
+                    ├── access-azure-cloud-based-solutions/
+                        └── layout.js
+                        └── page.js
+                    ├── access-online/
+                        └── layout.js
+                        └── page.js
+                    ├── access-support/
+                        └── layout.js
+                        └── page.js
+                    ├── is-access-right-for-your-company/
+                        └── layout.js
+                        └── page.js
+                    ├── upgrades-and-migration/
+                        └── layout.js
+                        └── page.js
+                    └── layout.js
+                    └── page.js
+                ├── microsoft-dot-net/
+                    └── layout.js
+                    └── page.js
+                ├── microsoft-excel/
+                    ├── add-in-development/
+                        └── layout.js
+                        └── page.js
+                    ├── custom-design-and-development/
+                        └── layout.js
+                        └── page.js
+                    ├── data-manipulation/
+                        └── layout.js
+                        └── page.js
+                    ├── excel-formulas-and-custom-formulas/
+                        └── layout.js
+                        └── page.js
+                    ├── excel-support/
+                        └── layout.js
+                        └── page.js
+                    ├── pivot-tables-charts-and-reporting-solutions/
+                        └── layout.js
+                        └── page.js
+                    ├── upgrades-and-migration/
+                        └── layout.js
+                        └── page.js
+                    ├── vba-macro-development/
+                        └── layout.js
+                        └── page.js
+                    └── layout.js
+                    └── page.js
+                ├── microsoft-office/
+                    ├── upgrades-and-migration/
+                        └── layout.js
+                        └── page.js
+                    └── layout.js
+                    └── page.js
+                ├── microsoft-office-365/
+                    ├── app-and-custom-development/
+                        └── layout.js
+                        └── page.js
+                    ├── business-process-automation/
+                        └── layout.js
+                        └── page.js
+                    ├── cloud-backup-with-onedrive/
+                        └── layout.js
+                        └── page.js
+                    ├── exchange-online-setup-and-support/
+                        └── layout.js
+                        └── page.js
+                    ├── office-365-implementation/
+                        └── layout.js
+                        └── page.js
+                    ├── office-365-migration/
+                        └── layout.js
+                        └── page.js
+                    ├── remote-data-gathering-from-any-device/
+                        └── layout.js
+                        └── page.js
+                    ├── support-and-managed-services/
+                        └── layout.js
+                        └── page.js
+                    └── layout.js
+                    └── page.js
+                ├── microsoft-power-platform/
+                    ├── microsoft-power-apps/
+                        └── layout.js
+                        └── page.js
+                    ├── microsoft-power-automate/
+                        └── layout.js
+                        └── page.js
+                    ├── microsoft-power-bi/
+                        └── layout.js
+                        └── page.js
+                    ├── microsoft-power-pages/
+                        └── layout.js
+                        └── page.js
+                    └── layout.js
+                    └── page.js
+                ├── microsoft-powerpoint/
+                    ├── automate-presentations-with-vba/
+                        └── layout.js
+                        └── page.js
+                    ├── custom-powerpoint-templates-and-presentations/
+                        └── layout.js
+                        └── page.js
+                    ├── existing-presentation-redesign/
+                        └── layout.js
+                        └── page.js
+                    ├── powerpoint-user-training-and-assistance/
+                        └── layout.js
+                        └── page.js
+                    └── .DS_Store
+                    └── layout.js
+                    └── page.js
+                ├── microsoft-publisher/
+                    └── layout.js
+                    └── page.js
+                ├── microsoft-vbscript/
+                    └── layout.js
+                    └── page.js
+                ├── microsoft-word/
+                    ├── accessibility/
+                        └── layout.js
+                        └── page.js
+                    ├── companies-and-organisations/
+                        └── layout.js
+                        └── page.js
+                    ├── corporate-global-template-solution/
+                        └── layout.js
+                        └── page.js
+                    ├── corporate-identity/
+                        └── layout.js
+                        └── page.js
+                    ├── custom-toolbars-and-ribbons/
+                        └── layout.js
+                        └── page.js
+                    ├── fill-in-forms/
+                        └── layout.js
+                        └── page.js
+                    ├── government-departments/
+                        └── layout.js
+                        └── page.js
+                    ├── popup-forms/
+                        └── layout.js
+                        └── page.js
+                    ├── quick-parts/
+                        └── layout.js
+                        └── page.js
+                    ├── remove-repetition-and-increase-productivity/
+                        └── layout.js
+                        └── page.js
+                    ├── training/
+                        └── layout.js
+                        └── page.js
+                    ├── upgrades-and-migration/
+                        └── layout.js
+                        └── page.js
+                    ├── word-document-template-creation/
+                        └── layout.js
+                        └── page.js
+                    ├── word-template-conversions/
+                        └── layout.js
+                        └── page.js
+                    └── layout.js
+                    └── page.js
+                └── .DS_Store
+                └── layout.js
+                └── page.js
+            ├── terms-and-conditions/
+                └── layout.js
+                └── page.js
+            ├── word-and-powerpoint-experts-canberra/
+                └── layout.js
+                └── page.js
+            ├── word-and-powerpoint-experts-gold-coast/
+                └── layout.js
+                └── page.js
+            ├── word-and-powerpoint-experts-melbourne/
+                └── layout.js
+                └── page.js
+            ├── word-and-powerpoint-experts-perth/
+                └── layout.js
+                └── page.js
+            ├── word-and-powerpoint-experts-richmond/
+                └── layout.js
+                └── page.js
+            ├── word-and-powerpoint-experts-sydney/
+                └── layout.js
+                └── page.js
+            └── .DS_Store
+            └── favicon.ico
+            └── global.css
+            └── layout.js
+            └── page.js
+        ├── content/
+            ├── _/
+                └── content.md
+            ├── _about_us_/
+                └── content.md
+            ├── _ccp_/
+                └── content.md
+            ├── _client_testimonials_/
+                └── content.md
+            ├── _contact_us_/
+                └── content.md
+            ├── _contact_us_request_a_quote_/
+                └── content.md
+            ├── _excel_and_access_experts_central_coast_nsw_/
+                └── content.md
+            ├── _excel_and_access_experts_melbourne_/
+                └── content.md
+            ├── _excel_and_access_experts_richmond_/
+                └── content.md
+            ├── _excel_and_access_experts_sydney_/
+                └── content.md
+            ├── _faq_/
+                └── content.md
+            ├── _looking_for_a_job_/
+                └── content.md
+            ├── _office_and_office_365_experts_melbourne_/
+                └── content.md
+            ├── _office_and_office_365_experts_richmond_/
+                └── content.md
+            ├── _office_and_office_365_experts_sydney_/
+                └── content.md
+            ├── _office_excel_access_and_365_experts_brisbane_/
+                └── content.md
+            ├── _office_excel_access_and_365_experts_darwin_/
+                └── content.md
+            ├── _office_excel_access_and_365_experts_northern_rivers_nsw_/
+                └── content.md
+            ├── _office_excel_access_and_365_experts_perth_/
+                └── content.md
+            ├── _office_excel_access_and_word_experts_wollongong_/
+                └── content.md
+            ├── _privacy_policy_/
+                └── content.md
+            ├── _refund_policy_/
+                └── content.md
+            ├── _services_/
+                └── content.md
+            ├── _services_by_business_solution_/
+                └── content.md
+            ├── _services_by_business_solution_3rd_party_application_or_office_integration_/
+                └── content.md
+            ├── _services_by_business_solution_add_in_creation_/
+                └── content.md
+            ├── _services_by_business_solution_cloud_based_solutions_with_azure_/
+                └── content.md
+            ├── _services_by_business_solution_custom_office_solutions_/
+                └── content.md
+            ├── _services_by_business_solution_dashboards_/
+                └── content.md
+            ├── _services_by_business_solution_database_development_and_solutions_/
+                └── content.md
+            ├── _services_by_business_solution_office_and_sql_server_integration_/
+                └── content.md
+            ├── _services_by_business_solution_online_solutions_/
+                └── content.md
+            ├── _services_by_business_solution_vba_macro_development_/
+                └── content.md
+            ├── _services_by_office_product_/
+                └── content.md
+            ├── _services_microsoft_access_/
+                └── content.md
+            ├── _services_microsoft_access_3rd_party_product_integration_/
+                └── content.md
+            ├── _services_microsoft_access_access_azure_cloud_based_solutions_/
+                └── content.md
+            ├── _services_microsoft_access_access_online_/
+                └── content.md
+            ├── _services_microsoft_access_access_support_/
+                └── content.md
+            ├── _services_microsoft_access_is_access_right_for_your_company_/
+                └── content.md
+            ├── _services_microsoft_access_upgrades_and_migration_/
+                └── content.md
+            ├── _services_microsoft_dot_net_/
+                └── content.md
+            ├── _services_microsoft_excel_/
+                └── content.md
+            ├── _services_microsoft_excel_add_in_development_/
+                └── content.md
+            ├── _services_microsoft_excel_custom_design_and_development_/
+                └── content.md
+            ├── _services_microsoft_excel_data_manipulation_/
+                └── content.md
+            ├── _services_microsoft_excel_excel_formulas_and_custom_formulas_/
+                └── content.md
+            ├── _services_microsoft_excel_excel_support_/
+                └── content.md
+            ├── _services_microsoft_excel_pivot_tables_charts_and_reporting_solutions_/
+                └── content.md
+            ├── _services_microsoft_excel_upgrades_and_migration_/
+                └── content.md
+            ├── _services_microsoft_excel_vba_macro_development_/
+                └── content.md
+            ├── _services_microsoft_office_/
+                └── content.md
+            ├── _services_microsoft_office_365_/
+                └── content.md
+            ├── _services_microsoft_office_365_app_and_custom_development_/
+                └── content.md
+            ├── _services_microsoft_office_365_business_process_automation_/
+                └── content.md
+            ├── _services_microsoft_office_365_cloud_backup_with_onedrive_/
+                └── content.md
+            ├── _services_microsoft_office_365_exchange_online_setup_and_support_/
+                └── content.md
+            ├── _services_microsoft_office_365_office_365_implementation_/
+                └── content.md
+            ├── _services_microsoft_office_365_office_365_migration_/
+                └── content.md
+            ├── _services_microsoft_office_365_remote_data_gathering_from_any_device_/
+                └── content.md
+            ├── _services_microsoft_office_365_support_and_managed_services_/
+                └── content.md
+            ├── _services_microsoft_office_upgrades_and_migration_/
+                └── content.md
+            ├── _services_microsoft_power_platform_/
+                └── content.md
+            ├── _services_microsoft_power_platform_microsoft_power_apps_/
+                └── content.md
+            ├── _services_microsoft_power_platform_microsoft_power_automate_/
+                └── content.md
+            ├── _services_microsoft_power_platform_microsoft_power_bi_/
+                └── content.md
+            ├── _services_microsoft_power_platform_microsoft_power_pages_/
+                └── content.md
+            ├── _services_microsoft_powerpoint_/
+                └── content.md
+            ├── _services_microsoft_powerpoint_automate_presentations_with_vba_/
+                └── content.md
+            ├── _services_microsoft_powerpoint_custom_powerpoint_templates_and_presentations_/
+                └── content.md
+            ├── _services_microsoft_powerpoint_existing_presentation_redesign_/
+                └── content.md
+            ├── _services_microsoft_powerpoint_powerpoint_user_training_and_assistance_/
+                └── content.md
+            ├── _services_microsoft_publisher_/
+                └── content.md
+            ├── _services_microsoft_vbscript_/
+                └── content.md
+            ├── _services_microsoft_word_/
+                └── content.md
+            ├── _services_microsoft_word_accessibility_/
+                └── content.md
+            ├── _services_microsoft_word_companies_and_organisations_/
+                └── content.md
+            ├── _services_microsoft_word_corporate_global_template_solution_/
+                └── content.md
+            ├── _services_microsoft_word_corporate_identity_/
+                └── content.md
+            ├── _services_microsoft_word_custom_toolbars_and_ribbons_/
+                └── content.md
+            ├── _services_microsoft_word_fill_in_forms_/
+                └── content.md
+            ├── _services_microsoft_word_government_departments_/
+                └── content.md
+            ├── _services_microsoft_word_popup_forms_/
+                └── content.md
+            ├── _services_microsoft_word_quick_parts_/
+                └── content.md
+            ├── _services_microsoft_word_remove_repetition_and_increase_productivity_/
+                └── content.md
+            ├── _services_microsoft_word_training_/
+                └── content.md
+            ├── _services_microsoft_word_upgrades_and_migration_/
+                └── content.md
+            ├── _services_microsoft_word_word_document_template_creation_/
+                └── content.md
+            ├── _services_microsoft_word_word_template_conversions_/
+                └── content.md
+            ├── _terms_and_conditions_/
+                └── content.md
+            ├── _word_and_powerpoint_experts_canberra_/
+                └── content.md
+            ├── _word_and_powerpoint_experts_gold_coast_/
+                └── content.md
+            ├── _word_and_powerpoint_experts_melbourne_/
+                └── content.md
+            ├── _word_and_powerpoint_experts_perth_/
+                └── content.md
+            ├── _word_and_powerpoint_experts_richmond_/
+                └── content.md
+            ├── _word_and_powerpoint_experts_sydney_/
+                └── content.md
+            └── .DS_Store
+            └── README.md
+        ├── formattedContent/
+            ├── _/
+                └── content.docx
+            ├── _about_us_/
+                └── content.docx
+            ├── _ccp_/
+                └── content.docx
+            ├── _client_testimonials_/
+                └── content.docx
+            ├── _contact_us_/
+                └── content.docx
+            ├── _contact_us_request_a_quote_/
+                └── content.docx
+            ├── _excel_and_access_experts_central_coast_nsw_/
+                └── content.docx
+            ├── _excel_and_access_experts_melbourne_/
+                └── content.docx
+            ├── _excel_and_access_experts_richmond_/
+                └── content.docx
+            ├── _excel_and_access_experts_sydney_/
+                └── content.docx
+            ├── _faq_/
+                └── content.docx
+            ├── _looking_for_a_job_/
+                └── content.docx
+            ├── _office_and_office_365_experts_melbourne_/
+                └── content.docx
+            ├── _office_and_office_365_experts_richmond_/
+                └── content.docx
+            ├── _office_and_office_365_experts_sydney_/
+                └── content.docx
+            ├── _office_excel_access_and_365_experts_brisbane_/
+                └── content.docx
+            ├── _office_excel_access_and_365_experts_darwin_/
+                └── content.docx
+            ├── _office_excel_access_and_365_experts_northern_rivers_nsw_/
+                └── content.docx
+            ├── _office_excel_access_and_365_experts_perth_/
+                └── content.docx
+            ├── _office_excel_access_and_word_experts_wollongong_/
+                └── content.docx
+            ├── _privacy_policy_/
+                └── content.docx
+            ├── _refund_policy_/
+                └── content.docx
+            ├── _services_/
+                └── content.docx
+            ├── _services_by_business_solution_/
+                └── content.docx
+            ├── _services_by_business_solution_3rd_party_application_or_office_integration_/
+                └── content.docx
+            ├── _services_by_business_solution_add_in_creation_/
+                └── content.docx
+            ├── _services_by_business_solution_cloud_based_solutions_with_azure_/
+                └── content.docx
+            ├── _services_by_business_solution_custom_office_solutions_/
+                └── content.docx
+            ├── _services_by_business_solution_dashboards_/
+                └── content.docx
+            ├── _services_by_business_solution_database_development_and_solutions_/
+                └── content.docx
+            ├── _services_by_business_solution_office_and_sql_server_integration_/
+                └── content.docx
+            ├── _services_by_business_solution_online_solutions_/
+                └── content.docx
+            ├── _services_by_business_solution_vba_macro_development_/
+                └── content.docx
+            ├── _services_by_office_product_/
+                └── content.docx
+            ├── _services_microsoft_access_/
+                └── content.docx
+            ├── _services_microsoft_access_3rd_party_product_integration_/
+                └── content.docx
+            ├── _services_microsoft_access_access_azure_cloud_based_solutions_/
+                └── content.docx
+            ├── _services_microsoft_access_access_online_/
+                └── content.docx
+            ├── _services_microsoft_access_access_support_/
+                └── content.docx
+            ├── _services_microsoft_access_is_access_right_for_your_company_/
+                └── content.docx
+            ├── _services_microsoft_access_upgrades_and_migration_/
+                └── content.docx
+            ├── _services_microsoft_dot_net_/
+                └── content.docx
+            ├── _services_microsoft_excel_/
+                └── content.docx
+            ├── _services_microsoft_excel_add_in_development_/
+                └── content.docx
+            ├── _services_microsoft_excel_custom_design_and_development_/
+                └── content.docx
+            ├── _services_microsoft_excel_data_manipulation_/
+                └── content.docx
+            ├── _services_microsoft_excel_excel_formulas_and_custom_formulas_/
+                └── content.docx
+            ├── _services_microsoft_excel_excel_support_/
+                └── content.docx
+            ├── _services_microsoft_excel_pivot_tables_charts_and_reporting_solutions_/
+                └── content.docx
+            ├── _services_microsoft_excel_upgrades_and_migration_/
+                └── content.docx
+            ├── _services_microsoft_excel_vba_macro_development_/
+                └── content.docx
+            ├── _services_microsoft_office_/
+                └── content.docx
+            ├── _services_microsoft_office_365_/
+                └── content.docx
+            ├── _services_microsoft_office_365_app_and_custom_development_/
+                └── content.docx
+            ├── _services_microsoft_office_365_business_process_automation_/
+                └── content.docx
+            ├── _services_microsoft_office_365_cloud_backup_with_onedrive_/
+                └── content.docx
+            ├── _services_microsoft_office_365_exchange_online_setup_and_support_/
+                └── content.docx
+            ├── _services_microsoft_office_365_office_365_implementation_/
+                └── content.docx
+            ├── _services_microsoft_office_365_office_365_migration_/
+                └── content.docx
+            ├── _services_microsoft_office_365_remote_data_gathering_from_any_device_/
+                └── content.docx
+            ├── _services_microsoft_office_365_support_and_managed_services_/
+                └── content.docx
+            ├── _services_microsoft_office_upgrades_and_migration_/
+                └── content.docx
+            ├── _services_microsoft_power_platform_/
+                └── content.docx
+            ├── _services_microsoft_power_platform_microsoft_power_apps_/
+                └── content.docx
+            ├── _services_microsoft_power_platform_microsoft_power_automate_/
+                └── content.docx
+            ├── _services_microsoft_power_platform_microsoft_power_bi_/
+                └── content.docx
+            ├── _services_microsoft_power_platform_microsoft_power_pages_/
+                └── content.docx
+            ├── _services_microsoft_powerpoint_/
+                └── content.docx
+            ├── _services_microsoft_powerpoint_automate_presentations_with_vba_/
+                └── content.docx
+            ├── _services_microsoft_powerpoint_custom_powerpoint_templates_and_presentations_/
+                └── content.docx
+            ├── _services_microsoft_powerpoint_existing_presentation_redesign_/
+                └── content.docx
+            ├── _services_microsoft_powerpoint_powerpoint_user_training_and_assistance_/
+                └── content.docx
+            ├── _services_microsoft_publisher_/
+                └── content.docx
+            ├── _services_microsoft_vbscript_/
+                └── content.docx
+            ├── _services_microsoft_word_/
+                └── content.docx
+            ├── _services_microsoft_word_accessibility_/
+                └── content.docx
+            ├── _services_microsoft_word_companies_and_organisations_/
+                └── content.docx
+            ├── _services_microsoft_word_corporate_global_template_solution_/
+                └── content.docx
+            ├── _services_microsoft_word_corporate_identity_/
+                └── content.docx
+            ├── _services_microsoft_word_custom_toolbars_and_ribbons_/
+                └── content.docx
+            ├── _services_microsoft_word_fill_in_forms_/
+                └── content.docx
+            ├── _services_microsoft_word_government_departments_/
+                └── content.docx
+            ├── _services_microsoft_word_popup_forms_/
+                └── content.docx
+            ├── _services_microsoft_word_quick_parts_/
+                └── content.docx
+            ├── _services_microsoft_word_remove_repetition_and_increase_productivity_/
+                └── content.docx
+            ├── _services_microsoft_word_training_/
+                └── content.docx
+            ├── _services_microsoft_word_upgrades_and_migration_/
+                └── content.docx
+            ├── _services_microsoft_word_word_document_template_creation_/
+                └── content.docx
+            ├── _services_microsoft_word_word_template_conversions_/
+                └── content.docx
+            ├── _terms_and_conditions_/
+                └── content.docx
+            ├── _word_and_powerpoint_experts_canberra_/
+                └── content.docx
+            ├── _word_and_powerpoint_experts_gold_coast_/
+                └── content.docx
+            ├── _word_and_powerpoint_experts_melbourne_/
+                └── content.docx
+            ├── _word_and_powerpoint_experts_perth_/
+                └── content.docx
+            ├── _word_and_powerpoint_experts_richmond_/
+                └── content.docx
+            ├── _word_and_powerpoint_experts_sydney_/
+                └── content.docx
+            └── .DS_Store
+        ├── schemas/
+            └── .DS_Store
+            └── www.officeexperts.com.au--schema.json
+            └── www.officeexperts.com.au-about-us--schema.json
+            └── www.officeexperts.com.au-ccp--schema.json
+            └── www.officeexperts.com.au-client-testimonials--schema.json
+            └── www.officeexperts.com.au-contact-us--schema.json
+            └── www.officeexperts.com.au-contact-us-request-a-quote--schema.json
+            └── www.officeexperts.com.au-excel-and-access-experts-central-coast-nsw--schema.json
+            └── www.officeexperts.com.au-excel-and-access-experts-melbourne--schema.json
+            └── www.officeexperts.com.au-excel-and-access-experts-richmond--schema.json
+            └── www.officeexperts.com.au-excel-and-access-experts-sydney--schema.json
+            └── www.officeexperts.com.au-faq--schema.json
+            └── www.officeexperts.com.au-looking-for-a-job--schema.json
+            └── www.officeexperts.com.au-office-and-office-365-experts-melbourne--schema.json
+            └── www.officeexperts.com.au-office-and-office-365-experts-richmond--schema.json
+            └── www.officeexperts.com.au-office-and-office-365-experts-sydney--schema.json
+            └── www.officeexperts.com.au-office-excel-access-and-365-experts-brisbane--schema.json
+            └── www.officeexperts.com.au-office-excel-access-and-365-experts-darwin--schema.json
+            └── www.officeexperts.com.au-office-excel-access-and-365-experts-northern-rivers-nsw--schema.json
+            └── www.officeexperts.com.au-office-excel-access-and-365-experts-perth--schema.json
+            └── www.officeexperts.com.au-office-excel-access-and-word-experts-wollongong--schema.json
+            └── www.officeexperts.com.au-privacy-policy--schema.json
+            └── www.officeexperts.com.au-refund-policy--schema.json
+            └── www.officeexperts.com.au-services--schema.json
+            └── www.officeexperts.com.au-services-by-business-solution--schema.json
+            └── www.officeexperts.com.au-services-by-business-solution-3rd-party-application-or-office-integration--schema.json
+            └── www.officeexperts.com.au-services-by-business-solution-add-in-creation--schema.json
+            └── www.officeexperts.com.au-services-by-business-solution-cloud-based-solutions-with-azure--schema.json
+            └── www.officeexperts.com.au-services-by-business-solution-custom-office-solutions--schema.json
+            └── www.officeexperts.com.au-services-by-business-solution-dashboards--schema.json
+            └── www.officeexperts.com.au-services-by-business-solution-database-development-and-solutions--schema.json
+            └── www.officeexperts.com.au-services-by-business-solution-office-and-sql-server-integration--schema.json
+            └── www.officeexperts.com.au-services-by-business-solution-online-solutions--schema.json
+            └── www.officeexperts.com.au-services-by-business-solution-vba-macro-development--schema.json
+            └── www.officeexperts.com.au-services-by-office-product--schema.json
+            └── www.officeexperts.com.au-services-microsoft-access--schema.json
+            └── www.officeexperts.com.au-services-microsoft-access-3rd-party-product-integration--schema.json
+            └── www.officeexperts.com.au-services-microsoft-access-access-azure-cloud-based-solutions--schema.json
+            └── www.officeexperts.com.au-services-microsoft-access-access-online--schema.json
+            └── www.officeexperts.com.au-services-microsoft-access-access-support--schema.json
+            └── www.officeexperts.com.au-services-microsoft-access-is-access-right-for-your-company--schema.json
+            └── www.officeexperts.com.au-services-microsoft-access-upgrades-and-migration--schema.json
+            └── www.officeexperts.com.au-services-microsoft-dot-net--schema.json
+            └── www.officeexperts.com.au-services-microsoft-excel--schema.json
+            └── www.officeexperts.com.au-services-microsoft-excel-add-in-development--schema.json
+            └── www.officeexperts.com.au-services-microsoft-excel-custom-design-and-development--schema.json
+            └── www.officeexperts.com.au-services-microsoft-excel-data-manipulation--schema.json
+            └── www.officeexperts.com.au-services-microsoft-excel-excel-formulas-and-custom-formulas--schema.json
+            └── www.officeexperts.com.au-services-microsoft-excel-excel-support--schema.json
+            └── www.officeexperts.com.au-services-microsoft-excel-pivot-tables-charts-and-reporting-solutions--schema.json
+            └── www.officeexperts.com.au-services-microsoft-excel-upgrades-and-migration--schema.json
+            └── www.officeexperts.com.au-services-microsoft-excel-vba-macro-development--schema.json
+            └── www.officeexperts.com.au-services-microsoft-office--schema.json
+            └── www.officeexperts.com.au-services-microsoft-office-365--schema.json
+            └── www.officeexperts.com.au-services-microsoft-office-365-app-and-custom-development--schema.json
+            └── www.officeexperts.com.au-services-microsoft-office-365-business-process-automation--schema.json
+            └── www.officeexperts.com.au-services-microsoft-office-365-cloud-backup-with-onedrive--schema.json
+            └── www.officeexperts.com.au-services-microsoft-office-365-exchange-online-setup-and-support--schema.json
+            └── www.officeexperts.com.au-services-microsoft-office-365-office-365-implementation--schema.json
+            └── www.officeexperts.com.au-services-microsoft-office-365-office-365-migration--schema.json
+            └── www.officeexperts.com.au-services-microsoft-office-365-remote-data-gathering-from-any-device--schema.json
+            └── www.officeexperts.com.au-services-microsoft-office-365-support-and-managed-services--schema.json
+            └── www.officeexperts.com.au-services-microsoft-office-upgrades-and-migration--schema.json
+            └── www.officeexperts.com.au-services-microsoft-power-platform--schema.json
+            └── www.officeexperts.com.au-services-microsoft-power-platform-microsoft-power-apps--schema.json
+            └── www.officeexperts.com.au-services-microsoft-power-platform-microsoft-power-automate--schema.json
+            └── www.officeexperts.com.au-services-microsoft-power-platform-microsoft-power-bi--schema.json
+            └── www.officeexperts.com.au-services-microsoft-power-platform-microsoft-power-pages--schema.json
+            └── www.officeexperts.com.au-services-microsoft-powerpoint--schema.json
+            └── www.officeexperts.com.au-services-microsoft-powerpoint-automate-presentations-with-vba--schema.json
+            └── www.officeexperts.com.au-services-microsoft-powerpoint-custom-powerpoint-templates-and-presentations--schema.json
+            └── www.officeexperts.com.au-services-microsoft-powerpoint-existing-presentation-redesign--schema.json
+            └── www.officeexperts.com.au-services-microsoft-powerpoint-powerpoint-user-training-and-assistance--schema.json
+            └── www.officeexperts.com.au-services-microsoft-publisher--schema.json
+            └── www.officeexperts.com.au-services-microsoft-vbscript--schema.json
+            └── www.officeexperts.com.au-services-microsoft-word--schema.json
+            └── www.officeexperts.com.au-services-microsoft-word-accessibility--schema.json
+            └── www.officeexperts.com.au-services-microsoft-word-companies-and-organisations--schema.json
+            └── www.officeexperts.com.au-services-microsoft-word-corporate-global-template-solution--schema.json
+            └── www.officeexperts.com.au-services-microsoft-word-corporate-identity--schema.json
+            └── www.officeexperts.com.au-services-microsoft-word-custom-toolbars-and-ribbons--schema.json
+            └── www.officeexperts.com.au-services-microsoft-word-fill-in-forms--schema.json
+            └── www.officeexperts.com.au-services-microsoft-word-government-departments--schema.json
+            └── www.officeexperts.com.au-services-microsoft-word-popup-forms--schema.json
+            └── www.officeexperts.com.au-services-microsoft-word-quick-parts--schema.json
+            └── www.officeexperts.com.au-services-microsoft-word-remove-repetition-and-increase-productivity--schema.json
+            └── www.officeexperts.com.au-services-microsoft-word-training--schema.json
+            └── www.officeexperts.com.au-services-microsoft-word-upgrades-and-migration--schema.json
+            └── www.officeexperts.com.au-services-microsoft-word-word-document-template-creation--schema.json
+            └── www.officeexperts.com.au-services-microsoft-word-word-template-conversions--schema.json
+            └── www.officeexperts.com.au-terms-and-conditions--schema.json
+            └── www.officeexperts.com.au-word-and-powerpoint-experts-canberra--schema.json
+            └── www.officeexperts.com.au-word-and-powerpoint-experts-gold-coast--schema.json
+            └── www.officeexperts.com.au-word-and-powerpoint-experts-melbourne--schema.json
+            └── www.officeexperts.com.au-word-and-powerpoint-experts-perth--schema.json
+            └── www.officeexperts.com.au-word-and-powerpoint-experts-richmond--schema.json
+            └── www.officeexperts.com.au-word-and-powerpoint-experts-sydney--schema.json
+        └── .DS_Store
+        └── metadata.json
+        └── next-sitemap.config.js
+        └── package.json
+        └── staticwebapp.config.json
+        └── urls.json
+    ├── powerPlatform/
+        ├── app/
+            ├── api/
+                ├── contactForm/
+                    └── route.js
+                ├── quoteForm/
+                    └── route.js
+            ├── author/
+                ├── ppexperts/
+                    └── layout.js
+                    └── page.js
+            ├── client-testimonials/
+                └── layout.js
+                └── page.js
+            ├── contact-us/
+                ├── request-a-quote/
+                    └── layout.js
+                    └── page.js
+                └── layout.js
+                └── page.js
+            ├── meet-the-team/
+                └── layout.js
+                └── page.js
+            ├── services/
+                ├── microsoft-power-platform/
+                    ├── microsoft-power-apps/
+                        └── layout.js
+                        └── page.js
+                    ├── microsoft-power-automate/
+                        └── layout.js
+                        └── page.js
+                    ├── microsoft-power-bi/
+                        └── layout.js
+                        └── page.js
+                    ├── microsoft-power-pages/
+                        └── layout.js
+                        └── page.js
+                    └── .DS_Store
+                └── .DS_Store
+            └── .DS_Store
+            └── favicon.ico
+            └── global.css
+            └── layout.js
+            └── page.js
+        ├── content/
+            ├── _/
+                └── content.md
+            ├── _author_ppexperts_/
+                └── content.md
+            ├── _client_testimonials_/
+                └── content.md
+            ├── _contact_us_/
+                └── content.md
+            ├── _contact_us_request_a_quote_/
+                └── content.md
+            ├── _meet_the_team_/
+                └── content.md
+            ├── _services_microsoft_power_platform_microsoft_power_apps_/
+                └── content.md
+            ├── _services_microsoft_power_platform_microsoft_power_automate_/
+                └── content.md
+            ├── _services_microsoft_power_platform_microsoft_power_bi_/
+                └── content.md
+            ├── _services_microsoft_power_platform_microsoft_power_pages_/
+                └── content.md
+            └── .DS_Store
+            └── README.md
+        ├── schemas/
+            └── www.powerplatformexperts.com.au--schema.json
+            └── www.powerplatformexperts.com.au-author-ppexperts--schema.json
+            └── www.powerplatformexperts.com.au-client-testimonials--schema.json
+            └── www.powerplatformexperts.com.au-contact-us--schema.json
+            └── www.powerplatformexperts.com.au-contact-us-request-a-quote--schema.json
+            └── www.powerplatformexperts.com.au-meet-the-team--schema.json
+            └── www.powerplatformexperts.com.au-services-microsoft-power-platform-microsoft-power-apps--schema.json
+            └── www.powerplatformexperts.com.au-services-microsoft-power-platform-microsoft-power-automate--schema.json
+            └── www.powerplatformexperts.com.au-services-microsoft-power-platform-microsoft-power-bi--schema.json
+            └── www.powerplatformexperts.com.au-services-microsoft-power-platform-microsoft-power-pages--schema.json
+        └── .DS_Store
+        └── metadata.json
+        └── next-sitemap.config.js
+        └── package.json
+        └── staticwebapp.config.json
+        └── urls.json
+    ├── word/
+        ├── app/
+            ├── accessibility/
+                └── page.js
+            ├── api/
+                ├── contactForm/
+                    └── route.js
+                ├── quoteForm/
+                    └── route.js
+            ├── author/
+                ├── ppexperts/
+                    └── page.js
+            ├── client-testimonials/
+                └── page.js
+            ├── companies-and-organisations/
+                └── page.js
+            ├── contact-us/
+                ├── request-a-quote/
+                    └── page.js
+                └── page.js
+            ├── corporate-global-template-solution/
+                └── page.js
+            ├── corporate-identity/
+                └── page.js
+            ├── custom-toolbars-and-ribbons/
+                └── page.js
+            ├── fill-in-forms/
+                └── page.js
+            ├── government-departments/
+                └── page.js
+            ├── popup-forms/
+                └── page.js
+            ├── quick-parts/
+                └── page.js
+            ├── remove-repetition-and-increase-productivity/
+                └── page.js
+            ├── training/
+                └── page.js
+            ├── upgrades-and-migration/
+                └── page.js
+            ├── word-document-template-creation/
+                └── page.js
+            ├── word-template-conversions/
+                └── page.js
+            └── favicon.ico
+            └── global.css
+            └── layout.js
+            └── page.js
+        ├── content/
+            ├── _/
+                └── content.md
+            ├── _accessibility_/
+                └── content.md
+            ├── _client_testimonials_/
+                └── content.md
+            ├── _companies_and_organisations_/
+                └── content.md
+            ├── _contact_us_/
+                └── content.md
+            ├── _contact_us_request_a_quote_/
+                └── content.md
+            ├── _corporate_global_template_solution_/
+                └── content.md
+            ├── _corporate_identity_/
+                └── content.md
+            ├── _custom_toolbars_and_ribbons_/
+                └── content.md
+            ├── _excel_and_access_experts_sydney_/
+                └── content.md
+            ├── _fill_in_forms_/
+                └── content.md
+            ├── _government_departments_/
+                └── content.md
+            ├── _meet_the_team_/
+                └── content.md
+            ├── _popup_forms_/
+                └── content.md
+            ├── _quick_parts_/
+                └── content.md
+            ├── _remove_repetition_and_increase_productivity_/
+                └── content.md
+            ├── _training_/
+                └── content.md
+            ├── _upgrades_and_migration_/
+                └── content.md
+            ├── _word_document_template_creation_/
+                └── content.md
+            ├── _word_template_conversions_/
+                └── content.md
+            └── README.md
+        ├── formattedContent/
+            ├── _/
+                └── content.docx
+            ├── _accessibility_/
+                └── content.docx
+            ├── _client_testimonials_/
+                └── content.docx
+            ├── _companies_and_organisations_/
+                └── content.docx
+            ├── _contact_us_/
+                └── content.docx
+            ├── _contact_us_request_a_quote_/
+                └── content.docx
+            ├── _corporate_global_template_solution_/
+                └── content.docx
+            ├── _corporate_identity_/
+                └── content.docx
+            ├── _custom_toolbars_and_ribbons_/
+                └── content.docx
+            ├── _excel_and_access_experts_sydney_/
+                └── content.docx
+            ├── _fill_in_forms_/
+                └── content.docx
+            ├── _government_departments_/
+                └── content.docx
+            ├── _meet_the_team_/
+                └── content.docx
+            ├── _popup_forms_/
+                └── content.docx
+            ├── _quick_parts_/
+                └── content.docx
+            ├── _remove_repetition_and_increase_productivity_/
+                └── content.docx
+            ├── _training_/
+                └── content.docx
+            ├── _upgrades_and_migration_/
+                └── content.docx
+            ├── _word_document_template_creation_/
+                └── content.docx
+            ├── _word_template_conversions_/
+                └── content.docx
+        ├── schemas/
+            └── www.wordexperts.com.au--schema.json
+            └── www.wordexperts.com.au-accessibility--schema.json
+            └── www.wordexperts.com.au-client-testimonials--schema.json
+            └── www.wordexperts.com.au-companies-and-organisations--schema.json
+            └── www.wordexperts.com.au-contact-us--schema.json
+            └── www.wordexperts.com.au-contact-us-request-a-quote--schema.json
+            └── www.wordexperts.com.au-corporate-global-template-solution--schema.json
+            └── www.wordexperts.com.au-corporate-identity--schema.json
+            └── www.wordexperts.com.au-custom-toolbars-and-ribbons--schema.json
+            └── www.wordexperts.com.au-excel-and-access-experts-sydney--schema.json
+            └── www.wordexperts.com.au-fill-in-forms--schema.json
+            └── www.wordexperts.com.au-government-departments--schema.json
+            └── www.wordexperts.com.au-meet-the-team--schema.json
+            └── www.wordexperts.com.au-popup-forms--schema.json
+            └── www.wordexperts.com.au-quick-parts--schema.json
+            └── www.wordexperts.com.au-remove-repetition-and-increase-productivity--schema.json
+            └── www.wordexperts.com.au-training--schema.json
+            └── www.wordexperts.com.au-upgrades-and-migration--schema.json
+            └── www.wordexperts.com.au-word-document-template-creation--schema.json
+            └── www.wordexperts.com.au-word-template-conversions--schema.json
+        └── .DS_Store
+        └── metadata.json
+        └── next-sitemap.config.js
+        └── package.json
+        └── staticwebapp.config.json
+        └── urls.json
+    └── .DS_Store
+    └── middleware.js
+```
+
+## Components (0)
+
+*No components found*
+
+## API Routes (10)
+
+- `access/app/api/contactForm/route.js`
+- `access/app/api/quoteForm/route.js`
+- `excel/app/api/contactForm/route.js`
+- `excel/app/api/quoteForm/route.js`
+- `office/app/api/contactForm/route.js`
+- `office/app/api/quoteForm/route.js`
+- `powerPlatform/app/api/contactForm/route.js`
+- `powerPlatform/app/api/quoteForm/route.js`
+- `word/app/api/contactForm/route.js`
+- `word/app/api/quoteForm/route.js`
+
+## Page Routes (175)
+
+- `access/app/3rd-party-product-integration`
+- `access/app/access-azure-cloud-based-solutions`
+- `access/app/access-online`
+- `access/app/access-support`
+- `access/app/client-testimonials`
+- `access/app/contact-us/request-a-quote`
+- `access/app/contact-us`
+- `access/app/is-access-right-for-your-company`
+- `access/app/meet-the-team`
+- `access/app/upgrades-and-migration`
+- `access/app`
+- `excel/app/add-in-development`
+- `excel/app/client-testimonials`
+- `excel/app/contact-us/request-a-quote`
+- `excel/app/contact-us`
+- `excel/app/custom-design-and-development`
+- `excel/app/data-manipulation`
+- `excel/app/excel-formulas-and-custom-formulas`
+- `excel/app/excel-support`
+- `excel/app/pivot-tables-charts-and-reporting-solutions`
+- `excel/app/services/microsoft-access/3rd-party-product-integration`
+- `excel/app/services/microsoft-access/access-azure-cloud-based-solutions`
+- `excel/app/services/microsoft-access/access-online`
+- `excel/app/services/microsoft-access/access-support`
+- `excel/app/services/microsoft-access/is-access-right-for-your-company`
+- `excel/app/services/microsoft-access/upgrades-and-migration`
+- `excel/app/services/microsoft-access`
+- `excel/app/services/microsoft-powerpoint/automate-presentations-with-vba`
+- `excel/app/services/microsoft-powerpoint/custom-powerpoint-templates-and-presentations`
+- `excel/app/services/microsoft-powerpoint/existing-presentation-redesign`
+- `excel/app/services/microsoft-powerpoint/powerpoint-user-training-and-assistance`
+- `excel/app/services/microsoft-powerpoint`
+- `excel/app/services/microsoft-word/accessibility`
+- `excel/app/services/microsoft-word/companies-and-organisations`
+- `excel/app/services/microsoft-word/corporate-global-template-solution`
+- `excel/app/services/microsoft-word/corporate-identity`
+- `excel/app/services/microsoft-word/custom-toolbars-and-ribbons`
+- `excel/app/services/microsoft-word/fill-in-forms`
+- `excel/app/services/microsoft-word/government-departments`
+- `excel/app/services/microsoft-word/popup-forms`
+- `excel/app/services/microsoft-word/quick-parts`
+- `excel/app/services/microsoft-word/remove-repetition-and-increase-productivity`
+- `excel/app/services/microsoft-word/training`
+- `excel/app/services/microsoft-word/upgrades-and-migration`
+- `excel/app/services/microsoft-word/word-document-template-creation`
+- `excel/app/services/microsoft-word/word-template-conversions`
+- `excel/app/services/microsoft-word`
+- `excel/app/upgrades-and-migration`
+- `excel/app/vba-macro-development`
+- `excel/app`
+- `office/app/about-us`
+- `office/app/ccp`
+- `office/app/client-tesimonials`
+- `office/app/contact-us/request-a-quote`
+- `office/app/contact-us`
+- `office/app/excel-and-access-experts-central-coast-nsw`
+- `office/app/excel-and-access-experts-melbourne`
+- `office/app/excel-and-access-experts-richmond`
+- `office/app/excel-and-access-experts-sydney`
+- `office/app/faq`
+- `office/app/looking-for-a-job`
+- `office/app/office-and-office-365-experts-melbourne`
+- `office/app/office-and-office-365-experts-richmond`
+- `office/app/office-and-office-365-experts-sydney`
+- `office/app/office-excel-access-and-365-experts-brisbane`
+- `office/app/office-excel-access-and-365-experts-darwin`
+- `office/app/office-excel-access-and-365-experts-northern-rivers-nsw`
+- `office/app/office-excel-access-and-365-experts-perth`
+- `office/app/office-excel-access-and-word-experts-wollongong`
+- `office/app/privacy-policy`
+- `office/app/refund-policy`
+- `office/app/services/by-business-solution/3rd-party-application-or-office-integration`
+- `office/app/services/by-business-solution/add-in-creation`
+- `office/app/services/by-business-solution/cloud-based-solutions-with-azure`
+- `office/app/services/by-business-solution/custom-office-solutions`
+- `office/app/services/by-business-solution/dashboards`
+- `office/app/services/by-business-solution/database-development-and-solutions`
+- `office/app/services/by-business-solution/office-and-sql-server-integration`
+- `office/app/services/by-business-solution/online-solutions`
+- `office/app/services/by-business-solution/vba-macro-development`
+- `office/app/services/by-business-solution`
+- `office/app/services/by-office-product`
+- `office/app/services/microsoft-access/3rd-party-product-integration`
+- `office/app/services/microsoft-access/access-azure-cloud-based-solutions`
+- `office/app/services/microsoft-access/access-online`
+- `office/app/services/microsoft-access/access-support`
+- `office/app/services/microsoft-access/is-access-right-for-your-company`
+- `office/app/services/microsoft-access/upgrades-and-migration`
+- `office/app/services/microsoft-access`
+- `office/app/services/microsoft-dot-net`
+- `office/app/services/microsoft-excel/add-in-development`
+- `office/app/services/microsoft-excel/custom-design-and-development`
+- `office/app/services/microsoft-excel/data-manipulation`
+- `office/app/services/microsoft-excel/excel-formulas-and-custom-formulas`
+- `office/app/services/microsoft-excel/excel-support`
+- `office/app/services/microsoft-excel/pivot-tables-charts-and-reporting-solutions`
+- `office/app/services/microsoft-excel/upgrades-and-migration`
+- `office/app/services/microsoft-excel/vba-macro-development`
+- `office/app/services/microsoft-excel`
+- `office/app/services/microsoft-office/upgrades-and-migration`
+- `office/app/services/microsoft-office`
+- `office/app/services/microsoft-office-365/app-and-custom-development`
+- `office/app/services/microsoft-office-365/business-process-automation`
+- `office/app/services/microsoft-office-365/cloud-backup-with-onedrive`
+- `office/app/services/microsoft-office-365/exchange-online-setup-and-support`
+- `office/app/services/microsoft-office-365/office-365-implementation`
+- `office/app/services/microsoft-office-365/office-365-migration`
+- `office/app/services/microsoft-office-365/remote-data-gathering-from-any-device`
+- `office/app/services/microsoft-office-365/support-and-managed-services`
+- `office/app/services/microsoft-office-365`
+- `office/app/services/microsoft-power-platform/microsoft-power-apps`
+- `office/app/services/microsoft-power-platform/microsoft-power-automate`
+- `office/app/services/microsoft-power-platform/microsoft-power-bi`
+- `office/app/services/microsoft-power-platform/microsoft-power-pages`
+- `office/app/services/microsoft-power-platform`
+- `office/app/services/microsoft-powerpoint/automate-presentations-with-vba`
+- `office/app/services/microsoft-powerpoint/custom-powerpoint-templates-and-presentations`
+- `office/app/services/microsoft-powerpoint/existing-presentation-redesign`
+- `office/app/services/microsoft-powerpoint/powerpoint-user-training-and-assistance`
+- `office/app/services/microsoft-powerpoint`
+- `office/app/services/microsoft-publisher`
+- `office/app/services/microsoft-vbscript`
+- `office/app/services/microsoft-word/accessibility`
+- `office/app/services/microsoft-word/companies-and-organisations`
+- `office/app/services/microsoft-word/corporate-global-template-solution`
+- `office/app/services/microsoft-word/corporate-identity`
+- `office/app/services/microsoft-word/custom-toolbars-and-ribbons`
+- `office/app/services/microsoft-word/fill-in-forms`
+- `office/app/services/microsoft-word/government-departments`
+- `office/app/services/microsoft-word/popup-forms`
+- `office/app/services/microsoft-word/quick-parts`
+- `office/app/services/microsoft-word/remove-repetition-and-increase-productivity`
+- `office/app/services/microsoft-word/training`
+- `office/app/services/microsoft-word/upgrades-and-migration`
+- `office/app/services/microsoft-word/word-document-template-creation`
+- `office/app/services/microsoft-word/word-template-conversions`
+- `office/app/services/microsoft-word`
+- `office/app/services`
+- `office/app/terms-and-conditions`
+- `office/app/word-and-powerpoint-experts-canberra`
+- `office/app/word-and-powerpoint-experts-gold-coast`
+- `office/app/word-and-powerpoint-experts-melbourne`
+- `office/app/word-and-powerpoint-experts-perth`
+- `office/app/word-and-powerpoint-experts-richmond`
+- `office/app/word-and-powerpoint-experts-sydney`
+- `office/app`
+- `powerPlatform/app/author/ppexperts`
+- `powerPlatform/app/client-testimonials`
+- `powerPlatform/app/contact-us/request-a-quote`
+- `powerPlatform/app/contact-us`
+- `powerPlatform/app/meet-the-team`
+- `powerPlatform/app/services/microsoft-power-platform/microsoft-power-apps`
+- `powerPlatform/app/services/microsoft-power-platform/microsoft-power-automate`
+- `powerPlatform/app/services/microsoft-power-platform/microsoft-power-bi`
+- `powerPlatform/app/services/microsoft-power-platform/microsoft-power-pages`
+- `powerPlatform/app`
+- `word/app/accessibility`
+- `word/app/author/ppexperts`
+- `word/app/client-testimonials`
+- `word/app/companies-and-organisations`
+- `word/app/contact-us/request-a-quote`
+- `word/app/contact-us`
+- `word/app/corporate-global-template-solution`
+- `word/app/corporate-identity`
+- `word/app/custom-toolbars-and-ribbons`
+- `word/app/fill-in-forms`
+- `word/app/government-departments`
+- `word/app/popup-forms`
+- `word/app/quick-parts`
+- `word/app/remove-repetition-and-increase-productivity`
+- `word/app/training`
+- `word/app/upgrades-and-migration`
+- `word/app/word-document-template-creation`
+- `word/app/word-template-conversions`
+- `word/app`
+
+## Style Files (5)
+
+- `access/app/global.css`
+- `excel/app/global.css`
+- `office/app/global.css`
+- `powerPlatform/app/global.css`
+- `word/app/global.css`
+

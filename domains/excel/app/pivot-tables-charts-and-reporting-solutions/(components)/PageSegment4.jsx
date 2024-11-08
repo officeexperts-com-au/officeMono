@@ -66,7 +66,7 @@ const PageSegment4 = () => {
           <div className="image-wrapper">
             <Image
               src={hand}
-              alt="person hand with digital people above it"
+              alt="persons hand with digital people above it"
               width={600}
               height={400}
             />

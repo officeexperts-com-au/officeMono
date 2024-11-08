@@ -6,6 +6,7 @@ import AnimateOnScroll from "../../../../../components/AnimateOnScroll";
 import styles from "../../../../../styles/pageSegmentDropdowns.module.css";
 
 import hand from "../../../../../public/hand600x400.webp";
+import promo from "../../../../../public/promo.webp";
 
 const UpgradeIssues = () => {
   const issueDetails = [
@@ -63,12 +64,24 @@ const UpgradeIssues = () => {
       </div>
 
       <AnimateOnScroll animation="scale-up" duration={1} delay={0.2}>
-        <Image
-          src={hand}
-          alt="person hand with digital people above it"
-          width={600}
-          height={400}
-        />
+        <div className={styles.imgSection}>
+          <Image
+            src={hand}
+            alt="person hand with digital people above it"
+            width={600}
+            height={400}
+            className={styles.mainImg}
+          />
+          <div className={styles.img}>
+            <div className={styles.bar}></div>
+            <Image
+              src={promo}
+              alt="person at a computer"
+              width={130}
+              height={60}
+            />
+          </div>
+        </div>
       </AnimateOnScroll>
     </div>
   );
