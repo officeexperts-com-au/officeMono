@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main
-    # Remove paths filter to ensure it triggers
   pull_request:
     types: [opened, synchronize, reopened, closed]
     branches:
@@ -44,12 +43,28 @@ jobs:
           echo "Final directory contents:"
           ls -la domains/
 
-      # Install dependencies
+      # Install dependencies at root and access domain
       - name: Install Dependencies
-        run: npm install
+        run: |
+          npm install
+          cd domains/access
+          npm install next-sitemap --save-dev
 
       - name: Install OIDC Client from Core Package
         run: npm install @actions/core@1.6.0 @actions/http-client
+
+      # Create next-sitemap config if it doesn't exist
+      - name: Create Sitemap Config
+        run: |
+          echo "/** @type {import('next-sitemap').IConfig} */
+          module.exports = {
+            siteUrl: 'https://gentle-hill-0be2d5700.azurestaticapps.net',
+            generateRobotsTxt: true,
+            changefreq: 'weekly',
+            priority: 0.7,
+            exclude: ['/api/*'],
+            generateIndexSitemap: false,
+          }" > domains/access/next-sitemap.config.js
 
       - name: Get Id Token
         uses: actions/github-script@v6
@@ -70,7 +85,10 @@ jobs:
           app_location: "."
           api_location: ""
           output_location: "domains/access/.next"
-          app_build_command: "npm run build --filter=@experts/access"
+          app_build_command: |
+            cd domains/access && 
+            npm run build && 
+            npx next-sitemap
           github_id_token: ${{ steps.idtoken.outputs.result }}
 
   close_pull_request_job:
