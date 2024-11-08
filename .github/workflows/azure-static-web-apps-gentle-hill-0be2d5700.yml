@@ -37,28 +37,52 @@ jobs:
           node-version: "18"
           cache: "npm"
 
+      - name: Check Directory Structure Before
+        run: |
+          echo "Root directory:"
+          ls -la
+          echo "Domains directory:"
+          ls -la domains/
+
       - name: Prepare Workspace
         run: |
-          echo "Current directory contents:"
-          ls -la domains/
-
+          echo "Preparing workspace..."
           cp -r domains/access domains/access_backup
+          echo "Backup created"
           rm -rf domains/excel domains/office domains/powerPlatform domains/word
+          echo "Other domains removed"
           rm -rf domains/access
           mv domains/access_backup domains/access
+          echo "Access domain restored"
 
-          echo "Final directory contents:"
-          ls -la domains/
-
-      - name: Install Dependencies
+      - name: Check Directory Structure After
         run: |
+          echo "Root directory:"
+          ls -la
+          echo "Domains directory:"
+          ls -la domains/
+          echo "Access domain directory:"
+          ls -la domains/access/
+
+      - name: Install Root Dependencies
+        run: |
+          echo "Installing root dependencies..."
           npm install
+          echo "Root dependencies installed"
+
+      - name: Install Access Domain Dependencies
+        run: |
+          echo "Installing access domain dependencies..."
           cd domains/access
+          npm install
           npm install next-sitemap --save-dev
+          echo "Access domain dependencies installed"
 
       - name: Create Sitemap Config
         run: |
-          echo "/** @type {import('next-sitemap').IConfig} */
+          echo "Creating sitemap config..."
+          cat << EOF > domains/access/next-sitemap.config.js
+          /** @type {import('next-sitemap').IConfig} */
           module.exports = {
             siteUrl: 'https://gentle-hill-0be2d5700.azurestaticapps.net',
             generateRobotsTxt: true,
@@ -66,22 +90,31 @@ jobs:
             priority: 0.7,
             exclude: ['/api/*'],
             generateIndexSitemap: false,
-          }" > domains/access/next-sitemap.config.js
+          }
+          EOF
+          echo "Sitemap config created"
+          cat domains/access/next-sitemap.config.js
+
+      - name: Test Build
+        run: |
+          echo "Testing build process..."
+          cd domains/access
+          npm run build
+          echo "Build test completed"
 
       - name: Build And Deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
         env:
-          DEPLOYMENT_TOKEN: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_GENTLE_HILL_0BE2D5700 }}
+          AZURE_STATIC_WEB_APPS_API_TOKEN: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_GENTLE_HILL_0BE2D5700 }}
         with:
-          azure_static_web_apps_api_token: ${{ env.DEPLOYMENT_TOKEN }}
+          azure_static_web_apps_api_token: ${{ env.AZURE_STATIC_WEB_APPS_API_TOKEN }}
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           action: "upload"
-          app_location: "/domains/access"
+          app_location: "domains/access"
           api_location: ""
           output_location: ".next"
-          app_build_command: "cd domains/access && npm run build && npx next-sitemap"
-          deployment_environment: "production"
+          app_build_command: "npm run build && npx next-sitemap"
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
@@ -94,6 +127,6 @@ jobs:
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_GENTLE_HILL_0BE2D5700 }}
           action: "close"
-          app_location: "/domains/access"
+          app_location: "domains/access"
           api_location: ""
           output_location: ".next"
