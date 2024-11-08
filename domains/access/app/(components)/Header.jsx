@@ -13,15 +13,26 @@ const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
+    // Handle scroll
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 10);
+      if (typeof window !== "undefined") {
+        setIsScrolled(window.scrollY > 10);
+      }
     };
 
-    // Add the event listener
-    window.addEventListener("scroll", handleScroll);
+    // Add scroll listener only on client
+    if (typeof window !== "undefined") {
+      window.addEventListener("scroll", handleScroll);
+      // Initial check
+      handleScroll();
+    }
 
-    // Cleanup the event listener on component unmount
-    return () => window.removeEventListener("scroll", handleScroll);
+    // Cleanup
+    return () => {
+      if (typeof window !== "undefined") {
+        window.removeEventListener("scroll", handleScroll);
+      }
+    };
   }, []);
 
   const handleMouseEnter = (dropdown) => {
