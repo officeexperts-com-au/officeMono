@@ -1,54 +1,54 @@
-/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ../../node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[9].use[2]!../../node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[9].use[3]!../../node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[14].oneOf[9].use[4]!../../node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[14].oneOf[9].use[5]!../../styles/animate.module.scss ***!
-  \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-.animate_animate__QvPA9 {
+/*!*********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../../node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[2]!../../node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[3]!../../styles/animate.module.css ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************/
+.animate_animate__YW96S {
   opacity: 0;
   transform: translateY(50px);
   transition: all var(--animation-duration, 1s) cubic-bezier(0.16, 1, 0.3, 1);
   transition-delay: var(--animation-delay, 0s);
   will-change: transform, opacity;
 }
-.animate_animate__QvPA9.animate_visible__CvTWZ {
+.animate_animate__YW96S.animate_visible__jaP_p {
   opacity: 1 !important;
   transform: translateY(0) scale(1) !important;
 }
 
-.animate_fade-up__KTMmZ {
+.animate_fade-up__z6OOf {
   transform: translateY(50px);
   z-index: 2;
 }
 
-.animate_fade-down__XsXzK {
+.animate_fade-down__NLMe4 {
   transform: translateY(-100px);
 }
 
-.animate_slide-left__ypmRt {
+.animate_slide-left__XLWRT {
   transform: translateX(-100px);
 }
 
-.animate_slide-right__gec6e {
+.animate_slide-right__zPaR5 {
   transform: translateX(100px);
 }
 
-.animate_scale-down__puCyv {
+.animate_scale-down__DUcay {
   transform: scale(1.4);
 }
 
-.animate_scale-up__pD2C3 {
+.animate_scale-up__h1Zov {
   transform: scale(0.2);
 }
 
-.animate_fade__gySe6 {
+.animate_fade__4Shah {
   transform: none;
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .animate_animate__QvPA9 {
+  .animate_animate__YW96S {
     transition: none !important;
     transform: none !important;
     opacity: 1 !important;
   }
-}
+}/*# sourceMappingURL=animate.module.css.map */
 /*!***************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ../../node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[2]!../../node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[3]!../../styles/cookieConsent.module.css ***!
   \***************************************************************************************************************************************************************************************************************************************************************************************/

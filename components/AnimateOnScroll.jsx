@@ -1,8 +1,8 @@
 "use client";
-
 import React, { useState, useEffect, useRef } from "react";
 import PropTypes from "prop-types";
-import styles from "../styles/animate.module.scss";
+
+import styles from "../styles/animate.module.css";
 
 const AnimateOnScroll = ({
   children,

@@ -1,7 +1,7 @@
 {
   "/page": "app/page.js",
   "/contact-us/page": "app/contact-us/page.js",
-  "/access-azure-cloud-based-solutions/page": "app/access-azure-cloud-based-solutions/page.js",
   "/upgrades-and-migration/page": "app/upgrades-and-migration/page.js",
+  "/access-azure-cloud-based-solutions/page": "app/access-azure-cloud-based-solutions/page.js",
   "/3rd-party-product-integration/page": "app/3rd-party-product-integration/page.js"
 }
