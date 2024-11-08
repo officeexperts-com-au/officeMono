@@ -22,8 +22,21 @@ jobs:
         with:
           submodules: true
           lfs: false
+
+      # Install Node.js
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "18"
+          cache: "npm"
+
+      # Install dependencies at root level
+      - name: Install Dependencies
+        run: npm install
+
       - name: Install OIDC Client from Core Package
         run: npm install @actions/core@1.6.0 @actions/http-client
+
       - name: Get Id Token
         uses: actions/github-script@v6
         id: idtoken
@@ -32,21 +45,18 @@ jobs:
             const coredemo = require('@actions/core')
             return await coredemo.getIDToken()
           result-encoding: string
+
       - name: Build And Deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
-        env:
-          APP_LOCATION: "domains/access"
-          API_LOCATION: "domains/access/app/api"
-          OUTPUT_LOCATION: ".next"
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_GENTLE_HILL_0BE2D5700 }}
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           action: "upload"
-          app_location: ${{ env.APP_LOCATION }}
-          api_location: ""
-          output_location: ${{ env.OUTPUT_LOCATION }}
-          app_build_command: "cd ${{ env.APP_LOCATION }} && npm install && npm run build"
+          app_location: "." # Root of the monorepo
+          api_location: "" # Empty for Next.js apps
+          output_location: "domains/access/.next" # Specific to access domain
+          app_build_command: "npm run build --filter=@experts/access" # Turbo build command for access domain
           github_id_token: ${{ steps.idtoken.outputs.result }}
 
   close_pull_request_job:
