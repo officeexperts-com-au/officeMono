@@ -17,6 +17,18 @@
     "dev:excel": "turbo run dev --filter=@experts/excel",
     "dev:access": "turbo run dev --filter=@experts/access",
     "dev:powerplatform": "turbo run dev --filter=@experts/powerplatform",
+    "build:office": "turbo run build --filter=@experts/office...",
+    "build:word": "turbo run build --filter=@experts/word...",
+    "build:excel": "turbo run build --filter=@experts/excel...",
+    "build:access": "turbo run build --filter=@experts/access...",
+    "build:powerplatform": "turbo run build --filter=@experts/powerplatform...",
+    "lint:office": "turbo run lint --filter=@experts/office",
+    "lint:word": "turbo run lint --filter=@experts/word",
+    "lint:excel": "turbo run lint --filter=@experts/excel",
+    "lint:access": "turbo run lint --filter=@experts/access",
+    "lint:powerplatform": "turbo run lint --filter=@experts/powerplatform",
+    "build:australia": "turbo run build --filter=@experts/{office,word,excel}...",
+    "build:office-suite": "turbo run build --filter=@experts/{word,excel,powerplatform}...",
     "scan": "node node-scripts/scan-codebase.js"
   },
   "dependencies": {
