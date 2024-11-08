@@ -79,14 +79,11 @@ jobs:
           action: "upload"
           app_location: "/domains/access"
           api_location: ""
-          output_location: "domains/access/.next"
-          app_build_command: |
-            cd domains/access && 
-            npm run build && 
-            npx next-sitemap
+          output_location: ".next"
+          app_build_command: "cd domains/access && npm run build && npx next-sitemap"
           deployment_environment: "production"
 
- close_pull_request_job:
+  close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
     runs-on: ubuntu-latest
     name: Close Pull Request Job
