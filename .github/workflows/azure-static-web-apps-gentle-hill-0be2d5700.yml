@@ -4,18 +4,11 @@ on:
   push:
     branches:
       - main
-    paths:
-      - "domains/access/**"
-      - "package.json"
-      - "turbo.json"
+    # Remove paths filter to ensure it triggers
   pull_request:
     types: [opened, synchronize, reopened, closed]
     branches:
       - main
-    paths:
-      - "domains/access/**"
-      - "package.json"
-      - "turbo.json"
 
 jobs:
   build_and_deploy_job:
@@ -40,21 +33,14 @@ jobs:
       # Remove other domain packages to prevent their build
       - name: Prepare Workspace
         run: |
-          # List current contents for debugging
           echo "Current directory contents:"
           ls -la domains/
 
-          # Create backup of access domain
           cp -r domains/access domains/access_backup
-
-          # Remove all domains except backup
           rm -rf domains/excel domains/office domains/powerPlatform domains/word
-
-          # Move backup back to access
           rm -rf domains/access
           mv domains/access_backup domains/access
 
-          # List final contents for verification
           echo "Final directory contents:"
           ls -la domains/
 
