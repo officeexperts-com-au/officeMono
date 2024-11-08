@@ -1,6 +1,8 @@
 import React from "react";
 import Image from "next/image";
-import styles from "../styles/meetTheTeam.module.scss";
+
+import styles from "../styles/meetTheTeam.module.css";
+
 import { teamMembers } from "../meetTheTeam";
 
 const MeetTheTeam = () => {

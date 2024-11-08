@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import styles from "../styles/faqSection.module.scss";
+import styles from "../styles/faqSection.module.css";
 
 const FAQ = ({ title = "Frequently Asked Questions", faqs = [] }) => {
   if (!Array.isArray(faqs) || !faqs.length) {

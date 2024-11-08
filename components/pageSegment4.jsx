@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 
 import styles from "../styles/pageSegment4.module.css";
+
 import chain from "../public/chain600x400.webp";
 
 const PageSegment4 = () => {

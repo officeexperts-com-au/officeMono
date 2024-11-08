@@ -1,10 +1,12 @@
 // TestimonialPage.jsx
 import React from "react";
+
 import { testimonials } from "../../../testimonials";
+
 import TestimonialCard from "../(components)/TestimonialPage";
 import AnimateOnScroll from ".../../../components/AnimateOnScroll";
 
-import styles from "../styles/testimonialPage.module.scss";
+import styles from "../styles/testimonialPage.module.css";
 
 const TestimonialPage = () => {
   return (

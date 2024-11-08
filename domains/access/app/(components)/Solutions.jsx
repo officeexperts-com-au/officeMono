@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 
-import styles from "../../../../styles/solutions.module.scss";
+import styles from "../../../../styles/solutions.module.css";
 
 import project1 from "../../../../public/project-img-1.webp";
 import project2 from "../../../../public/project-img-2.webp";

@@ -1,7 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import PropTypes from "prop-types";
-import styles from "../styles/testimonialsCard.module.scss";
+
+import styles from "../styles/testimonialsCard.module.css";
 
 const TestimonialCard = ({ content, name, contact, image }) => {
   // Add defensive check

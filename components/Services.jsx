@@ -1,14 +1,10 @@
 import React from "react";
 import Image from "next/image";
-import dynamic from "next/dynamic";
 
 import styles from "../styles/services.module.css";
-import ServicesCard from "./ServicesCard";
 
-// Dynamically import AnimateOnScroll with no SSR
-const AnimateOnScroll = dynamic(() => import("./AnimateOnScroll"), {
-  ssr: false,
-});
+import ServicesCard from "./ServicesCard";
+import AnimateOnScroll from "./AnimateOnScroll";
 
 import dataSol from "../public/microsoft/microsoft-database-solutions_microsoft-access-experts_sharepoint_sql-server_azure_asp-dot-net.jpg";
 import azure from "../public/microsoft/microsoft-azure-integration_microsoft-office-experts-group.jpg";

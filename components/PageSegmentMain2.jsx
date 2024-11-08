@@ -1,6 +1,8 @@
 import Image from "next/image";
 import React from "react";
-import styles from "../styles/pageSegment2.module.scss";
+
+import styles from "../styles/pageSegment2.module.css";
+
 import lady from "../public/service-img-1.webp";
 
 const PageSegmentMain2 = () => {

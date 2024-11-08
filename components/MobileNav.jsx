@@ -1,7 +1,8 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import styles from "../styles/mobileNav.module.scss";
+
+import styles from "../styles/mobileNav.module.css";
 
 const MobileNav = () => {
   const [isOpen, setIsOpen] = useState(false);

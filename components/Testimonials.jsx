@@ -1,7 +1,9 @@
 import React from "react";
-import styles from "../styles/testimonialsSection.module.scss";
+
 import TestimonialCard from "./TestimonialCard";
 import { testimonials } from "../domains/access/testimonials";
+
+import styles from "../styles/testimonialsSection.module.css";
 
 const Testimonials = () => {
   // Calculate how many slides to append based on viewport size

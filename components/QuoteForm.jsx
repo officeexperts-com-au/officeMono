@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import React, { useState, useRef } from "react";
+
 import styles from "../styles/contact.module.css";
 
 const MAX_FILE_SIZE = 5 * 1024 * 1024; // 5 MB

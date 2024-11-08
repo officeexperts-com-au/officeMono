@@ -421,16 +421,16 @@
 .header_socials__DZaLA svg:hover {
   color: #ff403f;
 }/*# sourceMappingURL=header.module.css.map */
-/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ../../node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[9].use[2]!../../node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[9].use[3]!../../node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[14].oneOf[9].use[4]!../../node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[14].oneOf[9].use[5]!../../styles/mobileNav.module.scss ***!
-  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!***********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../../node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[2]!../../node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[3]!../../styles/mobileNav.module.css ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************/
 @media (min-width: 1025px) {
-  .mobileNav_mobileNavContainer__vz2kw {
+  .mobileNav_mobileNavContainer___iQyA {
     display: none;
   }
 }
 
-.mobileNav_menuButton__PDtDV {
+.mobileNav_menuButton__a3PmU {
   position: fixed;
   top: 1rem;
   right: 1rem;
@@ -441,12 +441,12 @@
   cursor: pointer;
 }
 
-.mobileNav_menuIcon__Dkj69 {
+.mobileNav_menuIcon__dI5kn {
   width: 1.5rem;
   height: 1.5rem;
 }
 
-.mobileNav_mobileNav__Gl_EP {
+.mobileNav_mobileNav__bxsbp {
   position: fixed;
   top: 0;
   right: -100%;
@@ -460,11 +460,11 @@
   box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.mobileNav_isOpen__b8eCp {
+.mobileNav_isOpen__WQSux {
   right: 0;
 }
 
-.mobileNav_overlay__hg_y2 {
+.mobileNav_overlay__mORrt {
   position: fixed;
   top: 0;
   left: 0;
@@ -474,7 +474,7 @@
   z-index: 998;
 }
 
-.mobileNav_backButton__m4KPw {
+.mobileNav_backButton__I3yVD {
   display: flex;
   align-items: center;
   width: 100%;
@@ -485,33 +485,33 @@
   cursor: pointer;
 }
 
-.mobileNav_backIcon__52vsy {
+.mobileNav_backIcon__XyBtt {
   width: 1.25rem;
   height: 1.25rem;
   margin-right: 0.5rem;
 }
 
-.mobileNav_navList__bOJDE {
+.mobileNav_navList__aXM9u {
   list-style: none;
   padding: 0;
   margin: 0;
   transition: opacity 0.3s ease-in-out;
 }
 
-.mobileNav_fadeIn__PWvv8 {
+.mobileNav_fadeIn__50jO7 {
   opacity: 1;
 }
 
-.mobileNav_fadeOut__qp_VI {
+.mobileNav_fadeOut__GpjeI {
   opacity: 0;
 }
 
-.mobileNav_navItem__JCSfa {
+.mobileNav_navItem__p1UCg {
   border-bottom: 1px solid #eee;
 }
 
-.mobileNav_navButton__oGeJN,
-.mobileNav_navLink__Mxgvc {
+.mobileNav_navButton__yMiHc,
+.mobileNav_navLink___3l7b {
   display: block;
   width: 100%;
   padding: 1rem;
@@ -522,10 +522,10 @@
   text-decoration: none;
   color: inherit;
 }
-.mobileNav_navButton__oGeJN:hover,
-.mobileNav_navLink__Mxgvc:hover {
+.mobileNav_navButton__yMiHc:hover,
+.mobileNav_navLink___3l7b:hover {
   background-color: #f5f5f5;
-}
+}/*# sourceMappingURL=mobileNav.module.css.map */
 /*!********************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ../../node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!../../node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./app/global.css ***!
   \********************************************************************************************************************************************************************************************************************************************************************/

@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 
-import styles from "../styles/contact.module.scss";
+import styles from "../styles/contact.module.css";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
